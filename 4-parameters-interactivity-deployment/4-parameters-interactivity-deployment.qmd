@@ -1,0 +1,239 @@
+---
+title: "Parameters, interactivity,<br>and deployment"
+subtitle: "Build-a-Dashboard Workshop"
+author:   
+  - name: Dr. Mine Çetinkaya-Rundel
+    affiliations:
+      - name: Duke University
+      - name: Posit, PBC
+date: "2024-08-12"
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
+format:
+  revealjs:
+    theme: ../style/slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+---
+
+# Deployment
+
+## Dashboard deployment
+
+Dashboards are typically just static HTML pages so can be deployed to any web server or web host.
+
+```{=html}
+<table id="deployment-table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 65%">
+</colgroup>
+<tbody>
+<tr class="odd fragment">
+<td>Static</td>
+<td><span>Rendered a single time (e.g.&nbsp;when underlying data won’t ever change)</span></td>
+</tr>
+<tr class="even fragment">
+<td>Scheduled</td>
+<td><span>Rendered on a schedule (e.g.&nbsp;via <code>cron</code> job) to accommodate changing data.</span></td>
+</tr>
+<tr class="odd fragment">
+<td>Parameterized</td>
+<td><span>Variations of static or scheduled dashboards based on parameters.</span></td>
+</tr>
+<tr class="even fragment">
+<td>Interactive</td>
+<td><span>Fully interactive dashboard using Shiny (requires a server for deployment).</span></td>
+</tr>
+</tbody>
+</table>
+
+<style type="text/css">
+#deployment-table td {
+  border-bottom: none;
+}
+#deployment-table td:first-of-type {
+  font-weight: 800;
+}
+</style>
+```
+
+# Parameters
+
+## Parameters {auto-animate="true"}
+
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|6-7|13-14|19-23"}
+{{< include _parameters-class-compact-r.qmd >}}
+````
+:::
+:::
+
+## Parameters {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="6-7,13-14,19-23"}
+{{< include _parameters-class-compact-r.qmd >}}
+````
+:::
+:::
+:::
+
+::: {.column width="60%"}
+![](images/parameters-class-compact-r.png)
+:::
+:::
+
+## Parameters {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="6-7"}
+{{< include _parameters-class-midsize-r.qmd >}}
+````
+:::
+:::
+:::
+
+::: {.column width="60%"}
+![](images/parameters-class-midsize-r.png)
+:::
+:::
+
+## Rendering with parameter
+
+Use the `-P` command line option to vary the parameter:
+
+``` bash
+quarto render dashboard-r.qmd -P class:"suv"
+```
+
+## Parameters
+
+::: python-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|11-15|17-21|25-29"}
+{{< include _parameters-py.qmd >}}
+````
+:::
+
+# Interactivity
+
+## Interactivity with Shiny
+
+::: incremental
+- The Shiny package (for R and for Python) provides an easy way to build web applications with R.
+
+- Quarto dashboards can include embedded Shiny components (e.g., a plot with sliders that control its inputs) to add interactivity.
+
+- Ladder of complexity/customization: Quarto dashboard > Quarto dashboard with Shiny components > Shiny dashboard
+:::
+
+##  
+
+```{=html}
+<iframe src="https://jjallaire.shinyapps.io/penguins-dashboard/" title = "Palmer Penguins" frameborder="1" height="600" width="1000"></iframe>
+```
+
+## Deployment of interactive dashboards
+
+::: columns
+::: {.column width="60%"}
+### Server
+
+::: {.column width="40%"}
+#### Cloud
+
+-   [shinyapps.io](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shinyapps.io-cloud-hosting)
+-   [Hugging Face](https://huggingface.co/docs/hub/spaces-sdks-docker-shiny)
+-   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
+:::
+
+::: {.column width="50%"}
+#### On-Prem
+
+-   [Shiny Server](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shiny-server-open-source) (open source)
+-   [Posit Connect](https://shiny.posit.co/py/docs/deploy.html#deploy-to-posit-connect-commercial) (commercial)
+-   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
+:::
+:::
+
+::: {.column .fragment width="40%"}
+### Serverless
+
+Using [Pyodide](https://pyodide.org/)
+
+\[[Example](https://wch.github.io/retirement-simulation-dashboard/)\]
+
+Using [ShinyLive](https://posit-dev.github.io/r-shinylive/)
+:::
+:::
+
+## Other interactivity
+
+- [Observable JS](https://quarto.org/docs/dashboards/interactivity/observable.html) for client-side interactivity using the Observable dialect of JavaScript.
+
+- [Jupyter Widgets](https://quarto.org/docs/interactive/widgets/jupyter.html) or [htmlwidgets](https://quarto.org/docs/interactive/widgets/htmlwidgets.html) for client-side interactivity based on standard Python and R JavaScript widget frameworks.
+
+# Your turn
+
+## Start
+
+::: r-box
+-   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `4 - Parameters, interactivity, and deployment`.
+
+-   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-4.qmd.`
+:::
+
+::: python-box
+Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-4.qmd.`
+:::
+
+## Goal
+
+::: your-turn
+Deploy your latest dashboard to QuartoPub.
+
+**Stretch goal:** Add parameter and/or interactivity to your dashboard for narrowing down to or picking a year.
+:::
+
+{{< countdown minutes=10 >}}
+
+# Wrap up
+
+## Time for Q&A! {.center}
+
+## Q&A after workshop {.center}
+
+<https://github.com/quarto-dev/quarto-cli/discussions>
+
+## Feedback
+
+Please fill out the workshop survey at <https://pos.it/conf-workshop-survey>.
+
+## Learning More
+
+|                   |                                                                        |
+|-------------------------|-----------------------------------------------|
+| About Quarto      | <https://quarto.org/>                                                  |
+| Quarto Dashboards | <https://quarto.org/docs/dashboards/>                                  |
+| Shiny for R       | <https://shiny.posit.co/r/>                                            |
+| Shiny for Python  | <https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/> |
+
+## Quarto at posit::conf(2024) - Tuesday
+
+- [Automated Reporting With Quarto: Beyond Copy And Paste](https://reg.conf.posit.co/flow/posit/positconf24/publiccatalog/page/publiccatalog/session/1712004124994001gOid) - 2:40 PM - 4:00 PM PDT Columbia A/B
+
+- [Making Decisions With Data](https://reg.conf.posit.co/flow/posit/positconf24/publiccatalog/page/publiccatalog/session/1712004520332001rWs6) - 2:40 PM - 4:00 PM PDT 300 | Columbia D
+
+... and many more on Wednesday!
+
+## Thank you! {.center}
+
+<https://pos.it/conf-workshop-survey>

@@ -1,0 +1,760 @@
+---
+title: "Dashboard components"
+subtitle: "Build-a-Dashboard Workshop"
+author:   
+  - name: Dr. Mine Çetinkaya-Rundel
+    affiliations:
+      - name: Duke University
+      - name: Posit, PBC
+date: "2024-08-12"
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
+format:
+  revealjs:
+    theme: ../style/slides.scss
+    transition: fade
+    slide-number: true
+    chalkboard: true
+---
+
+# Dashboard components
+
+## Navigation bar and pages
+
+Icon, title, and author along with links to sub-pages if more than one page is defined.
+
+![](images/navbar-pages.png)
+
+## Sidebars, rows, columns, and tabsets
+
+Rows and columns using markdown heading, with optional attributes to control height, width, etc.
+Sidebars, mostly used for for interactive inputs.
+Tabsets to further divide content.
+
+![](images/sidebar-rows-columns-tabsets.png)
+
+## Cards
+
+Cards are containers for code cell outputs (e.g., plots, tables, value boxes) and free form markdown text.
+The content of cards typically maps to *cells* in your notebook or source document.
+
+![](images/cards.png)
+
+## A note on computing language
+
+-   The examples in this module will primarily feature R code in code cells
+
+-   All code in code cells can be replaced with Python, Julia, Observable, etc. and the layout would look exactly the same
+
+-   When/if different behavior in layout is expected, this will be explicitly called out and examples in other computing languages will also be provided
+
+# Navigation bar and pages
+
+## Pages {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|10,18"}
+{{< include _pages.qmd >}}
+````
+:::
+
+## Pages {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="10"}
+{{< include _pages.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/pages-scatter.png)
+:::
+:::
+
+## Pages {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="18"}
+{{< include _pages.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/pages-bar.png)
+:::
+:::
+
+## Logo {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-5"}
+{{< include _logo.qmd >}}
+````
+:::
+
+## Logo {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="3-5"}
+{{< include _logo.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/logo.png)
+:::
+:::
+
+## Navigation buttons {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|6-15"}
+{{< include _nav-buttons.qmd >}}
+````
+:::
+
+## Navigation buttons {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="6-15"}
+{{< include _nav-buttons.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/nav-buttons.png)
+:::
+:::
+
+## Navigation buttons -- alternative {.smaller auto-animate="true"}
+
+Special aliases are recognized for certain navigation buttons: `linkedin`, `facebook`, `reddit`, `twitter`, and `github`.
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|6-7"}
+{{< include _nav-buttons-alternative.qmd >}}
+````
+:::
+
+# Sidebars, rows, columns, and tabsets
+
+## Sidebars
+
+-   For information about the dashboard, data, etc. and/or for user inputs in interactive dashboards
+
+-   Can be at the global or page level
+
+## Sidebars - Global {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|22-24"}
+{{< include _sidebar-global.qmd >}}
+````
+:::
+
+## Sidebars - Global {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-24"}
+{{< include _sidebar-global.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-global-scatter.png)
+:::
+:::
+
+## Sidebars - Global {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-24"}
+{{< include _sidebar-global.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-global-bar.png)
+:::
+:::
+
+## Sidebars - Page {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|22-28"}
+{{< include _sidebar-page.qmd >}}
+````
+:::
+
+## Sidebars - Page {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-28"}
+{{< include _sidebar-page.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-page-scatter.png)
+:::
+:::
+
+## Sidebars - Page {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="22-28"}
+{{< include _sidebar-page.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/sidebars-page-bar.png)
+:::
+:::
+
+## Rows {auto-animate="true"}
+
+By default, cards are laid out in rows:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12,20"}
+{{< include _rows.qmd >}}
+````
+:::
+
+## Rows {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,20"}
+{{< include _rows.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/rows.png)
+:::
+:::
+
+## Rows {auto-animate="true"}
+
+Default value of `orientation` is `rows`:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5"}
+{{< include _rows-orientation.qmd >}}
+````
+:::
+
+## Columns {auto-animate="true"}
+
+Setting `orientation` to `columns` makes each `##` indicate a column instead of a row:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5"}
+{{< include _columns.qmd >}}
+````
+:::
+
+## Columns {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="4-5,13,21"}
+{{< include _columns.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/columns.png)
+:::
+:::
+
+## Rows, then columns {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12-22|24-40"}
+{{< include _rows-then-columns.qmd >}}
+````
+:::
+
+## Rows, then columns {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,14,18,24,26,34"}
+{{< include _rows-then-columns.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/rows-then-columns.png)
+:::
+:::
+
+## Columns, then rows {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|5|12-22|24-40"}
+{{< include _columns-then-rows.qmd >}}
+````
+:::
+
+## Columns, then rows {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="5"}
+{{< include _columns-then-rows.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/columns-then-rows.png)
+:::
+:::
+
+## Heights and widths of rows and columns {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12,24|14,18|26,34"}
+{{< include _rows-then-columns-height-width.qmd >}}
+````
+:::
+
+## Heights and widths of rows and columns {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,24,14,18,26,34"}
+{{< include _rows-then-columns-height-width.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/rows-then-columns-heights-widths.png)
+:::
+:::
+
+## `fill` vs. `flow`
+
+::: incremental
+-   Each row in a dashboard that is not given an explicit height will determine its size by either `fill`ing available space or by `flow`ing to its natural height
+
+-   `fill`ling layout is generally the default, however for certain types of content (e.g., markdown text) `flow` layout is the default.
+
+-   If the default behavior is not what you want, you can explicitly specify filling or flowing behavior using the `.fill` and `.flow` classes applied to a row.
+
+    ```` {.yaml filename="dashboard-r.qmd"}
+    ## Row {.fill}
+
+    ## Row {.flow}
+    ````
+:::
+
+## `scrolling`
+
+Need more space?
+Set `scrolling: true` for accommodate page overflow.
+
+``` yaml
+---
+format: 
+  dashboard:
+    scrolling: true 
+---
+```
+
+. . .
+
+::: callout-note
+This option is handy for adding more rows of cards to a dashboard, however spreading content across **pages** and **tabsets** can be a better way to present information.
+:::
+
+## Per page controls {.smaller}
+
+`orientation` and `scrolling` can be provided at the dashboard or page level:
+
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12|24"}
+{{< include _per-page-controls.qmd >}}
+````
+
+## Tabsets {auto-animate="true"}
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|12|24"}
+{{< include _tabsets.qmd >}}
+````
+:::
+
+## Tabsets {.smaller auto-animate="true"}
+
+Each card within a row/column or each row/column within another becomes a tab:
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="12,24"}
+{{< include _tabsets.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/tabsets.png)
+:::
+:::
+
+# Cards
+
+## Cards
+
+::: incremental
+-   Fundamental unit of display within dashboards
+
+-   Created automatically for cells and markdown content that are within rows and columns
+
+-   Can be created manually with a `card` div:
+
+    ```` {.yaml}
+    ::: {.card}
+    This text will be displayed within a card
+    :::
+    ````
+
+-   Cards provide an **expand** button which appears at bottom right on hover
+:::
+
+## Card titles {.smaller auto-animate="true"}
+
+Card titles can be provided as a cell option or within a `cat()` (R) or `print()` (Python) statement:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|13|19-21"}
+{{< include _card-titles.qmd >}}
+````
+:::
+
+## Card titles {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="13,19-21"}
+{{< include _card-titles.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/card-titles.png)
+:::
+:::
+
+## Pop quiz!
+
+::: your-turn
+Which of the following cells will become a card in a dashboard?
+:::
+
+::: columns
+::: {.column width=45%}
+a.  
+
+```{{r}}
+library(palmerpenguins)
+```
+
+b.  
+
+```{{r}}
+x <- 2
+```
+:::
+
+::: {.column width=35%}
+c.  
+
+```{{r}}
+plot(cars)
+```
+
+d.  
+
+```{{r}}
+#| output: false
+2 + 2
+```
+:::
+::: {.column width=20%}
+![](images/slido.png)
+:::
+:::
+
+## Multiple outputs {.smaller auto-animate="true"}
+
+If a cell generates multiple outputs, they get wrapped in a single cell:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|14-15|17-18"}
+{{< include _card-multiple-outputs-r.qmd >}}
+````
+:::
+
+## Multiple outputs {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="14-15,17-18"}
+{{< include _card-multiple-outputs-r.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/card-multiple-outputs.png)
+:::
+:::
+
+## Multiple output layout {.smaller auto-animate="true"}
+
+You can control layout of multiple outputs with `layout-ncol`:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|14"}
+{{< include _card-multiple-output-layout-r.qmd >}}
+````
+:::
+
+## Multiple output layout {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="14"}
+{{< include _card-multiple-output-layout-r.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/card-multiple-output-layout.png)
+:::
+:::
+
+## Value boxes {.smaller}
+
+::: incremental
+-   Value boxes are a great way to prominently display simple values within a dashboard
+
+-   You can create value boxes in executable cells or plain markdown in divs
+
+-   Value boxes use Bootstrap icons (<https://icons.getbootstrap.com>) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we'll get to themes later!)
+
+    | Color alias | Default theme color(s) |
+    |-------------|------------------------|
+    | `primary`   | Blue                   |
+    | `secondary` | Gray                   |
+    | `success`   | Green                  |
+    | `info`      | Bright Blue            |
+    | `warning`   | Yellow/Orange          |
+    | `danger`    | Red                    |
+    | `light`     | Light Gray             |
+    | `dark`      | Black                  |
+:::
+
+## Value boxes
+
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|11|13-28|30-38|40-48|50-54|56"}
+{{< include _valueboxes-r.qmd >}}
+````
+:::
+:::
+
+## Value boxes {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+::: r-box
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="30-38,40-48,50-54"}
+{{< include _valueboxes-r.qmd >}}
+````
+:::
+:::
+:::
+
+::: {.column width="60%"}
+![](images/valueboxes-r.png)
+:::
+:::
+
+## Value boxes {auto-animate="true"}
+
+::: {data-id="code"}
+::: python-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|11|13-25|27-35|37-45|47-51|53"}
+{{< include _valueboxes-py.qmd >}}
+````
+:::
+:::
+
+## Value boxes {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+::: python-box
+```` {.yaml filename="dashboard-py.qmd" code-line-numbers="27-35,37-45,47-51"}
+{{< include _valueboxes-py.qmd >}}
+````
+:::
+:::
+:::
+
+::: {.column width="60%"}
+![](images/valueboxes-py.png)
+:::
+:::
+
+## Markdown text {.smaller}
+
+::: incremental
+-   You can include markdown text anywhere within a dashboard
+
+-   Markdown text is automatically placed in cards, but you can also explicitly put them in cards with fenced divs, and add titles to cards
+
+    ```` {.yaml}
+    ::: {.card title="Title goes here"}
+    Text goes here.
+    :::
+    ````
+
+-   You can place markdown text and other cell output in a single card as well
+
+    ```` {.yaml}
+    ::: {.card title="Title goes here"}
+    Text goes here.
+
+    ```{{r}}
+    # code generating output goes here
+    ```
+    :::    
+    ````
+:::
+
+# Your turn
+
+## Start
+
+::: r-box
+-   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `2 - Dashboards components`.
+
+-   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-2.qmd.`
+:::
+
+::: python-box
+Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-2.qmd.`
+:::
+
+## Goal
+
+Your goal is to create a dashboard that looks like the following:
+
+![](images/olympicdash-r-2.png)
+
+## Step 1 {.smaller}
+
+::: your-turn
+-   Add two pages - one for Summer Olympics and one for Winter Olympics.
+-   Duplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.
+:::
+
+![](images/olympicdash-r-2-step-1.png)
+
+{{< countdown minutes=5 >}}
+
+## Step 2 {.smaller}
+
+::: your-turn
+In the Summer Olympics page:
+
+-   Make the columns 65% (first) and 35% (second) of width of the dashboard.
+-   Divide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.
+-   In the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.
+:::
+
+![](images/olympicdash-r-2-step-2.png)
+
+{{< countdown minutes=5 >}}
+
+## Step 3 {.smaller}
+
+::: your-turn
+In the Summer Olympics page:
+
+-   Divide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.
+-   In the second row of the second column, create tables (using **gt** for R or **great_tables** for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
+-   Place these tables in tabsets with descriptive text about table content in the same card/tab.
+:::
+
+![](images/olympicdash-r-2-step-3.png)
+
+{{< countdown minutes=10 >}}
+
+## Step 4 {.smaller}
+
+::: your-turn
+In the first row of the second column of the Summer Olympics page, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the `award-fill` icon.
+:::
+
+![](images/olympicdash-r-2-step-4.png)
+
+{{< countdown minutes=10 >}}
+
+## Step 5 {.smaller}
+
+::: your-turn
+Duplicate dashboard content for the Winter Olympics page, share your results with your neighbor, and discuss approaches for not repeating yourself in your code.
+:::
+
+![](images/olympicdash-r-2-step-5.png)
+
+{{< countdown minutes=5 >}}

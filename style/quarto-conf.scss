@@ -1,0 +1,25 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+$font-family: "Space Grotesk", sans-serif;
+$link-color: #FF75EF;
+$hover-color: lighten($link-color, 10%);
+
+/*-- scss:rules --*/
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover{
+    color: $hover-color;
+    border-bottom: 1px solid $hover-color;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Space Grotesk;
+  color: #D95127;
+}
