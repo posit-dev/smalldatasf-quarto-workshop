@@ -4,10 +4,10 @@ title: "Intro to Quarto"
 
 ## Slides
 
-[View slides in full screen](1-hello-dashboards.html)
+[View slides in full screen](0-intro-to-quarto.html)
 
 ```{=html}
-<iframe class="slide-deck" src="1-hello-dashboards.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+<iframe class="slide-deck" src="0-intro-to-quarto.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
 ```
 ## Exercises
 

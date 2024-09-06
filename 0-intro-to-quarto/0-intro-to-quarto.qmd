@@ -1,15 +1,21 @@
 ---
-title: "From Jupyter Notebooks to websites with Quarto"
-author: "Mine Çetinkaya Rundel"
-institute: "Duke University + Posit"
-footer: "🔗 [bit.ly/quarto-pydata](https://bit.ly/quarto-pydata)"
+title: "Intro to Quarto"
+subtitle: "Small Data SF"
+author:   
+  - name: Sara Altman
+    affiliations:
+      - name: Posit, PBC
+  - name: Isabella Velásquez
+    affiliations:
+      - name: Posit, PBC
+footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+logo: "../images/slides-logo.png"
 format:
   revealjs:
+    theme: ../style/slides.scss
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: images/quarto-icon.svg
-    theme: slides.scss
 ---
 
 ```{r}
@@ -41,23 +47,7 @@ python3 -m pip install tabulate pandas seaborn palmerpenguins
 
 # Welcome
 
-## Code of Conduct {.smaller}
-
-PyData has an engaged and respectful community made up of people from all over the world. We are committed to creating a productive, professional, and inclusive environment for everyone. All community members are expected to show respect and courtesy to other attendees throughout the conference, all conference events and online forums. Our code of conduct is strictly enforced.
-
-Do not insult or put down others. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for PyData NYC.
-
-All communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate.
-
-PyData NYC is dedicated to providing a harassment-free community for everyone, regardless of gender, sexual orientation, gender identity and expression, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of community members in any form.
-
-Thank you for helping make this a welcoming, friendly community for all.
-
-::: aside
-[For more info and reporting a code of conduct incident](https://pydata.org/code-of-conduct/)
-:::
-
-## About me
+## About us
 
 ::: columns
 ::: {.column width="50%"}
