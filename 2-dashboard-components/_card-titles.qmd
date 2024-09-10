@@ -5,21 +5,23 @@ format:
     logo: images/beetle.png
 ---
 
-```{{r}}
-library(ggplot2)
+```{{python}}
+from plotnine import ggplot, aes, geom_point, geom_bar
+from plotnine.data import mpg
 ```
 
-```{{r}}
+```{{python}}
 #| title: Highway vs. city mileage
-ggplot(mpg, aes(x = cty, y = hwy)) +
-  geom_point()
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
 ```
 
-```{{r}}
-n_cars <- nrow(mpg)
-
-cat("title=", "Drive types of", n_cars, "cars")
-
-ggplot(mpg, aes(x = drv)) +
-  geom_bar()
+```{{python}}
+#| title: Drive types
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
 ```
