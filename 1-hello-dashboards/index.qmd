@@ -11,10 +11,4 @@ title: "Hello, Dashboards!"
 ```
 ## Exercises
 
--   R:
-
-    -   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `1 - Hello, Dashboards!`.
-
-    -   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-1.qmd.`
-
--   Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-1.qmd.`
+-   Clone the GitHub repo `posit-dev/small-data-sf-olympicdash` (<https://github.com/posit-dev/small-data-sf-olympicdash>) and work on `olympicdash-py-1.qmd.`
