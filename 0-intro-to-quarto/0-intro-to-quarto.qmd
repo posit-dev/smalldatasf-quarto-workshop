@@ -8,7 +8,7 @@ author:
   - name: Isabella Velásquez
     affiliations:
       - name: Posit, PBC
-footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+footer: "[pos.it/small-data-sf-quarto-workshop](https://pos.it/small-data-sf-quarto-workshop)"
 logo: "../images/slides-logo.png"
 format:
   revealjs:
@@ -26,49 +26,45 @@ library(countdown)
 
 # Pre-workshop
 
-## Setup {.smaller}
-
-::: task
-**1. Tools:** Have JupyterLab and/or VS Code (with Jupyter and Quarto extensions) ready to go
-
-**2. Software:** Download and install Python and the pre-release version of Quarto:
-
--   Python 3: <https://www.python.org/downloads/>
--   Quarto 1.4.464: <https://quarto.org/docs/download/prerelease.html>
-
-**3. Packages:** Install the following packages:
-
-``` {.bash filename="Terminal"}
-python3 -m pip install tabulate pandas seaborn palmerpenguins
-```
-
-**4. Exercises:** Go to [`bit.ly/quarto-pydata-website`](https://bit.ly/quarto-pydata-website), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
-:::
-
 # Welcome
 
 ## About us
 
 ::: columns
 ::: {.column width="50%"}
--   Professor of the Practice\
-    Department of Statistical Science\
-    Duke University
+-   Data Science Educator
 
--   Developer Educator, Posit
+    Developer Relations, Posit
 :::
 
 ::: {.column width="50%" style="text-align: center;"}
-![](images/mine.png){fig-alt="Mine's headshot" fig-align="center"}
+![](images/sara.jpg){fig-alt="Sara's headshot" fig-align="center" width=250px style="border-radius: 50%;"}
 
-**Mine Çetinkaya-Rundel**
+**Sara Altman**
 
-[mine-cr.com](https://mine-cr.com)
 :::
 :::
 
--   Teaching data analysis in computational notebooks for 10+ years
--   Teaching and using Quarto for 2+ years
+## About us
+
+::: columns
+::: {.column width="50%"}
+-   Sr. Product Marketing Manager
+
+    Developer Relations, Posit
+:::
+
+::: {.column width="50%" style="text-align: center;"}
+![](images/isabella.jpg){fig-alt="Isabella's headshot" fig-align="center" width=250px style="border-radius: 50%;"}
+
+**Isabella Velásquez**
+
+[{{< fa brands github >}} \@ivelasq](https://github.com/ivelasq)
+
+[{{< fa link >}} ivelasq.rbind.io](https://ivelasq.rbind.io)
+
+:::
+:::
 
 ## About you
 
@@ -96,7 +92,7 @@ These materials are pitched at someone who:
 
 -   knows some Python + Markdown
 
--   has worked in Jupyter Lab and/or VS Code
+-   has worked in VS Code
 
 -   wants to learn about Quarto
 :::
@@ -104,13 +100,13 @@ These materials are pitched at someone who:
 
 ::: {.column width="50%"}
 ::: {.fragment .fade-in}
-I'll teach you
+We'll teach you
 
--   More Markdown
+- What is Quarto
 
--   New Quarto formats
+- How to create documents from Quarto
 
--   New Quarto projects
+- How to create a dashboard from a notebook
 :::
 :::
 :::
@@ -148,17 +144,17 @@ I'll teach you
 
 -   During **my turn** and **your turn** segments -- raise your hand
 
--   During **our turn** segments -- also feel free to raise your hand for questions but if your question seems specific to your setup, I might come around and help during the next your turn break
+-   During **our turn** segments -- also feel free to raise your hand for questions but if your question seems specific to your setup, we might come around and help during the next your turn break
 
 ## Setup {.smaller}
 
 ::: task
-**1. Tools:** Have JupyterLab and/or VS Code (with Jupyter and Quarto extensions) ready to go
+**1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
 
 **2. Software:** Download and install Python and the pre-release version of Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
--   Quarto 1.4.464: <https://quarto.org/docs/download/prerelease.html>
+-   Quarto 1.5.57: <https://quarto.org/docs/get-started/>
 
 **3. Packages:** Install the following packages:
 
@@ -221,7 +217,7 @@ Quarto is a command line interface (**CLI**) that renders plain text formats (`.
 #| code-line-numbers: "|1|2|10|15|16"
 
   Usage:   quarto 
-  Version: 1.4.464
+  Version: 1.5.57
 
   Description:
 
@@ -295,32 +291,26 @@ return {
 ## From the comfort of your own ~~home~~workspace
 
 ::: r-stack
-![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="1200"}
+![](https://quarto.org/docs/tools/images/jupyterlab-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside JupyterLab" width="900"}
 
-![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="1200"}
+![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside VSCode" width="900"}
 
-![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside RStudio" width="1200"}
+![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside RStudio" width="900"}
 :::
 
 ## Rendering
-
-**in JupyterLab**
-
-In the Terminal via `quarto render`:
-
-``` {.bash filename="Terminal"}
-quarto render document.qmd # defaults to html
-quarto render document.qmd --to pdf
-quarto render document.qmd --to docx
-```
-
-<br>
 
 **in VS Code**
 
 -   Option 1: In the Terminal via `quarto render`
 
+. . .
+
 -   Option 2: Using the Quarto Extension and clicking on Preview
+
+. . .
+
+-   Option 3: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + K
 
 # Quarto formats
 
@@ -367,7 +357,7 @@ quarto render document.qmd --to docx
 ## Your turn
 
 ::: task
-In JupyterLab or VS Code, open the `hello-penquins.ipynb` file. Render the document to HTML.
+In VS Code, open the `hello-penquins.ipynb` file. Render the document to HTML.
 
 -   In the YAML: Add an `author` field and add your name.
 
@@ -1018,6 +1008,8 @@ profile:
     -   `book`: Books
 
     -   `manuscript`: Manuscripts (Quarto 1.4+)
+
+    -   `dashboard`: Dashboards (Quarto 1.4+)
 
 ## Quarto websites
 

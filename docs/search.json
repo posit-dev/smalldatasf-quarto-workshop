@@ -441,14 +441,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#setup",
     "title": "Intro to Quarto",
     "section": "Setup",
-    "text": "Setup\n\n1. Tools: Have JupyterLab and/or VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.4.464: https://quarto.org/docs/download/prerelease.html\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins\n\n4. Exercises: Go to bit.ly/quarto-pydata-website, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder."
+    "text": "Setup\n\n1. Tools: Have VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins\n\n4. Exercises: Go to bit.ly/quarto-pydata-website, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder.\n\n\n\nLet’s get started!"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#about-us",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#about-us",
     "title": "Intro to Quarto",
     "section": "About us",
-    "text": "About us\n\n\n\nProfessor of the Practice\nDepartment of Statistical Science\nDuke University\nDeveloper Educator, Posit\n\n\n\n\n\n\n\nMine Çetinkaya-Rundel\nmine-cr.com\n\n\nTeaching data analysis in computational notebooks for 10+ years\nTeaching and using Quarto for 2+ years"
+    "text": "About us\n\n\n\nData Science Educator\nDeveloper Relations, Posit\n\n\n\n\n\n\n\nSara Altman"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#about-you",
@@ -462,7 +462,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#meeting-you-where-you-are",
     "title": "Intro to Quarto",
     "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\n\n\nThese materials are pitched at someone who:\n\nknows some Python + Markdown\nhas worked in Jupyter Lab and/or VS Code\nwants to learn about Quarto\n\n\n\n\nI’ll teach you\n\nMore Markdown\nNew Quarto formats\nNew Quarto projects"
+    "text": "Meeting you where you are\n\n\n\nThese materials are pitched at someone who:\n\nknows some Python + Markdown\nhas worked in VS Code\nwants to learn about Quarto\n\n\n\n\nWe’ll teach you\n\nWhat is Quarto\nHow to create documents from Quarto\nHow to create a dashboard from a notebook"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#workshop-structure",
@@ -476,14 +476,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#getting-help",
     "title": "Intro to Quarto",
     "section": "Getting help",
-    "text": "Getting help\n\nDuring my turn and your turn segments – raise your hand\nDuring our turn segments – also feel free to raise your hand for questions but if your question seems specific to your setup, I might come around and help during the next your turn break"
+    "text": "Getting help\n\nDuring my turn and your turn segments – raise your hand\nDuring our turn segments – also feel free to raise your hand for questions but if your question seems specific to your setup, we might come around and help during the next your turn break"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#setup-1",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#setup-1",
     "title": "Intro to Quarto",
     "section": "Setup",
-    "text": "Setup\n\n1. Tools: Have JupyterLab and/or VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.4.464: https://quarto.org/docs/download/prerelease.html\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins\n\n4. Exercises: Go to bit.ly/quarto-pydata-website, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder.\n\n\n\nLet’s get started!"
+    "text": "Setup\n\n1. Tools: Have VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins\n\n4. Exercises: Go to bit.ly/quarto-pydata-website, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder.\n\n\n\nLet’s get started!"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto",
@@ -511,7 +511,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#revisit-what-is-quarto",
     "title": "Intro to Quarto",
     "section": "Revisit: What is Quarto?",
-    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\n\n  Usage:   quarto \n  Version: 1.4.464\n\n  Description:\n\n    Quarto CLI\n\n  Options:\n\n    -h, --help     - Show this help.                            \n    -V, --version  - Show the version number for this program.  \n\n  Commands:\n\n    render          [input] [args...]     - Render files or projects to various document types.\n    preview         [file] [args...]      - Render and preview a document or website project.  \n    serve           [input]               - Serve a Shiny interactive document.                \n    create          [type] [commands...]  - Create a Quarto project or extension               \n    create-project  [dir]                 - Create a project for rendering multiple documents  \n    convert         &lt;input&gt;               - Convert documents to alternate representations.    \n    pandoc          [args...]             - Run the version of Pandoc embedded within Quarto.  \n    typst           [args...]             - Run the version of Typst embedded within Quarto.   \n    run             [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n    add             &lt;extension&gt;           - Add an extension to this folder or project         \n    install         [target...]           - Installs an extension or global dependency.        \n    publish         [provider] [path]     - Publish a document or project to a provider.       \n    check           [target]              - Verify correct functioning of Quarto installation. \n    help            [command]             - Show this help or the help of a sub-command."
+    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\n\n  Usage:   quarto \n  Version: 1.5.57\n\n  Description:\n\n    Quarto CLI\n\n  Options:\n\n    -h, --help     - Show this help.                            \n    -V, --version  - Show the version number for this program.  \n\n  Commands:\n\n    render          [input] [args...]     - Render files or projects to various document types.\n    preview         [file] [args...]      - Render and preview a document or website project.  \n    serve           [input]               - Serve a Shiny interactive document.                \n    create          [type] [commands...]  - Create a Quarto project or extension               \n    create-project  [dir]                 - Create a project for rendering multiple documents  \n    convert         &lt;input&gt;               - Convert documents to alternate representations.    \n    pandoc          [args...]             - Run the version of Pandoc embedded within Quarto.  \n    typst           [args...]             - Run the version of Typst embedded within Quarto.   \n    run             [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n    add             &lt;extension&gt;           - Add an extension to this folder or project         \n    install         [target...]           - Installs an extension or global dependency.        \n    publish         [provider] [path]     - Publish a document or project to a provider.       \n    check           [target]              - Verify correct functioning of Quarto installation. \n    help            [command]             - Show this help or the help of a sub-command."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#under-the-hood",
@@ -546,7 +546,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#rendering",
     "title": "Intro to Quarto",
     "section": "Rendering",
-    "text": "Rendering\nin JupyterLab\nIn the Terminal via quarto render:\n\n\nTerminal\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\n\nin VS Code\n\nOption 1: In the Terminal via quarto render\nOption 2: Using the Quarto Extension and clicking on Preview"
+    "text": "Rendering\nin VS Code\n\nOption 1: In the Terminal via quarto render\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#one-install-batteries-included",
@@ -567,7 +567,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn",
     "title": "Intro to Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\nIn JupyterLab or VS Code, open the hello-penquins.ipynb file. Render the document to HTML.\n\nIn the YAML: Add an author field and add your name.\nAdd a markdown cell and write some text.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+    "text": "Your turn\n\nIn VS Code, open the hello-penquins.ipynb file. Render the document to HTML.\n\nIn the YAML: Add an author field and add your name.\nAdd a markdown cell and write some text.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
@@ -609,7 +609,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-projects",
     "title": "Intro to Quarto",
     "section": "Quarto projects",
-    "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbook: Books\nmanuscript: Manuscripts (Quarto 1.4+)"
+    "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbook: Books\nmanuscript: Manuscripts (Quarto 1.4+)\ndashboard: Dashboards (Quarto 1.4+)"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-websites",
@@ -721,7 +721,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#acknowledgements",
     "title": "Intro to Quarto",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\n\nArtwork by Allison Horst: https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote\nCode examples from palmerpenguins: https://github.com/mcnakhaee/palmerpenguins\n\n\n\n\n\npos.it/quarto-dashboards-24"
+    "text": "Acknowledgements\n\nArtwork by Allison Horst: https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote\nCode examples from palmerpenguins: https://github.com/mcnakhaee/palmerpenguins\n\n\n\n\n\npos.it/small-data-sf-quarto-workshop"
   },
   {
     "objectID": "3-theming-styling/3-theming-styling.html#bootswatch-themes",
@@ -1135,5 +1135,12 @@
     "title": "Hello, dashboards!",
     "section": "Step 3",
     "text": "Step 3\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/quarto-dashboards-24"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#about-us-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#about-us-1",
+    "title": "Intro to Quarto",
+    "section": "About us",
+    "text": "About us\n\n\n\nSr. Product Marketing Manager\nDeveloper Relations, Posit\n\n\n\n\n\n\n\nIsabella Velásquez\n @ivelasq\n ivelasq.rbind.io"
   }
 ]
