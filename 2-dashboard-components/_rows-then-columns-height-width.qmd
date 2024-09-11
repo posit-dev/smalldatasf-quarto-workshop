@@ -5,8 +5,9 @@ format:
     logo: images/beetle.png
 ---
 
-```{{r}}
-library(ggplot2)
+```{{python}}
+from plotnine import ggplot, aes, geom_point, geom_bar
+from plotnine.data import mpg
 ```
 
 ## Overview {height="30%"}
@@ -25,16 +26,20 @@ This is a car.
 
 ### Scatter {width="75%"}
 
-```{{r}}
+```{{python}}
 #| title: Highway vs. city mileage
-ggplot(mpg, aes(x = cty, y = hwy)) +
-  geom_point()
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
 ```
 
 ### Bar {width="25%"}
 
-```{{r}}
+```{{python}}
 #| title: Drive types
-ggplot(mpg, aes(x = drv)) +
-  geom_bar()
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
 ```

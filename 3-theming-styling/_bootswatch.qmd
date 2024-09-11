@@ -5,47 +5,44 @@ format:
     theme: quartz
 ---
 
-```{{r}}
-library(ggplot2)
-library(dplyr)
+```{{python}}
+from plotnine import ggplot, aes, geom_point, geom_bar
+from plotnine.data import mpg
 ```
 
 ## Value boxes {height="25%"}
 
-```{{r}}
+```{{python}}
 #| label: calculate-values
-lowest_mileage_cty <- mpg |>
-  filter(cty == min(cty)) |>
-  distinct(cty) |>
-  pull(cty)
+lowest_mileage_index = mpg['cty'].idxmin()
+lowest_mileage_car = mpg.iloc[lowest_mileage_index]
+lowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']
 
-highest_mileage_cty <- mpg |>
-  filter(cty == max(cty)) |>
-  distinct(cty) |>
-  pull(cty)
-  
-rounded_mean_city_mileage <- mpg |>
-  summarize(round(mean(cty), 2)) |>
-  pull()
+highest_mileage_index = mpg['cty'].idxmax()
+highest_mileage_car = mpg.iloc[highest_mileage_index]
+highest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']
+
+mean_city_mileage = mpg['cty'].mean()
+rounded_mean_city_mileage = round(mean_city_mileage, 2)
 ```
 
-```{{r}}
+```{{python}}
 #| content: valuebox
 #| title: "Least efficient"
 #| icon: fuel-pump-fill
 #| color: danger
-list(
-  value = paste(lowest_mileage_cty, "mpg")
+dict(
+  value = str(f"{lowest_mileage_cty} mpg")
 )
 ```
 
-```{{r}}
+```{{python}}
 #| content: valuebox
 #| title: "Most efficient"
-list(
+dict(
   icon = "fuel-pump",
   color = "success",
-  value = paste(highest_mileage_cty, "mpg")
+  value = str(f"{highest_mileage_cty} mpg")
 )
 ```
 
@@ -57,14 +54,18 @@ Average city mileage
 
 ## Plots {height="75%"}
 
-```{{r}}
+```{{python}}
 #| title: Highway vs. city mileage
-ggplot(mpg, aes(x = cty, y = hwy)) +
-  geom_point()
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
 ```
 
-```{{r}}
+```{{python}}
 #| title: Drive types
-ggplot(mpg, aes(x = drv)) +
-  geom_bar()
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
 ```

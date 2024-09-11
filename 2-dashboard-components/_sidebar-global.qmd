@@ -1,5 +1,5 @@
 ---
-title: "Sidebars - Global"
+title: "Sidebars"
 format: 
   dashboard:
     logo: images/beetle.png
@@ -15,8 +15,9 @@ format:
         aria-label: YouTube
 ---
 
-```{{r}}
-library(ggplot2)
+```{{python}}
+from plotnine import ggplot, aes, geom_point, geom_bar
+from plotnine.data import mpg
 ```
 
 # {.sidebar}
@@ -25,16 +26,20 @@ Information and/or interactivity tools that you want on every page go here.
 
 # Scatter
 
-```{{r}}
+```{{python}}
 #| title: Highway vs. city mileage
-ggplot(mpg, aes(x = cty, y = hwy)) +
-  geom_point()
+(
+    ggplot(mpg, aes(x = "cty", y = "hwy"))
+    + geom_point()
+)
 ```
 
 # Bar
 
-```{{r}}
+```{{python}}
 #| title: Drive types
-ggplot(mpg, aes(x = drv)) +
-  geom_bar()
+(
+    ggplot(mpg, aes(x = "drv"))
+    + geom_bar()
+)
 ```
