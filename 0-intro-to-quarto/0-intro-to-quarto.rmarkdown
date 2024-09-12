@@ -24,6 +24,8 @@ format:
 library(countdown)
 ```
 
+
+
 # Welcome
 
 ## About us
@@ -75,11 +77,15 @@ Please share
 -   What do you hope to get out of this tutorial?
 :::
 
+
+
 ```{r}
 #| echo: false
 
 countdown(minutes = 4)
 ```
+
+
 
 ## Meeting you where you are
 
@@ -209,6 +215,8 @@ Quarto is a command line interface (**CLI**) that renders plain text formats (`.
 
 . . .
 
+
+
 ```{bash}
 #| eval: false
 #| echo: true
@@ -243,6 +251,8 @@ Quarto is a command line interface (**CLI**) that renders plain text formats (`.
     check           [target]              - Verify correct functioning of Quarto installation. 
     help            [command]             - Show this help or the help of a sub-command.
 ```
+
+
 
 ## Under the hood
 
@@ -366,9 +376,13 @@ In VS Code, open the `hello-penquins.ipynb` file. Render the document to HTML.
 -   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
 :::
 
+
+
 ```{r}
 countdown(minutes = 10)
 ```
+
+
 
 ## A pause
 
@@ -378,9 +392,13 @@ Where does the name "Quarto" come from?
 
 . . .
 
+
+
 ```{=html}
 <iframe src="https://en.wikipedia.org/wiki/Quarto" title = "Quarto on Wikipedia" frameborder="1" height="450" width="900"></iframe>
 ```
+
+
 ::: aside
 Source: <https://en.wikipedia.org/wiki/Quarto>
 :::
@@ -1220,11 +1238,15 @@ Let's build a website that features the Jupyter notebook we worked on and highli
 -   Re-publish on GitHub pages with `quarto publish`.
 :::
 
+
+
 ```{r}
 #| echo: false
 
 countdown(minutes = 10)
 ```
+
+
 
 # Listings
 
@@ -1250,11 +1272,15 @@ Let's now add a blog component to our website:
 Experiment with the style of listings and choose one you like.
 :::
 
+
+
 ```{r}
 #| echo: false
 
 countdown(minutes = 5)
 ```
+
+
 
 # Computations
 
@@ -1348,12 +1374,16 @@ execute:
 
 or
 
+
+
 ```{r}
 #| echo: fenced
 #| cache: true
 
 1 + 1
 ```
+
+
 
 ## Freezing
 
@@ -1368,9 +1398,13 @@ Add a `_metadata.yml` file to the `posts` directory of your website and update t
 ::: learn-more
 [quarto.org/docs/websites](https://quarto.org/docs/websites/)
 
+
+
 ```{=html}
 <iframe src="https://quarto.org/docs/websites" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
 ```
+
+
 :::
 
 ## Links for reviewing tutorial materials
@@ -1400,3 +1434,4 @@ any questions?
 
 - Artwork by Allison Horst: <https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote>
 - Code examples from `palmerpenguins`: <https://github.com/mcnakhaee/palmerpenguins>
+

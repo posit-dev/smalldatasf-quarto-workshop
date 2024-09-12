@@ -104,8 +104,12 @@ Clone the GitHub repo `posit-dev/small-data-sf-olympicdash` (<https://github.com
 
 ::: your-turn
 Deploy your latest dashboard to [Posit Connect Cloud](https://connect.posit.cloud/).
-
 :::
+
+* Sign up for free at <https://connect.posit.cloud/> (requires GitHub account)
+* Click Publish and select Quarto
+* Select your dashboard repository
+* Click Publish
 
 {{< countdown minutes=10 >}}
 
@@ -117,10 +121,6 @@ Deploy your latest dashboard to [Posit Connect Cloud](https://connect.posit.clou
 
 <https://github.com/quarto-dev/quarto-cli/discussions>
 
-## Feedback
-
-Please fill out the workshop survey at <https://pos.it/conf-workshop-survey>.
-
 ## Learning More
 
 |                   |                                                                        |
@@ -131,5 +131,3 @@ Please fill out the workshop survey at <https://pos.it/conf-workshop-survey>.
 | Shiny for Python  | <https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/> |
 
 ## Thank you! {.center}
-
-<https://pos.it/conf-workshop-survey>

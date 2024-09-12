@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Space+Grotesk:wght@300..700&display=swap&family=Satisfy&display=swap');
 
 $font-family-sans-serif: "Space Grotesk", sans-serif;
 $font-family-monospace: "Inconsolata", monospace;
@@ -52,31 +52,31 @@ details>summary {
 }
 
 .reveal .hand {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Satisfy', cursive;
   font-size: 1.2em
 }
 
 .reveal .hand-green {
-  font-family: 'Gochi Hand', cursive;
-  color: #7A9857;
+  font-family: 'Satisfy', cursive;
+  color: #48A098;
   font-size: 1.2em
 }
 
 .reveal .hand-green-large {
-  font-family: 'Gochi Hand', cursive;
-  color: #7A9857;
+  font-family: 'Satisfy', cursive;
+  color: #48A098;
   font-size: 3em
 }
 
 .reveal .hand-blue-large {
-  font-family: 'Gochi Hand', cursive;
-  color: #81A9D7;
+  font-family: 'Satisfy', cursive;
+  color: #2F1DF5;
   font-size: 3em
 }
 
 .reveal .hand-green {
-  font-family: 'Gochi Hand', cursive;
-  color: #7A9857;
+  font-family: 'Satisfy', cursive;
+  color: #48A098;
 }
 
 .reveal .slide .your-turn {
@@ -86,8 +86,8 @@ details>summary {
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #7A9857;
-  background-color: #7A985750;
+  border-left: solid 5px #D95127;
+  background-color: #FF6349;
 }
 
 .reveal .slide .our-turn {
@@ -97,15 +97,15 @@ details>summary {
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #589398;
-  background-color: #58939850;
+  border-left: solid 5px #FF70C6;
+  background-color: #FF76FA;
 }
 
 .reveal .slide .r-box {
   padding: 0.5em 1em 0.5em 2.5em;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #3767B6;
+  border-left: solid 5px #2F1DF5;
   background: #BBBDC050 center no-repeat;
   background-image: url("../../../../images/r-logo.png");
   background-position: 0.5em 0.5em;
@@ -116,7 +116,7 @@ details>summary {
   padding: 0.5em 1em 0.5em 2.5em;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #5482B0;
+  border-left: solid 5px #2F1DF5;
   background: #FADF6F50 center no-repeat;
   # background-image: url("../../../../images/python-logo.png");
   background-position: 0.5em 0.5em;
