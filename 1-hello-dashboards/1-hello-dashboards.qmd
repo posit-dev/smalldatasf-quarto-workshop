@@ -92,13 +92,13 @@ format: dashboard
 Dashboards are composed of **cards**.
 
 ::: r-hstack
-::: {data-id="box1" auto-animate-delay="0" style="background: #72994E; width: 200px; height: 150px; margin: 10px; border: 3px solid #57733D;"}
+::: {data-id="box1" auto-animate-delay="0" style="background: #FF6349; width: 200px; height: 150px; margin: 10px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box2" auto-animate-delay="0.1" style="background: #F2F2F2; width: 200px; height: 150px; margin: 10px; border: 3px solid #C2C2C4;"}
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #FF6C9F; width: 200px; height: 150px; margin: 10px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box3" auto-animate-delay="0.2" style="background: #419599; width: 200px; height: 150px; margin: 10px; border: 3px solid #297075;"}
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #FF75EF; width: 200px; height: 150px; margin: 10px; border: 3px solid #000;"}
 :::
 :::
 
@@ -107,13 +107,13 @@ Dashboards are composed of **cards**.
 Cards are arranged into **rows** and **columns**.
 
 ::: r-stack
-::: {data-id="box1" auto-animate-delay="0" style="background: #72994E; width: 235px; height: 145px; margin-top: 30px; position: absolute; left: 275px; border: 3px solid #57733D;"}
+::: {data-id="box1" auto-animate-delay="0" style="background: #FF6349; width: 235px; height: 145px; margin-top: 30px; position: absolute; left: 275px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box2" style="background: #F2F2F2; width: 235px; height: 145px; margin-top: 30px; position: absolute; right: 275px; border: 3px solid #C2C2C4;"}
+::: {data-id="box2" style="background: #FF6C9F; width: 235px; height: 145px; margin-top: 30px; position: absolute; right: 275px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box3" style="background: #419599; width: 500px; height: 300px; margin-top: 200px; border: 3px solid #297075;"}
+::: {data-id="box3" style="background: #FF75EF; width: 500px; height: 300px; margin-top: 200px; border: 3px solid #000;"}
 :::
 :::
 
@@ -122,16 +122,16 @@ Cards are arranged into **rows** and **columns**.
 **Pages**, **tabsets**, and **sidebars** allow for more advanced layouts.
 
 ::: r-stack
-::: {data-id="box1" auto-animate-delay="0" style="background: #72994E; width: 235px; height: 145px; margin-top: 30px; position: absolute; left: 275px; border: 3px solid #57733D;"}
+::: {data-id="box1" auto-animate-delay="0" style="background: #FF6349; width: 235px; height: 145px; margin-top: 30px; position: absolute; left: 275px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box2" style="background: #F2F2F2; width: 235px; height: 145px; margin-top: 30px; position: absolute; right: 275px; border: 3px solid #C2C2C4;"}
+::: {data-id="box2" style="background: #FF6C9F; width: 235px; height: 145px; margin-top: 30px; position: absolute; right: 275px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box3" style="background: #419599; width: 500px; height: 300px; margin-top: 200px; border: 3px solid #297075;"}
+::: {data-id="box3" style="background: #FF75EF; width: 500px; height: 300px; margin-top: 200px; border: 3px solid #000;"}
 :::
 
-::: {data-id="box4" auto-animate-delay="0" style="background: #DFB33E; width: 150px; height: 470px; margin-top: 30px; position: absolute; right: 800px; border: 3px solid #9a771a;"}
+::: {data-id="box4" auto-animate-delay="0" style="background: #D95127; width: 150px; height: 470px; margin-top: 30px; position: absolute; right: 800px; border: 3px solid #000;"}
 :::
 :::
 
