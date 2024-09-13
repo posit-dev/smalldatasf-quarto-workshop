@@ -4,7 +4,7 @@
     "href": "setup.html",
     "title": "Setup instructions",
     "section": "",
-    "text": "Prior to the workshop check you have the required software and set up any accounts you might need for publishing your dashboard.",
+    "text": "1. Software: Download and install Python and Quarto:\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.",
     "crumbs": [
       "Setup"
     ]
@@ -24,7 +24,7 @@
     "href": "setup.html#publishing-accounts",
     "title": "Setup instructions",
     "section": "Publishing accounts",
-    "text": "Publishing accounts\nYou do not need to publish your dashboard during the workshop, but it would be good practice!\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Quarto Pub\nGitHub only if you are already a Git/GitHub user",
+    "text": "Publishing accounts\nYou do not need to publish your dashboard during the workshop, but it would be good practice!\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Posit Connect Cloud if you are already a Git/GitHub user\nQuarto Pub",
     "crumbs": [
       "Setup"
     ]
