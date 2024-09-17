@@ -1,0 +1,15 @@
+---
+title: "Components and themes"
+---
+
+## Slides
+
+[View slides in full screen](2-components-theming.html)
+
+```{=html}
+<iframe class="slide-deck" src="2-components-theming.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+## Exercises
+
+-   Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-2.qmd.`

@@ -1,6 +1,6 @@
 ---
 title: "Hello, dashboards!"
-subtitle: "From Notebooks to Dashboards with Quarto Workshop"
+subtitle: "Small Data SF"
 author:   
   - name: Sara Altman and Isabella Velásquez
     affiliations:
@@ -355,7 +355,7 @@ from plotnine.data import mpg
 ## Start {.smaller}
 
 ::: python-box
-Clone the GitHub repo `posit-dev/small-data-sf-olympicdash` (<https://github.com/posit-dev/small-data-sf-olympicdash>) and work on `olympicdash-py-1.qmd.`
+Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-1.qmd.`
 :::
 
 ## Goal
