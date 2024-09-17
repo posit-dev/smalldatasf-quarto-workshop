@@ -114,7 +114,7 @@ Deploy your latest dashboard to [Posit Connect Cloud](https://connect.posit.clou
 * Select your dashboard repository
 * Click Publish
 
-{{< countdown minutes=10 >}}
+{{< countdown minutes=5 >}}
 
 # Wrap up
 
