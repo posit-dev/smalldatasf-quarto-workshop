@@ -1,6 +1,6 @@
 ---
-title: "Dashboard components"
-subtitle: "From Notebooks to Dashboards with Quarto Workshop"
+title: "Dashboard components and themes"
+subtitle: "Small Data SF"
 author:   
   - name: Sara Altman and Isabella Velásquez
     affiliations:
@@ -520,7 +520,7 @@ d.
 ## Start
 
 ::: python-box
-Clone the GitHub repo `posit-dev/small-data-sf-olympicdash` (<https://github.com/posit-dev/small-data-sf-olympicdash>) and work on `olympicdash-py-2.qmd.`
+Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-2.qmd.`
 :::
 
 ## Goal
@@ -587,3 +587,93 @@ Duplicate dashboard content for the Winter Olympics page, share your results wit
 ![](images/olympicdash-r-2-step-5.png)
 
 {{< countdown minutes=5 >}}
+
+# Theming
+
+## Bootswatch themes {.smaller auto-animate="true"}
+
+Quarto dashboards can be styled with one of the 25 themes from the Bootswatch project:
+
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-5"}
+{{< include _bootswatch.qmd >}}
+````
+:::
+
+## Bootswatch themes {.smaller auto-animate="true"}
+
+::: columns
+::: {.column width="40%"}
+::: {data-id="code"}
+```` {.yaml filename="dashboard-r.qmd" code-line-numbers="3-5"}
+{{< include _bootswatch.qmd >}}
+````
+:::
+:::
+
+::: {.column width="60%"}
+![](images/bootswatch.png)
+:::
+:::
+
+## Bootswatch themes
+
+::: {.large .center-align}
+<https://bootswatch.com>
+:::
+
+```{=html}
+<iframe src="https://bootswatch.com" title = "Bootswatch themes" frameborder="1" height="500" width="1000"></iframe>
+```
+
+## Custom themes
+
+::: incremental
+-   You can create an entirely custom theme and apply it to your dashboard:
+
+    ```` {.yaml}
+    format:
+      theme: style.scss
+    ````
+
+-   Or you can customize an existing Bootswatch theme:
+
+    ```` {.yaml}
+    format:
+      theme:
+        - cosmo
+        - custom.scss
+    ````
+:::
+
+
+# Your turn
+
+## Goal
+
+Your goal is to create a dashboard that looks like the following:
+
+![](images/olympicdash-py-3.png)
+
+::: your-turn
+- Update the theme to the appropriate Bootswatch theme.
+:::
+
+::: callout-tip
+Work with your neighbor if you're having difficulty finding which theme to use.
+:::
+
+![](images/olympicdash-py-3.png)
+
+{{< countdown minutes=3 >}}
+
+
+# Learn more
+
+## Theming Quarto
+
+A lot more to learn on theming all things Quarto!
+
+```{=html}
+<iframe src="https://quarto.org/docs/dashboards/theming.html" title = "Bootswatch themes" frameborder="1" height="500" width="1000"></iframe>
+```
