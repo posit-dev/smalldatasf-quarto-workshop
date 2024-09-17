@@ -63,15 +63,15 @@ quarto --version
 
 ##  {.no-line background-image="images/dashboards/stock-explorer.png" background-size="contain"}
 
-## 🍰 Olympic Games dashboard - Python
+## 🍰 Olympic Games dashboard
 
 <!-- TODO: update link-->
 ::: python-box
-🔗 [mine.quarto.pub/olympic-games-py](https://mine.quarto.pub/olympic-games-py/)
+🔗 [https://saraaltman.quarto.pub/olympic-games/](https://saraaltman.quarto.pub/olympic-games/)
 :::
 
 ```{=html}
-<iframe src="https://mine.quarto.pub/olympic-games-py/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
+<iframe src="https://saraaltman.quarto.pub/olympic-games/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
 ```
 
 ## Notebook ➝ Dashboard
