@@ -117,10 +117,6 @@ Deploy your latest dashboard to [Posit Connect Cloud](https://connect.posit.clou
 
 ## Time for Q&A! {.center}
 
-## Q&A after workshop {.center}
-
-<https://github.com/quarto-dev/quarto-cli/discussions>
-
 ## Learning More
 
 |                   |                                                                        |
