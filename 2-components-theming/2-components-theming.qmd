@@ -657,12 +657,10 @@ Your goal is to create a dashboard that looks like the following:
 
 ![](images/olympicdash-py-3.png)
 
+## Step 1 {.smaller}
+
 ::: your-turn
 - Update the theme to the appropriate Bootswatch theme.
-:::
-
-::: callout-tip
-Work with your neighbor if you're having difficulty finding which theme to use.
 :::
 
 ![](images/olympicdash-py-3.png)
