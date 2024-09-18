@@ -65,7 +65,6 @@ quarto --version
 
 ## 🍰 Olympic Games dashboard
 
-<!-- TODO: update link-->
 ::: python-box
 🔗 [https://saraaltman.quarto.pub/olympic-games/](https://saraaltman.quarto.pub/olympic-games/)
 :::

@@ -575,6 +575,22 @@ Use the code (commented with `TODO for Step 3`) at the bottom of the document to
 
 {{< countdown minutes=10 >}}
 
+## Interactive plotting {.smaller}
+
+-   We've been creating static plots with `plotnine`
+-   But you can also add interactive plots to your dashboard, e.g., with `plotly`
+
+::: python-box
+🔗  [https://saraaltman.quarto.pub/olympicdash-plotly/](https://saraaltman.quarto.pub/olympicdash-plotly/)
+:::
+
+
+## 
+
+```{=html}
+<iframe src="https://saraaltman.quarto.pub/olympicdash-plotly/" title = "Olympic Games dashboard, with plotly"  height="900" width="1440"></iframe>
+```
+
 # Theming
 
 ## Bootswatch themes {.smaller auto-animate="true"}
