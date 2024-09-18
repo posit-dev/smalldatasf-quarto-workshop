@@ -477,7 +477,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto",
     "title": "Intro to Quarto",
     "section": "A tour of Quarto",
-    "text": "A tour of Quarto\n\nSit back and enjoy!\n\n\n\nRunning individual cells and quarto rendering entire document\nCustomizing output format options: code-fold, toc\nCross referencing figures and tables\nCode cells: labels, alt-text for figures, cross references for figures and tables\nLightbox effect"
+    "text": "A tour of Quarto\n\nSit back and enjoy!\n\n\n\nUnderstanding the relationship between Quarto and the Jupyter engine\nUsing Quarto in VS Code\nCreating Quarto documents (metadata, markdown text, and code)\nWorking with Quarto projects"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#revisit-what-is-quarto",
@@ -540,7 +540,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn",
     "title": "Intro to Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\nIn VS Code, open the olympicdash-0.ipynb file. Render the document to HTML.\n\nIn the YAML: Add an author field and add your name.\nAdd a markdown cell and write some text.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+    "text": "Your turn\n\nIn VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert. Preview the file.\nIn the YAML, add an author field and add your name.\nAdd a markdown cell and write some text.\nFor one of the tables, add the chunk option echo: false.\nAdd this to the top of the plotnine chart to set the order of medal variable.\n\nolympics['medal'] = pd.Categorical(\n    olympics['medal'], \n    categories=[\"Gold\", \"Silver\", \"Bronze\"], \n    ordered=True\n)\n\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
@@ -561,49 +561,49 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-1",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\n\nYet another markup language”\nMetadata of your document\nDemarcated by three dashes (---) on either end\nUses key-value pairs in the format key: value"
+    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\n\nYet another markup language”\nMetadata of your document\nDemarcated by three dashes (---) on either end\nUses key-value pairs in the format key: value"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-2",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-2",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nText: Markdown\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\nQuarto enables you to weave together content and executable code.\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax"
+    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\ntheme: sketchy\n---"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-3",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-3",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nText: Markdown\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-4",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-4",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode\n\n\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\nCode chunks begin and end with three backticks (usually)\nCode chunks are identified with a programming language in between {}"
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nThe `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins \"palmerpenguins R package\") package contains size measurements for `r nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\n\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-5",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-5",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-6",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-6",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n```\ntitle: \"My first Quarto dashboard\"\nformat: html\n```\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode\n\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\nCode chunks begin and end with three backticks (usually)\nCode chunks are identified with a programming language in between {}"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-project",
@@ -999,7 +999,7 @@
     "href": "index.html#instructors",
     "title": "From Notebooks to Dashboards with Quarto",
     "section": "Instructor(s)",
-    "text": "Instructor(s)\nIsabella Velásquez is a Senior Product Marketing Manager at Posit Software, where she develops strategic content to increase brand visibility and drive product adoption. With a background in data analysis, reporting, and visualization using tools like R, SQL, and Python, Isabella has honed her skills across multiple industries, including her previous role at the Bill & Melinda Gates Foundation. She holds an MS in Analytics and a BA in Economics and East Asian Languages and Civilizations from the University of Chicago. Isabella is also an educator, sharing her expertise in data science as an instructor and teaching assistant at the University of Tennessee, Knoxville and the University of Chicago.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "text": "Instructor(s)\nIsabella Velásquez is a Senior Product Marketing Manager at Posit Software, where she develops strategic content to increase brand visibility and drive product adoption. With a background in data analysis, reporting, and visualization using tools like R, SQL, and Python, Isabella has honed her skills across multiple industries, including her previous role at the Bill & Melinda Gates Foundation. She holds an MS in Analytics and a BA in Economics and East Asian Languages and Civilizations from the University of Chicago. Isabella is also an educator, sharing her expertise in data science as an instructor and teaching assistant at the University of Tennessee, Knoxville and the University of Chicago.\n[Sara Altman] is a Data Science Educator at Posit on the Developer Relations team. She creates technical content to help developers and data scientists achieve their goals with Posit tools. Prior to joining the Developer Relations team, she worked on Posit Academy, Posit’s educational platform. Before Posit, Sara taught data science and R at Stanford. She holds a MS and BS in Symbolic Systems from Stanford.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
     "crumbs": [
       "Home"
     ]
@@ -1128,7 +1128,7 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#start",
     "title": "Hello, dashboards!",
     "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-1.qmd."
+    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-1.qmd."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#goal",
@@ -1156,7 +1156,7 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3",
     "title": "Hello, dashboards!",
     "section": "Step 3",
-    "text": "Step 3\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/quarto-dashboards-24"
+    "text": "Step 3\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/small-data-sf-quarto-workshop"
   },
   {
     "objectID": "2-components-theming/index.html",
@@ -1622,5 +1622,33 @@
     "title": "Intro to Quarto",
     "section": "Setup, continued",
     "text": "Setup, continued\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\n\n\n\nLet’s get started!"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
+    "title": "Hello, dashboards!",
+    "section": "🍰 Olympic Games dashboard",
+    "text": "🍰 Olympic Games dashboard\n\n🔗 https://saraaltman.quarto.pub/olympic-games/"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
+    "title": "Intro to Quarto",
+    "section": "Converting notebooks",
+    "text": "Converting notebooks\nYou can convert between .ipynb and .qmd representations of a notebook using the quarto convert command.\nFor example:\n\n\nTerminal\n\nquarto convert basics-jupyter.ipynb # converts to qmd\nquarto convert basics-jupyter.qmd   # converts to ipynb"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
+    "title": "Intro to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
+    "title": "Intro to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   }
 ]

@@ -213,6 +213,48 @@ Where does the name "Quarto" come from?
 Source: <https://en.wikipedia.org/wiki/Quarto>
 :::
 
+# Quarto formats
+
+## One install, "Batteries included" {.smaller}
+
+-   Quarto comes **"batteries included"** straight out of the box:
+
+    -   HTML reports and websites
+
+    -   PDF reports
+
+    -   MS Office (Word, Powerpoint)
+
+    -   Presentations (Powerpoint, Beamer, `revealjs`)
+
+    -   Books
+
+    -   Dashboards
+
+    -   ...
+
+. . .
+
+-   Any language, *exact* same approach and syntax
+
+## Many Quarto formats {.smaller}
+
+| Feature          | Quarto                                                                                                                                                                                      |
+|------------------|------------------------------------------------------|
+| Basic Formats    | [html](https://quarto.org/docs/output-formats/html-basics.html), [pdf](https://quarto.org/docs/output-formats/pdf-basics.html), [docx](https://quarto.org/docs/output-formats/ms-word.html) |
+| Beamer           | [beamer](https://quarto.org/docs/presentations/beamer.html)                                                                                                                                 |
+| PowerPoint       | [pptx](https://quarto.org/docs/presentations/powerpoint.html)                                                                                                                               |
+| HTML Slides      | [revealjs](https://quarto.org/docs/presentations/revealjs/)                                                                                                                                 |
+| Advanced Layout  | [Quarto Article Layout](https://quarto.org/docs/authoring/article-layout.html)                                                                                                              |
+| Cross References | [Quarto Crossrefs](https://quarto.org/docs/authoring/cross-references.html)                                                                                                                 |
+| Websites & Blogs | [Quarto Websites](https://quarto.org/docs/websites/), [Quarto Blogs](https://quarto.org/docs/websites/website-blog.html)                                                                    |
+| Books            | [Quarto Books](https://quarto.org/docs/books/)                                                                                                                                              |
+| Interactivity    | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/)                                                                                                                  |
+| Journal Articles | [Journal Articles](https://quarto.org/docs/journals/index.html)                                                                                                                             |
+| Dashboards       | [Dashboards](https://quarto.org/docs/dashboards/)                                                                                                                                                           |
+
+: {tbl-colwidths="\[25,75\]"}
+
 ## A tour of Quarto
 
 ::: {.hand-blue-large style="text-align: center;"}
@@ -220,11 +262,10 @@ Sit back and enjoy!
 :::
 
 ::: demo
--   Running individual cells and `quarto render`ing entire document
--   Customizing output format options: `code-fold`, `toc`
--   Cross referencing figures and tables
--   Code cells: labels, alt-text for figures, cross references for figures and tables
--   Lightbox effect
+-   Understanding the relationship between Quarto and the Jupyter engine
+-   Using Quarto in VS Code
+-   Creating Quarto documents (metadata, markdown text, and code)
+-   Working with Quarto projects
 :::
 
 # How it works
@@ -290,27 +331,19 @@ with a wider lens...
 -   Quarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the `.md` file by Pandoc and converted to a final output format
 :::
 
-## Aside: Lua filters {.smaller}
+## Converting notebooks
 
--   Here is an example of a Lua filter that converts strong emphasis to small caps, from <https://pandoc.org/lua-filters.html>:
+You can convert between `.ipynb` and `.qmd` representations of a notebook using the `quarto convert` 
+command. 
 
-``` lua
-return {
-  {
-    Strong = function (elem)
-      return pandoc.SmallCaps(elem.c)
-    end,
-  }
-}
+For example:
+
+```{.bash filename="Terminal"}
+quarto convert basics-jupyter.ipynb # converts to qmd
+quarto convert basics-jupyter.qmd   # converts to ipynb
 ```
 
-. . .
-
--   Lua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!
-
-. . .
-
--   We won't go into the details of writing Lua filters in this workshop, and you don't need to worry about learning about Lua filters unless you're working on extending Quarto.
+# Quarto and VS Code
 
 ## From the comfort of your own ~~home~~workspace
 
@@ -336,48 +369,6 @@ return {
 
 -   Option 3: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + K
 
-# Quarto formats
-
-## One install, "Batteries included" {.smaller}
-
--   Quarto comes **"batteries included"** straight out of the box:
-
-    -   HTML reports and websites
-
-    -   PDF reports
-
-    -   MS Office (Word, Powerpoint)
-
-    -   Presentations (Powerpoint, Beamer, `revealjs`)
-
-    -   Books
-
-    -   Dashboards
-
-    -   ...
-
-. . .
-
--   Any language, *exact* same approach and syntax
-
-## Many Quarto formats {.smaller}
-
-| Feature          | Quarto                                                                                                                                                                                      |
-|------------------|------------------------------------------------------|
-| Basic Formats    | [html](https://quarto.org/docs/output-formats/html-basics.html), [pdf](https://quarto.org/docs/output-formats/pdf-basics.html), [docx](https://quarto.org/docs/output-formats/ms-word.html) |
-| Beamer           | [beamer](https://quarto.org/docs/presentations/beamer.html)                                                                                                                                 |
-| PowerPoint       | [pptx](https://quarto.org/docs/presentations/powerpoint.html)                                                                                                                               |
-| HTML Slides      | [revealjs](https://quarto.org/docs/presentations/revealjs/)                                                                                                                                 |
-| Advanced Layout  | [Quarto Article Layout](https://quarto.org/docs/authoring/article-layout.html)                                                                                                              |
-| Cross References | [Quarto Crossrefs](https://quarto.org/docs/authoring/cross-references.html)                                                                                                                 |
-| Websites & Blogs | [Quarto Websites](https://quarto.org/docs/websites/), [Quarto Blogs](https://quarto.org/docs/websites/website-blog.html)                                                                    |
-| Books            | [Quarto Books](https://quarto.org/docs/books/)                                                                                                                                              |
-| Interactivity    | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/)                                                                                                                  |
-| Journal Articles | [Journal Articles](https://quarto.org/docs/journals/index.html)                                                                                                                             |
-| Dashboards       | [Dashboards](https://quarto.org/docs/dashboards/)                                                                                                                                                           |
-
-: {tbl-colwidths="\[25,75\]"}
-
 # Documents to projects
 
 ## Anatomy of a Quarto document
@@ -402,10 +393,10 @@ Three components:
 ::: {.column .fragment}
 
 ````md
-```
+---
 title: "My first Quarto dashboard"
 format: html
-```
+---
 ````
 
 :::
@@ -421,13 +412,34 @@ format: html
 
 ## Anatomy of a Quarto document
 
+**Metadata: YAML**
+
+:::: columns
+::: {.column}
+
+````{.markdown code-line-numbers=4}
+---
+title: "My first Quarto dashboard"
+format: html
+theme: sketchy
+---
+````
+:::
+
+::: {.column .fragment}
+![](images/sketchy.png)
+:::
+::::
+
+## Anatomy of a Quarto document
+
 **Text: Markdown**
 
 ````md
-```
+---
 title: "My first Quarto dashboard"
 format: html
-```
+---
 
 Quarto enables you to weave together content and executable code.
 ````
@@ -439,13 +451,45 @@ Quarto enables you to weave together content and executable code.
 
 ## Anatomy of a Quarto document
 
+**Text: Markdown**
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for &#96;r nrow(penguins)&#96; penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+</code>
+</pre>
+</div>
+```
+
+The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+
+## Anatomy of a Quarto document
+
+**Text: Markdown**
+
++-----------------------------------+-------------------------------+
+| Markdown Syntax                   | Output                        |
++===================================+===============================+
+|     *italics* and **bold**        | *italics* and **bold**        |
++-----------------------------------+-------------------------------+
+|     superscript^2^ / subscript~2~ | superscript^2^ / subscript~2~ |
++-----------------------------------+-------------------------------+
+|     ~~strikethrough~~             | ~~strikethrough~~             |
++-----------------------------------+-------------------------------+
+|     `verbatim code`               | `verbatim code`               |
++-----------------------------------+-------------------------------+
+
+## Anatomy of a Quarto document
+
 **Code**
 
 ````{.markdown code-line-numbers=|8-16}
-```
+---
 title: "My first Quarto dashboard"
 format: html
-```
+---
 
 Quarto enables you to weave together content and executable code.
 
@@ -469,10 +513,10 @@ from plotnine.data import mpg
 ::: {.column}
 
 ````{.markdown code-line-numbers=8-16}
-```
+---
 title: "My first Quarto dashboard"
 format: html
-```
+---
 
 Quarto enables you to weave together content and executable code.
 
@@ -502,10 +546,10 @@ from plotnine.data import mpg
 **Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
 
 ````{.markdown code-line-numbers=|9}
-```
+---
 title: "My first Quarto dashboard"
 format: html
-```
+---
 
 Quarto enables you to weave together content and executable code.
 
@@ -527,10 +571,10 @@ from plotnine.data import mpg
 **Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
 
 ````{.markdown code-line-numbers=9-10}
-```
+---
 title: "My first Quarto dashboard"
 format: html
-```
+---
 
 Quarto enables you to weave together content and executable code.
 
@@ -548,16 +592,29 @@ from plotnine.data import mpg
 
 ````
 
-## Your turn
+## Your turn {.smaller}
 
 ::: task
-In VS Code, open the `olympicdash-0.ipynb` file. Render the document to HTML.
+In VS Code, open the `olympicdash-0.ipynb` file. 
 
--   In the YAML: Add an `author` field and add your name.
+-   Convert the file to `.qmd` using `quarto convert`.
+Preview the file.
+
+-   In the YAML, add an `author` field and add your name.
 
 -   Add a markdown cell and write some text.
 
--   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.
+-   For one of the tables, add the chunk option `echo: false`.
+
+-   Add this to the top of the plotnine chart to set the order of `medal` variable.
+
+```python
+olympics['medal'] = pd.Categorical(
+    olympics['medal'], 
+    categories=["Gold", "Silver", "Bronze"], 
+    ordered=True
+)
+```
 
 -   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
 :::
@@ -1174,47 +1231,7 @@ profile:
 
     -   `dashboard`: Dashboards (Quarto 1.4+)
 
-## Quarto websites
-
-::: incremental
--   Websites are essentially `format: html` + a Quarto Project file
-
--   But a website is different than `format: html` in that it has multiple pages
-
--   Websites and books are very similar in that they associate multiple pages/resources into a connected resource
-
-    -   In books, you can cross-reference between pages (chapters), but (currently), you can't cross-reference between pages in websites
-:::
-
-## Whole game
-
-::: demo
-Let's build a website that features the Jupyter notebook we worked on and highlight the following features of Quarto websites:
-
--   Add a `_quarto.yml`
--   Create a landing page: `index.qmd`
--   Explore navigation options: `navbar`, `sidebar`
--   Apply themes, including a light and dark theme toggle
--   Publish to GitHub Pages with `quarto publish`
-:::
-
-## Your turn
-
-::: task
--   Add one more notebook that has at least one executable code cell and add it to the navigation list in `_quarto.yml` and render your site.
-    -   Not inspired to generate content? Feel free to copy the contents of <https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed/blob/main/posts/islands-species.ipynb>.
--   Add an [about page](https://quarto.org/docs/websites/website-about.html), `about.qmd`, personalize it, and add it to the navigation list in `_quarto.yml` and render your site.
--   Re-publish on GitHub pages with `quarto publish`.
-:::
-
-```{r}
-#| echo: false
-
-countdown(minutes = 10)
-```
-
 # Wrap up
-
 
 
 ##  {menu="thank you" background-image="images/thank-you.png"}
