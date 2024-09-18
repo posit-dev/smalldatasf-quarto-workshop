@@ -478,7 +478,7 @@ Isabella Velásquez
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_16a693c0" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_f703b7ab" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -542,36 +542,18 @@ Isabella Velásquez
 <li><p>During <strong>our turn</strong> segments – also feel free to raise your hand for questions but if your question seems specific to your setup, we might come around and help during the next your turn break</p></li>
 </ul>
 </section>
-<section id="setup" class="slide level2 smaller">
-<h2>Setup</h2>
-<div class="task">
-<p><strong>1. Software:</strong> Download and install Python and the latest version of Quarto:</p>
-<ul>
-<li>Python 3: <a href="https://www.python.org/downloads/" class="uri">https://www.python.org/downloads/</a></li>
-<li>Quarto 1.5.57: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></li>
-</ul>
-<p><strong>2. Tools:</strong> Dowload and install VS Code and Jupyter and the Quarto extensions:</p>
-<ul>
-<li>VS Code: <a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></li>
-<li>Quarto Extension: <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto" class="uri">https://marketplace.visualstudio.com/items?itemName=quarto.quarto</a></li>
-<li>Jupyter Extension: <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter" class="uri">https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter</a></li>
-</ul>
-</div>
-</section>
-<section id="setup-continued" class="slide level2 smaller">
-<h2>Setup, continued</h2>
-<div class="task">
-<p><strong>3. Exercises:</strong> Go to <a href="https://pos.it/smalldatasf-quarto-exercises"><code>pos.it/smalldatasf-quarto-exercises</code></a>, click on <em>Use this template</em> then <em>Create a new repository</em>.</p>
-<p><strong>4. Packages:</strong> Open <em>VS Code</em>. Under <em>Start</em>, click on <em>Clone Git Repository</em>, and paste the URL of your exercise repo.</p>
-<ul>
-<li>Open the cloned project. In the Command Palette, go to <code>Python: Create Environment...</code> and choose <code>Venv</code>, then choose the (latest) Python version you have installed.</li>
-<li>Check the box for <code>requirements.txt</code> in the <em>Select dependencies to install</em> menu and hit <em>OK</em>.</li>
-</ul>
-</div>
-<div class="fragment">
+<section id="a-tour-of-quarto" class="slide level2">
+<h2>A tour of Quarto</h2>
 <div class="hand-blue-large" style="text-align: center;">
-<p>Let’s get started!</p>
+<p>Sit back and enjoy!</p>
 </div>
+<div class="demo">
+<ul>
+<li>Understanding the relationship between Quarto and the Jupyter engine</li>
+<li>Using Quarto in VS Code</li>
+<li>Creating Quarto documents (metadata, markdown text, and code)</li>
+<li>Working with Quarto projects</li>
+</ul>
 </div>
 </section></section>
 <section>
@@ -583,7 +565,7 @@ Isabella Velásquez
 <h2>Quarto …</h2>
 <p>is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular media.</p>
 
-<img data-src="images/horst-quarto-schematic.png" alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." class="r-stretch quarto-figure-center"><p class="caption">Artwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.</p></section>
+<img data-src="images/demo-quarto.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
 <section id="with-quarto" class="slide level2">
 <h2>With Quarto …</h2>
 <p>you can <strong>weave</strong> together <strong>narrative</strong> and <strong>code</strong> to produce elegantly formatted output such as documents, web pages, blog posts, books, dashboards, and more, with…</p>
@@ -600,10 +582,8 @@ Isabella Velásquez
 <div class="task">
 <p>Where does the name “Quarto” come from?</p>
 </div>
-<div class="fragment">
 <p><a href="https://en.wikipedia.org/wiki/Quarto" data-preview-link="true">Quarto on Wikipedia</a></p>
 
-</div>
 <aside><div>
 <p>Source: <a href="https://en.wikipedia.org/wiki/Quarto" class="uri">https://en.wikipedia.org/wiki/Quarto</a></p>
 </div></aside></section></section>
@@ -692,20 +672,6 @@ Isabella Velásquez
 </tr>
 </tbody>
 </table>
-</section>
-<section id="a-tour-of-quarto" class="slide level2">
-<h2>A tour of Quarto</h2>
-<div class="hand-blue-large" style="text-align: center;">
-<p>Sit back and enjoy!</p>
-</div>
-<div class="demo">
-<ul>
-<li>Understanding the relationship between Quarto and the Jupyter engine</li>
-<li>Using Quarto in VS Code</li>
-<li>Creating Quarto documents (metadata, markdown text, and code)</li>
-<li>Working with Quarto projects</li>
-</ul>
-</div>
 </section></section>
 <section>
 <section id="how-it-works" class="title-slide slide level1 center">
@@ -777,8 +743,8 @@ Isabella Velásquez
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode" id="cb2" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">quarto</span> convert basics-jupyter.ipynb <span class="co"># converts to qmd</span></span>
-<span id="cb2-2"><a></a><span class="ex">quarto</span> convert basics-jupyter.qmd   <span class="co"># converts to ipynb</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">quarto</span> convert my-document.ipynb <span class="co"># converts to qmd</span></span>
+<span id="cb2-2"><a></a><span class="ex">quarto</span> convert my-document.qmd   <span class="co"># converts to ipynb</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -789,17 +755,47 @@ Isabella Velásquez
 <section id="from-the-comfort-of-your-own-homeworkspace" class="slide level2">
 <h2>From the comfort of your own <del>home</del>workspace</h2>
 <div class="r-stack">
+<p><img data-src="https://quarto.org/docs/tools/images/rstudio-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside RStudio" width="900"></p>
 <p><img data-src="https://quarto.org/docs/tools/images/jupyterlab-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside JupyterLab" width="900"></p>
 <p><img data-src="https://quarto.org/docs/computations/images/python-vscode.png" class="fragment" alt="A screenshot of a Quarto document rendered inside VSCode" width="900"></p>
-<p><img data-src="https://quarto.org/docs/tools/images/rstudio-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside RStudio" width="900"></p>
 </div>
 </section>
-<section id="rendering" class="slide level2">
-<h2>Rendering</h2>
+<section id="quarto-vs-code-extension" class="slide level2">
+<h2>Quarto VS Code extension</h2>
+<div>
+<ul>
+<li class="fragment">Integrated render and preview for Quarto documents.</li>
+<li class="fragment">Syntax highlighting for markdown and embedded languages</li>
+<li class="fragment">Completion and diagnostics for YAML options</li>
+<li class="fragment">Completion for embedded languages (e.g.&nbsp;Python, R, Julia, etc.)</li>
+<li class="fragment">Commands and key-bindings for running cells and selected lines</li>
+</ul>
+</div>
+</section>
+<section id="previewing-and-rendering" class="slide level2">
+<h2>Previewing and rendering</h2>
+
+<img data-src="images/demo-quarto.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="previewing-and-rendering-1" class="slide level2">
+<h2>Previewing and rendering</h2>
+
+<img data-src="images/demo-quarto-left.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="previewing-and-rendering-2" class="slide level2">
+<h2>Previewing and rendering</h2>
+
+<img data-src="images/demo-quarto-right.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="previewing" class="slide level2">
+<h2>Previewing</h2>
 <p><strong>in VS Code</strong></p>
 <ul>
-<li>Option 1: In the Terminal via <code>quarto render</code></li>
+<li>Option 1: In the Terminal via <code>quarto preview</code></li>
 </ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb3" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="ex">quarto</span> preview my-document.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div class="fragment">
 <ul>
 <li>Option 2: Using the Quarto Extension and clicking on Preview</li>
@@ -810,10 +806,61 @@ Isabella Velásquez
 <li>Option 3: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + K</li>
 </ul>
 </div>
+</section>
+<section id="rendering" class="slide level2">
+<h2>Rendering</h2>
+<p><strong>in VS Code</strong></p>
+<ul>
+<li>Option 1: In the Terminal via <code>quarto render</code></li>
+</ul>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="ex">quarto</span> render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<ul>
+<li>Option 2: Use the Command Palette: <strong>Quarto: Render Project</strong></li>
+</ul>
+</div>
+</section>
+<section id="your-turn" class="slide level2 smaller">
+<h2>Your turn</h2>
+<div class="task">
+<p><strong>1. Software:</strong> Download and install Python and the latest version of Quarto:</p>
+<ul>
+<li>Python 3: <a href="https://www.python.org/downloads/" class="uri">https://www.python.org/downloads/</a></li>
+<li>Quarto 1.5.57: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></li>
+</ul>
+<p><strong>2. Tools:</strong> Dowload and install VS Code and Jupyter and the Quarto extensions:</p>
+<ul>
+<li>VS Code: <a href="https://code.visualstudio.com/" class="uri">https://code.visualstudio.com/</a></li>
+<li>Quarto Extension: <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto" class="uri">https://marketplace.visualstudio.com/items?itemName=quarto.quarto</a></li>
+<li>Jupyter Extension: <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter" class="uri">https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter</a></li>
+</ul>
+</div>
+</section>
+<section id="your-turn-1" class="slide level2 smaller">
+<h2>Your turn</h2>
+<div class="task">
+<p><strong>3. Exercises:</strong> Go to <a href="https://pos.it/smalldatasf-quarto-exercises"><code>pos.it/smalldatasf-quarto-exercises</code></a>, click on <em>Use this template</em> then <em>Create a new repository</em>.</p>
+<p><strong>4. Packages:</strong> Open <em>VS Code</em>. Under <em>Start</em>, click on <em>Clone Git Repository</em>, and paste the URL of your exercise repo.</p>
+<ul>
+<li>Open the cloned project. In the Command Palette, go to <code>Python: Create Environment...</code> and choose <code>Venv</code>, then choose the (latest) Python version you have installed.</li>
+<li>Check the box for <code>requirements.txt</code> in the <em>Select dependencies to install</em> menu and hit <em>OK</em>.</li>
+</ul>
+<p>See full instructions under <strong>Setup</strong>: <a href="https://pos.it/smalldatasf-quarto-workshop">pos.it/smalldatasf-quarto-workshop</a></p>
+<p><strong>Then:</strong> In VS Code, open the <code>olympicdash-0.ipynb</code> file.</p>
+<ul>
+<li><p>Convert the file to <code>.qmd</code> using <code>quarto convert</code>.</p></li>
+<li><p>Preview the <code>.qmd</code> file.</p></li>
+</ul>
+</div>
 </section></section>
 <section>
-<section id="documents-to-projects" class="title-slide slide level1 center">
-<h1>Documents to projects</h1>
+<section id="quarto-documents" class="title-slide slide level1 center">
+<h1>Quarto documents</h1>
 
 </section>
 <section id="anatomy-of-a-quarto-document" class="slide level2">
@@ -833,10 +880,15 @@ Isabella Velásquez
 <p><strong>Metadata: YAML</strong></p>
 <div class="columns">
 <div class="column fragment">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="co">---</span></span>
-<span id="cb3-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
-<span id="cb3-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb3-4"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb5" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="co">---</span></span>
+<span id="cb5-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb5-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb5-4"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div><div class="column fragment">
 <ul>
 <li>Yet another markup language”</li>
@@ -848,27 +900,18 @@ Isabella Velásquez
 </section>
 <section id="anatomy-of-a-quarto-document-2" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
-<p><strong>Metadata: YAML</strong></p>
-<div class="columns">
-<div class="column">
-<div class="sourceCode" id="cb4" data-code-line-numbers="4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="co">---</span></span>
-<span id="cb4-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
-<span id="cb4-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb4-4"><a></a><span class="an">theme:</span><span class="co"> sketchy</span></span>
-<span id="cb4-5"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment">
-<p><img data-src="images/sketchy.png"></p>
-</div></div>
-</section>
-<section id="anatomy-of-a-quarto-document-3" class="slide level2">
-<h2>Anatomy of a Quarto document</h2>
 <p><strong>Text: Markdown</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="co">---</span></span>
-<span id="cb5-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
-<span id="cb5-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb5-4"><a></a><span class="co">---</span></span>
-<span id="cb5-5"><a></a></span>
-<span id="cb5-6"><a></a>Quarto enables you to weave together content and executable code.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb6" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="co">---</span></span>
+<span id="cb6-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb6-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb6-4"><a></a><span class="co">---</span></span>
+<span id="cb6-5"><a></a></span>
+<span id="cb6-6"><a></a>Quarto enables you to weave together content and executable code.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div class="fragment">
 <ul>
 <li>Markdown is a lightweight language for creating formatted text</li>
@@ -876,7 +919,7 @@ Isabella Velásquez
 </ul>
 </div>
 </section>
-<section id="anatomy-of-a-quarto-document-4" class="slide level2">
+<section id="anatomy-of-a-quarto-document-3" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <p><strong>Text: Markdown</strong></p>
 <div class="sourceCode">
@@ -887,7 +930,7 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 </div>
 <p>The <code>penguins</code> data from the <a href="https://allisonhorst.github.io/palmerpenguins" title="palmerpenguins R package"><strong>palmerpenguins</strong></a> package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.</p>
 </section>
-<section id="anatomy-of-a-quarto-document-5" class="slide level2">
+<section id="anatomy-of-a-quarto-document-4" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <p><strong>Text: Markdown</strong></p>
 <table class="caption-top" style="width:94%;">
@@ -897,7 +940,7 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 </colgroup>
 <thead>
 <tr class="header">
-<th>Markdown Syntax</th>
+<th>Markdown syntax</th>
 <th>Output</th>
 </tr>
 </thead>
@@ -921,33 +964,15 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 </tbody>
 </table>
 </section>
-<section id="anatomy-of-a-quarto-document-6" class="slide level2">
+<section id="anatomy-of-a-quarto-document-5" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <p><strong>Code</strong></p>
-<div class="sourceCode" id="cb10" data-code-line-numbers="|8-16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="co">---</span></span>
-<span id="cb10-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
-<span id="cb10-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb10-4"><a></a><span class="co">---</span></span>
-<span id="cb10-5"><a></a></span>
-<span id="cb10-6"><a></a>Quarto enables you to weave together content and executable code.</span>
-<span id="cb10-7"><a></a></span>
-<span id="cb10-8"><a></a><span class="in">```{python}</span></span>
-<span id="cb10-9"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
-<span id="cb10-10"><a></a><span class="in">from plotnine.data import mpg</span></span>
-<span id="cb10-11"><a></a></span>
-<span id="cb10-12"><a></a><span class="in">(</span></span>
-<span id="cb10-13"><a></a><span class="in">    ggplot(mpg, aes(x = "cty", y = "hwy"))</span></span>
-<span id="cb10-14"><a></a><span class="in">    + geom_point()</span></span>
-<span id="cb10-15"><a></a><span class="in">)</span></span>
-<span id="cb10-16"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="anatomy-of-a-quarto-document-7" class="slide level2">
-<h2>Anatomy of a Quarto document</h2>
-<p><strong>Code</strong></p>
-<div class="columns">
-<div class="column">
-<div class="sourceCode" id="cb11" data-code-line-numbers="8-16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="co">---</span></span>
-<span id="cb11-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb11" data-filename="my-document.qmd" data-code-line-numbers="|8-16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="co">---</span></span>
+<span id="cb11-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
 <span id="cb11-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb11-4"><a></a><span class="co">---</span></span>
 <span id="cb11-5"><a></a></span>
@@ -962,6 +987,29 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <span id="cb11-14"><a></a><span class="in">    + geom_point()</span></span>
 <span id="cb11-15"><a></a><span class="in">)</span></span>
 <span id="cb11-16"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="anatomy-of-a-quarto-document-6" class="slide level2">
+<h2>Anatomy of a Quarto document</h2>
+<p><strong>Code</strong></p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb12" data-code-line-numbers="8-16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="co">---</span></span>
+<span id="cb12-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb12-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb12-4"><a></a><span class="co">---</span></span>
+<span id="cb12-5"><a></a></span>
+<span id="cb12-6"><a></a>Quarto enables you to weave together content and executable code.</span>
+<span id="cb12-7"><a></a></span>
+<span id="cb12-8"><a></a><span class="in">```{python}</span></span>
+<span id="cb12-9"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
+<span id="cb12-10"><a></a><span class="in">from plotnine.data import mpg</span></span>
+<span id="cb12-11"><a></a></span>
+<span id="cb12-12"><a></a><span class="in">(</span></span>
+<span id="cb12-13"><a></a><span class="in">    ggplot(mpg, aes(x = "cty", y = "hwy"))</span></span>
+<span id="cb12-14"><a></a><span class="in">    + geom_point()</span></span>
+<span id="cb12-15"><a></a><span class="in">)</span></span>
+<span id="cb12-16"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <ul>
 <li>Code chunks begin and end with three backticks (usually)</li>
@@ -969,32 +1017,11 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 </ul>
 </div></div>
 </section>
-<section id="anatomy-of-a-quarto-document-8" class="slide level2">
+<section id="anatomy-of-a-quarto-document-7" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
-<div class="sourceCode" id="cb12" data-code-line-numbers="|9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="co">---</span></span>
-<span id="cb12-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
-<span id="cb12-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb12-4"><a></a><span class="co">---</span></span>
-<span id="cb12-5"><a></a></span>
-<span id="cb12-6"><a></a>Quarto enables you to weave together content and executable code.</span>
-<span id="cb12-7"><a></a></span>
-<span id="cb12-8"><a></a><span class="in">```{python}</span></span>
-<span id="cb12-9"><a></a><span class="in">#| include: false</span></span>
-<span id="cb12-10"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
-<span id="cb12-11"><a></a><span class="in">from plotnine.data import mpg</span></span>
-<span id="cb12-12"><a></a></span>
-<span id="cb12-13"><a></a><span class="in">(</span></span>
-<span id="cb12-14"><a></a><span class="in">    ggplot(mpg, aes(x = "cty", y = "hwy"))</span></span>
-<span id="cb12-15"><a></a><span class="in">    + geom_point()</span></span>
-<span id="cb12-16"><a></a><span class="in">)</span></span>
-<span id="cb12-17"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="anatomy-of-a-quarto-document-9" class="slide level2">
-<h2>Anatomy of a Quarto document</h2>
-<p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
-<div class="sourceCode" id="cb13" data-code-line-numbers="9-10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="co">---</span></span>
-<span id="cb13-2"><a></a><span class="an">title:</span><span class="co"> "My first Quarto dashboard"</span></span>
+<div class="sourceCode" id="cb13" data-code-line-numbers="|9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="co">---</span></span>
+<span id="cb13-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
 <span id="cb13-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb13-4"><a></a><span class="co">---</span></span>
 <span id="cb13-5"><a></a></span>
@@ -1002,45 +1029,367 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <span id="cb13-7"><a></a></span>
 <span id="cb13-8"><a></a><span class="in">```{python}</span></span>
 <span id="cb13-9"><a></a><span class="in">#| include: false</span></span>
-<span id="cb13-10"><a></a><span class="in">#| fig.alt: "A scatterplot with cty on the x-axis and hwy on the y-axis."</span></span>
-<span id="cb13-11"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
-<span id="cb13-12"><a></a><span class="in">from plotnine.data import mpg</span></span>
-<span id="cb13-13"><a></a></span>
-<span id="cb13-14"><a></a><span class="in">(</span></span>
-<span id="cb13-15"><a></a><span class="in">    ggplot(mtcars, aes(x = "cty", y = "hwy"))</span></span>
-<span id="cb13-16"><a></a><span class="in">    + geom_point()</span></span>
-<span id="cb13-17"><a></a><span class="in">)</span></span>
-<span id="cb13-18"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-10"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
+<span id="cb13-11"><a></a><span class="in">from plotnine.data import mpg</span></span>
+<span id="cb13-12"><a></a></span>
+<span id="cb13-13"><a></a><span class="in">(</span></span>
+<span id="cb13-14"><a></a><span class="in">    ggplot(mpg, aes(x = "cty", y = "hwy"))</span></span>
+<span id="cb13-15"><a></a><span class="in">    + geom_point()</span></span>
+<span id="cb13-16"><a></a><span class="in">)</span></span>
+<span id="cb13-17"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="your-turn" class="slide level2 smaller">
+<section id="anatomy-of-a-quarto-document-8" class="slide level2">
+<h2>Anatomy of a Quarto document</h2>
+<p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
+<div class="sourceCode" id="cb14" data-code-line-numbers="9-10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="co">---</span></span>
+<span id="cb14-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb14-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb14-4"><a></a><span class="co">---</span></span>
+<span id="cb14-5"><a></a></span>
+<span id="cb14-6"><a></a>Quarto enables you to weave together content and executable code.</span>
+<span id="cb14-7"><a></a></span>
+<span id="cb14-8"><a></a><span class="in">```{python}</span></span>
+<span id="cb14-9"><a></a><span class="in">#| include: false</span></span>
+<span id="cb14-10"><a></a><span class="in">#| fig.alt: "A scatterplot with cty on the x-axis and hwy on the y-axis."</span></span>
+<span id="cb14-11"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
+<span id="cb14-12"><a></a><span class="in">from plotnine.data import mpg</span></span>
+<span id="cb14-13"><a></a></span>
+<span id="cb14-14"><a></a><span class="in">(</span></span>
+<span id="cb14-15"><a></a><span class="in">    ggplot(mtcars, aes(x = "cty", y = "hwy"))</span></span>
+<span id="cb14-16"><a></a><span class="in">    + geom_point()</span></span>
+<span id="cb14-17"><a></a><span class="in">)</span></span>
+<span id="cb14-18"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="anatomy-of-a-quarto-document-9" class="slide level2">
+<h2>Anatomy of a Quarto document</h2>
+<p><strong>Inline code</strong> executes code <em>within Markdown</em></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb15" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="in">```{python}</span></span>
+<span id="cb15-2"><a></a><span class="in">radius = 5</span></span>
+<span id="cb15-3"><a></a><span class="in">```</span></span>
+<span id="cb15-4"><a></a></span>
+<span id="cb15-5"><a></a>The radius of the circle is <span class="in">`{python} radius`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Results in:</p>
+<p>The radius of the circle is 5.</p>
+</section>
+<section id="your-turn-2" class="slide level2 smaller">
 <h2>Your turn</h2>
+<p>In VS Code, open the <code>olympicdash-0.qmd</code> file.</p>
 <div class="task">
-<p>In VS Code, open the <code>olympicdash-0.ipynb</code> file.</p>
 <ul>
-<li><p>Convert the file to <code>.qmd</code> using <code>quarto convert</code>. Preview the file.</p></li>
 <li><p>In the YAML, add an <code>author</code> field and add your name.</p></li>
-<li><p>Add a markdown cell and write some text.</p></li>
+<li><p>Add some Markdown text to the document.</p></li>
 <li><p>For one of the tables, add the chunk option <code>echo: false</code>.</p></li>
 <li><p>Add this to the top of the plotnine chart to set the order of <code>medal</code> variable.</p></li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a>olympics[<span class="st">'medal'</span>] <span class="op">=</span> pd.Categorical(</span>
-<span id="cb14-2"><a></a>    olympics[<span class="st">'medal'</span>], </span>
-<span id="cb14-3"><a></a>    categories<span class="op">=</span>[<span class="st">"Gold"</span>, <span class="st">"Silver"</span>, <span class="st">"Bronze"</span>], </span>
-<span id="cb14-4"><a></a>    ordered<span class="op">=</span><span class="va">True</span></span>
-<span id="cb14-5"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Change the html theme to <code>sketchy</code>. (See <a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a> for documentation on HTML theming.)</li>
-</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a>olympics[<span class="st">'medal'</span>] <span class="op">=</span> pd.Categorical(</span>
+<span id="cb16-2"><a></a>    olympics[<span class="st">'medal'</span>], </span>
+<span id="cb16-3"><a></a>    categories<span class="op">=</span>[<span class="st">"Gold"</span>, <span class="st">"Silver"</span>, <span class="st">"Bronze"</span>], </span>
+<span id="cb16-4"><a></a>    ordered<span class="op">=</span><span class="va">True</span></span>
+<span id="cb16-5"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>Save in between each step and see how the preview changes.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_576b6ae9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_396459c9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="authoring-quarto" class="title-slide slide level1 center">
+<h1>Authoring Quarto</h1>
+
+</section>
+<section id="images-and-links" class="slide level2">
+<h2>Images and links</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Markdown syntax</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><pre><code>&lt;https://quarto.org&gt;</code></pre></td>
+<td><a href="https://quarto.org" class="uri">https://quarto.org</a></td>
+</tr>
+<tr class="even">
+<td><pre><code>[Quarto](https://quarto.org)</code></pre></td>
+<td><a href="https://quarto.org">Quarto</a></td>
+</tr>
+<tr class="odd">
+<td><pre><code>![](penguin.jpg)</code></pre></td>
+<td><img data-src="penguin.jpg"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tables" class="slide level2">
+<h2>Tables</h2>
+<h3 id="tables-1">Tables</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a></a><span class="in">```{markdown}</span></span>
+<span id="cb21-2"><a></a><span class="in">| Right | Left | Default | Center |</span></span>
+<span id="cb21-3"><a></a><span class="in">|------:|:-----|---------|:------:|</span></span>
+<span id="cb21-4"><a></a><span class="in">|    12 | 12   | 12      |   12   |</span></span>
+<span id="cb21-5"><a></a><span class="in">|   123 | 123  | 123     |  123   |</span></span>
+<span id="cb21-6"><a></a><span class="in">|     1 | 1    | 1       |   1    |</span></span>
+<span id="cb21-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Right</th>
+<th style="text-align: left;">Left</th>
+<th>Default</th>
+<th style="text-align: center;">Center</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12</td>
+<td>12</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">123</td>
+<td>123</td>
+<td style="text-align: center;">123</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td>1</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="divs-and-spans" class="slide level2">
+<h2>Divs and Spans</h2>
+<p>You can add classes, attributes, and other identifiers to content using Divs and Spans.</p>
+<p><strong>Divs</strong></p>
+<pre><code>::: {.border}
+This content can be styled with a border
+:::</code></pre>
+<p><strong>Spans</strong></p>
+<pre><code>[This is *some text*]{.class key="val"}</code></pre>
+</section>
+<section id="divs" class="slide level2">
+<h2>Divs</h2>
+<p><strong>Callout blocks</strong></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb24" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a></a>:::{.callout-tip}</span>
+<span id="cb24-2"><a></a></span>
+<span id="cb24-3"><a></a>Note that there are five types of callouts, including: </span>
+<span id="cb24-4"><a></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb24-5"><a></a></span>
+<span id="cb24-6"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code>, and <code>important</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="divs-1" class="slide level2">
+<h2>Divs</h2>
+<p><strong>Multiple columns</strong></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb25" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a>::: {layout-ncol=2}</span>
+<span id="cb25-2"><a></a></span>
+<span id="cb25-3"><a></a><span class="al">![](penguin.jpg)</span></span>
+<span id="cb25-4"><a></a></span>
+<span id="cb25-5"><a></a>Photo by &lt;a href="https://unsplash.com/@corneliusventures?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Cornelius Ventures&lt;/a&gt; on &lt;a href="https://unsplash.com/s/photos/penguin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"&gt;Unsplash&lt;/a&gt;</span>
+<span id="cb25-6"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="penguin.jpg"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Photo by <a href="https://unsplash.com/@corneliusventures?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cornelius Ventures</a> on <a href="https://unsplash.com/s/photos/penguin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="divs-2" class="slide level2">
+<h2>Divs</h2>
+<p><strong>Tabsets</strong></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb26" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a>::: {.panel-tabset group="language"}</span>
+<span id="cb26-2"><a></a><span class="fu">## R</span></span>
+<span id="cb26-3"><a></a></span>
+<span id="cb26-4"><a></a><span class="in">`library(dplyr)`</span></span>
+<span id="cb26-5"><a></a></span>
+<span id="cb26-6"><a></a><span class="fu">## Python</span></span>
+<span id="cb26-7"><a></a></span>
+<span id="cb26-8"><a></a><span class="in">`import pandas as pd`</span></span>
+<span id="cb26-9"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="panel-tabset" data-group="language">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R</a></li><li><a href="#tabset-1-2">Python</a></li></ul>
+<div class="tab-content" data-group="language">
+<div id="tabset-1-1">
+<p><code>library(dplyr)</code></p>
+</div>
+<div id="tabset-1-2">
+<p><code>import pandas as pd</code></p>
+</div>
+</div>
+</div>
+</section>
+<section id="spans" class="slide level2">
+<h2>Spans</h2>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb27" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>This is text that is <span class="co">[</span><span class="ot">red</span><span class="co">]</span>{style="color:red;"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<p>This is text that is <span style="color:red;">red</span>.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb28" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a><span class="al">![](penguin.jpg)</span>{fig-alt="A photo of a penguin jumping"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img data-src="penguin.jpg" alt="A photo of a penguin jumping"></p>
+</div>
+</section>
+<section id="theming" class="slide level2">
+<h2>Theming</h2>
+<div class="columns">
+<div class="column">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb29" data-filename="my-document.qmd" data-code-line-numbers="4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a></a><span class="co">---</span></span>
+<span id="cb29-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb29-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb29-4"><a></a><span class="an">theme:</span><span class="co"> sketchy</span></span>
+<span id="cb29-5"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column fragment">
+<p><img data-src="images/sketchy.png"></p>
+</div></div>
+</section>
+<section id="your-turn-3" class="slide level2 smaller">
+<h2>Your turn</h2>
+<ul>
+<li><p>Change the html theme to <code>sketchy</code>. (See <a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a> for documentation on HTML theming.)</p></li>
+<li><p>Edit the Markdown text you wrote in the previous exercise so that one of the words is blue.</p></li>
+<li><p>Add a code chunk cell with the option <code>include: false</code>. Use the dataset to find the most gold medals by team.</p></li>
+<li><p>Use inline code to write a sentence such as: “The most gold medals won by a single team are [count].”</p></li>
+<li><p>Add a Div of your choice.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_7c6fca1c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="changing-formats" class="title-slide slide level1 center">
+<h1>Changing formats</h1>
+
+</section>
+<section id="changing-formats-1" class="slide level2">
+<h2>Changing formats</h2>
+<div class="columns">
+<div class="column">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb31" data-filename="my-document.qmd" data-code-line-numbers="3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="co">---</span></span>
+<span id="cb31-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb31-3"><a></a><span class="an">format:</span><span class="co"> revealjs</span></span>
+<span id="cb31-4"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column fragment">
+<p><img data-src="images/revealjs.png"></p>
+</div></div>
+</section>
+<section id="changing-formats-2" class="slide level2">
+<h2>Changing formats</h2>
+<div class="columns">
+<div class="column">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb32" data-filename="my-document.qmd" data-code-line-numbers="3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a><span class="co">---</span></span>
+<span id="cb32-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb32-3"><a></a><span class="an">format:</span><span class="co"> pdf</span></span>
+<span id="cb32-4"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column fragment">
+<p><img data-src="images/pdf.png"></p>
+</div></div>
+</section>
+<section id="changing-formats-3" class="slide level2">
+<h2>Changing formats</h2>
+<div class="columns">
+<div class="column">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb33" data-filename="my-document.qmd" data-code-line-numbers="3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="co">---</span></span>
+<span id="cb33-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb33-3"><a></a><span class="an">format:</span><span class="co"> dashboard</span></span>
+<span id="cb33-4"><a></a><span class="an">theme:</span><span class="co"> sketchy</span></span>
+<span id="cb33-5"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column fragment">
+<p><img data-src="images/dashboard.png"></p>
+</div></div>
+</section></section>
+<section>
+<section id="documents-to-projects" class="title-slide slide level1 center">
+<h1>Documents to projects</h1>
+
 </section>
 <section id="anatomy-of-a-quarto-project" class="slide level2">
 <h2>Anatomy of a Quarto project</h2>
@@ -1070,8 +1419,8 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <div class="code-with-filename-file">
 <pre><strong>_quarto.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb18" data-filename="_quarto.yml"><pre class="sourceCode numberSource yaml fragment number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb18-1" class="hljs-ln-code"><a></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb18-2" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"A Barebones Project"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36" data-filename="_quarto.yml"><pre class="sourceCode numberSource yaml fragment number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb36-1" class="hljs-ln-code"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb36-2" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Olympic Games"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="quarto.yml-1" class="slide level2" data-auto-animate="true">
@@ -1081,553 +1430,72 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <div class="code-with-filename-file">
 <pre><strong>_quarto.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb19" data-filename="_quarto.yml" data-code-line-numbers="1-20|528-548"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb19-1" class="hljs-ln-code"><a></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb19-2" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb19-3" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> _site</span></span>
-<span id="cb19-4" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">resources</span><span class="kw">:</span></span>
-<span id="cb19-5" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"/docs/download/_download.json"</span></span>
-<span id="cb19-6" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"/docs/download/_prerelease.json"</span></span>
-<span id="cb19-7" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"/_redirects"</span></span>
-<span id="cb19-8" class="hljs-ln-code"><a></a></span>
-<span id="cb19-9" class="hljs-ln-code"><a></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb19-10" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto"</span></span>
-<span id="cb19-11" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"quarto-dark-bg.jpeg"</span></span>
-<span id="cb19-12" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> </span><span class="st">"favicon.png"</span></span>
-<span id="cb19-13" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">google-analytics</span><span class="kw">:</span><span class="at"> </span><span class="st">"G-FV9Z7SDZ0M"</span></span>
-<span id="cb19-14" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">open-graph</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-15" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">twitter-card</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-16" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">site-url</span><span class="kw">:</span><span class="at"> https://quarto.org</span></span>
-<span id="cb19-17" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">repo-url</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-web</span></span>
-<span id="cb19-18" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">issue-url</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-cli/issues/new/choose</span></span>
-<span id="cb19-19" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
-<span id="cb19-20" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-21" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">bread-crumbs</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-22" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">search</span><span class="kw">:</span></span>
-<span id="cb19-23" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">show-item-context</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-24" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">type</span><span class="kw">:</span><span class="at"> overlay</span></span>
-<span id="cb19-25" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">algolia</span><span class="kw">:</span></span>
-<span id="cb19-26" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">index-name</span><span class="kw">:</span><span class="at"> prod_QUARTO</span></span>
-<span id="cb19-27" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">application-id</span><span class="kw">:</span><span class="at"> ZPJB5I1QN7</span></span>
-<span id="cb19-28" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">search-only-api-key</span><span class="kw">:</span><span class="at"> 41be6c1e0a7fea4a51b107810facf577</span></span>
-<span id="cb19-29" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">analytics-events</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-30" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">show-logo</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-31" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span></span>
-<span id="cb19-32" class="hljs-ln-code"><a></a><span class="fu">    left</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb19-33" class="hljs-ln-code"><a></a>      Proudly supported by</span>
-<span id="cb19-34" class="hljs-ln-code"><a></a>      [![](https://www.rstudio.com/assets/img/posit-logo-fullcolor-TM.svg){fig-alt="Posit" width=65px}](https://posit.co)</span>
-<span id="cb19-35" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">center</span><span class="kw">:</span></span>
-<span id="cb19-36" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"About"</span></span>
-<span id="cb19-37" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> about.qmd</span></span>
-<span id="cb19-38" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"FAQ"</span></span>
-<span id="cb19-39" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/faq/index.qmd</span></span>
-<span id="cb19-40" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"License"</span></span>
-<span id="cb19-41" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> license.qmd</span></span>
-<span id="cb19-42" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Trademark"</span></span>
-<span id="cb19-43" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> trademark.qmd</span></span>
-<span id="cb19-44" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
-<span id="cb19-45" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
-<span id="cb19-46" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/quarto_pub</span></span>
-<span id="cb19-47" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto Twitter</span></span>
-<span id="cb19-48" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb19-49" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-cli</span></span>
-<span id="cb19-50" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto GitHub</span></span>
-<span id="cb19-51" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> rss</span></span>
-<span id="cb19-52" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://quarto.org/docs/blog/index.xml</span></span>
-<span id="cb19-53" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">aria-label</span><span class="kw">:</span><span class="at"> Quarto Blog RSS        </span></span>
-<span id="cb19-54" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb19-55" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> light</span></span>
-<span id="cb19-56" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> quarto.png</span></span>
-<span id="cb19-57" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">logo-alt</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto logo."</span></span>
-<span id="cb19-58" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb19-59" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">collapse-below</span><span class="kw">:</span><span class="at"> lg</span></span>
-<span id="cb19-60" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb19-61" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
-<span id="cb19-62" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb19-63" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Get Started"</span></span>
-<span id="cb19-64" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/index.qmd</span></span>
-<span id="cb19-65" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guide"</span></span>
-<span id="cb19-66" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/guide/index.qmd</span></span>
-<span id="cb19-67" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Extensions</span></span>
-<span id="cb19-68" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/index.qmd</span></span>
-<span id="cb19-69" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reference"</span></span>
-<span id="cb19-70" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/index.qmd</span></span>
-<span id="cb19-71" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Gallery"</span></span>
-<span id="cb19-72" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/gallery/index.qmd</span></span>
-<span id="cb19-73" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Blog"</span></span>
-<span id="cb19-74" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/blog/index.qmd</span></span>
-<span id="cb19-75" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Help"</span></span>
-<span id="cb19-76" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">menu</span><span class="kw">:</span></span>
-<span id="cb19-77" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Report a Bug"</span></span>
-<span id="cb19-78" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> </span><span class="st">"bug"</span></span>
-<span id="cb19-79" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://github.com/quarto-dev/quarto-cli/issues"</span></span>
-<span id="cb19-80" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Ask a Question"</span></span>
-<span id="cb19-81" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> </span><span class="st">"chat-right-text"</span></span>
-<span id="cb19-82" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://github.com/quarto-dev/quarto-cli/discussions"</span></span>
-<span id="cb19-83" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"FAQ"</span></span>
-<span id="cb19-84" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> </span><span class="st">"question-circle"</span></span>
-<span id="cb19-85" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/faq/index.qmd</span></span>
-<span id="cb19-86" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">tools</span><span class="kw">:</span></span>
-<span id="cb19-87" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> twitter</span></span>
-<span id="cb19-88" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://twitter.com/quarto_pub</span></span>
-<span id="cb19-89" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Quarto Twitter</span></span>
-<span id="cb19-90" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
-<span id="cb19-91" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/quarto-dev/quarto-cli</span></span>
-<span id="cb19-92" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Quarto GitHub</span></span>
-<span id="cb19-93" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> rss</span></span>
-<span id="cb19-94" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://quarto.org/docs/blog/index.xml</span></span>
-<span id="cb19-95" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Quarto Blog RSS        </span></span>
-<span id="cb19-96" class="hljs-ln-code"><a></a></span>
-<span id="cb19-97" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
-<span id="cb19-98" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> get-started</span></span>
-<span id="cb19-99" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Get Started"</span></span>
-<span id="cb19-100" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">style</span><span class="kw">:</span><span class="at"> </span><span class="st">"floating"</span></span>
-<span id="cb19-101" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
-<span id="cb19-102" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">align</span><span class="kw">:</span><span class="at"> left</span></span>
-<span id="cb19-103" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-104" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> docs/get-started/index.qmd</span></span>
-<span id="cb19-105" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tutorial: Hello, Quarto"</span></span>
-<span id="cb19-106" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/hello/</span></span>
-<span id="cb19-107" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tutorial: Computations"</span></span>
-<span id="cb19-108" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/computations/</span></span>
-<span id="cb19-109" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tutorial: Authoring"</span></span>
-<span id="cb19-110" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/get-started/authoring/</span></span>
-<span id="cb19-111" class="hljs-ln-code"><a></a></span>
-<span id="cb19-112" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> guide</span></span>
-<span id="cb19-113" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
-<span id="cb19-114" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-115" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guide"</span></span>
-<span id="cb19-116" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/guide/index.qmd</span></span>
-<span id="cb19-117" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-118" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Authoring"</span></span>
-<span id="cb19-119" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-120" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/markdown-basics.qmd</span></span>
-<span id="cb19-121" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/figures.qmd</span></span>
-<span id="cb19-122" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/tables.qmd</span></span>
-<span id="cb19-123" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/diagrams.qmd</span></span>
-<span id="cb19-124" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/videos.qmd</span></span>
-<span id="cb19-125" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jupyter Notebooks"</span></span>
-<span id="cb19-126" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/authoring/notebook-embed.qmd</span></span>
-<span id="cb19-127" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/callouts.qmd</span></span>
-<span id="cb19-128" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/code-annotation.qmd</span></span>
-<span id="cb19-129" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/article-layout.qmd</span></span>
-<span id="cb19-130" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Scholarly Writing"</span></span>
-<span id="cb19-131" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-132" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/authoring/front-matter.qmd</span></span>
-<span id="cb19-133" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/authoring/title-blocks.qmd</span></span>
-<span id="cb19-134" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/authoring/footnotes-and-citations.qmd</span></span>
-<span id="cb19-135" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/authoring/cross-references.qmd</span></span>
-<span id="cb19-136" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/authoring/create-citeable-articles.qmd</span></span>
-<span id="cb19-137" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/authoring/appendices.qmd</span></span>
-<span id="cb19-138" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Computations"</span></span>
-<span id="cb19-139" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-140" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/computations/python.qmd</span></span>
-<span id="cb19-141" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/computations/r.qmd</span></span>
-<span id="cb19-142" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/computations/julia.qmd</span></span>
-<span id="cb19-143" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/computations/ojs.qmd</span></span>
-<span id="cb19-144" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/computations/execution-options.qmd</span></span>
-<span id="cb19-145" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/computations/parameters.qmd</span></span>
-<span id="cb19-146" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Tools"</span></span>
-<span id="cb19-147" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-148" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"JupyterLab"</span></span>
-<span id="cb19-149" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-150" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"JupyterLab Basics"</span></span>
-<span id="cb19-151" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/tools/jupyter-lab.qmd</span></span>
-<span id="cb19-152" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"JupyterLab Extension"</span></span>
-<span id="cb19-153" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/tools/jupyter-lab-extension.qmd</span></span>
-<span id="cb19-154" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"RStudio IDE"</span></span>
-<span id="cb19-155" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb19-156" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"RStudio Basics"</span></span>
-<span id="cb19-157" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/tools/rstudio.qmd</span></span>
-<span id="cb19-158" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Visual Editor"</span></span>
-<span id="cb19-159" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/visual-editor/index.qmd</span></span>
-<span id="cb19-160" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-161" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Editor Basics</span></span>
-<span id="cb19-162" class="hljs-ln-code"><a></a><span class="at">                        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/visual-editor/index.qmd</span></span>
-<span id="cb19-163" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/visual-editor/technical.qmd</span></span>
-<span id="cb19-164" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/visual-editor/content.qmd</span></span>
-<span id="cb19-165" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/visual-editor/options.qmd</span></span>
-<span id="cb19-166" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/visual-editor/markdown.qmd</span></span>
-<span id="cb19-167" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"VS Code"</span></span>
-<span id="cb19-168" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/tools/vscode.qmd</span></span>
-<span id="cb19-169" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-170" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"VS Code Basics"</span></span>
-<span id="cb19-171" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/tools/vscode.qmd</span></span>
-<span id="cb19-172" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Visual Editor"</span></span>
-<span id="cb19-173" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/visual-editor/vscode/index.qmd</span></span>
-<span id="cb19-174" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Notebook Editor"</span></span>
-<span id="cb19-175" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/tools/vscode-notebook.qmd</span></span>
-<span id="cb19-176" class="hljs-ln-code"><a></a><span class="at">                </span></span>
-<span id="cb19-177" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/tools/neovim.qmd</span></span>
-<span id="cb19-178" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/tools/text-editors.qmd</span></span>
-<span id="cb19-179" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Documents"</span></span>
-<span id="cb19-180" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-181" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"HTML"</span></span>
-<span id="cb19-182" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-183" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/html-basics.qmd</span></span>
-<span id="cb19-184" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/html-code.qmd</span></span>
-<span id="cb19-185" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/html-themes.qmd</span></span>
-<span id="cb19-186" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/html-multi-format.qmd</span></span>
-<span id="cb19-187" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/html-publishing.qmd</span></span>
-<span id="cb19-188" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"PDF"</span></span>
-<span id="cb19-189" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-190" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/pdf-basics.qmd</span></span>
-<span id="cb19-191" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/pdf-engine.qmd</span></span>
-<span id="cb19-192" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"MS Word"</span></span>
-<span id="cb19-193" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-194" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/ms-word.qmd</span></span>
-<span id="cb19-195" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/ms-word-templates.qmd</span></span>
-<span id="cb19-196" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Markdown"</span></span>
-<span id="cb19-197" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-198" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/gfm.qmd</span></span>
-<span id="cb19-199" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/hugo.qmd</span></span>
-<span id="cb19-200" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/output-formats/docusaurus.qmd</span></span>
-<span id="cb19-201" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/output-formats/all-formats.qmd</span></span>
-<span id="cb19-202" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Presentations"</span></span>
-<span id="cb19-203" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-204" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
-<span id="cb19-205" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/presentations/index.qmd</span></span>
-<span id="cb19-206" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/presentations/revealjs/index.qmd</span></span>
-<span id="cb19-207" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-208" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reveal Basics"</span></span>
-<span id="cb19-209" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/presentations/revealjs/index.qmd</span></span>
-<span id="cb19-210" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/presentations/revealjs/presenting.qmd</span></span>
-<span id="cb19-211" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/presentations/revealjs/advanced.qmd</span></span>
-<span id="cb19-212" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/presentations/revealjs/themes.qmd</span></span>
-<span id="cb19-213" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/presentations/powerpoint.qmd</span></span>
-<span id="cb19-214" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/presentations/beamer.qmd</span></span>
-<span id="cb19-215" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Websites"</span></span>
-<span id="cb19-216" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/websites/website-basics.qmd</span></span>
-<span id="cb19-217" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-218" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/websites/website-basics.qmd</span></span>
-<span id="cb19-219" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/websites/website-navigation.qmd</span></span>
-<span id="cb19-220" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/websites/website-blog.qmd</span></span>
-<span id="cb19-221" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/websites/website-search.qmd</span></span>
-<span id="cb19-222" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/websites/website-tools.qmd</span></span>
-<span id="cb19-223" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/websites/website-about.qmd</span></span>
-<span id="cb19-224" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Listing Pages"</span></span>
-<span id="cb19-225" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/websites/website-listings.qmd</span></span>
-<span id="cb19-226" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-227" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/websites/website-listings.qmd</span></span>
-<span id="cb19-228" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/websites/website-listings-custom.qmd</span></span>
-<span id="cb19-229" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Books"</span></span>
-<span id="cb19-230" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/books/book-basics.qmd</span></span>
-<span id="cb19-231" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-232" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/books/book-basics.qmd</span></span>
-<span id="cb19-233" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/books/book-structure.qmd</span></span>
-<span id="cb19-234" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/books/book-crossrefs.qmd</span></span>
-<span id="cb19-235" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Customizing Output"</span></span>
-<span id="cb19-236" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/books/book-output.qmd</span></span>
-<span id="cb19-237" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Interactivity"</span></span>
-<span id="cb19-238" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-239" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
-<span id="cb19-240" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/interactive/index.qmd</span></span>
-<span id="cb19-241" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/interactive/ojs/index.qmd</span></span>
-<span id="cb19-242" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-243" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Introduction"</span></span>
-<span id="cb19-244" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/interactive/ojs/index.qmd</span></span>
-<span id="cb19-245" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/libraries.qmd</span></span>
-<span id="cb19-246" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/data-sources.qmd</span></span>
-<span id="cb19-247" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/ojs-cells.qmd</span></span>
-<span id="cb19-248" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/shiny.qmd</span></span>
-<span id="cb19-249" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/code-reuse.qmd</span></span>
-<span id="cb19-250" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples"</span></span>
-<span id="cb19-251" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-252" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/penguins.qmd</span></span>
-<span id="cb19-253" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/sunburst.qmd</span></span>
-<span id="cb19-254" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/arquero.qmd</span></span>
-<span id="cb19-255" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/population.qmd</span></span>
-<span id="cb19-256" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/noaa-co2.qmd</span></span>
-<span id="cb19-257" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/github.qmd</span></span>
-<span id="cb19-258" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> docs/interactive/ojs/examples/layout.qmd</span></span>
-<span id="cb19-259" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Shiny"</span></span>
-<span id="cb19-260" class="hljs-ln-code"><a></a><span class="at">                        </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-261" class="hljs-ln-code"><a></a><span class="at">                          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"K-Means"</span></span>
-<span id="cb19-262" class="hljs-ln-code"><a></a><span class="at">                            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/kmeans-shiny-ojs/</span></span>
-<span id="cb19-263" class="hljs-ln-code"><a></a><span class="at">                          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Binning"</span></span>
-<span id="cb19-264" class="hljs-ln-code"><a></a><span class="at">                            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/binning-shiny-ojs/</span></span>
-<span id="cb19-265" class="hljs-ln-code"><a></a><span class="at">                          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Binding"</span></span>
-<span id="cb19-266" class="hljs-ln-code"><a></a><span class="at">                            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/data-shiny-ojs/</span></span>
-<span id="cb19-267" class="hljs-ln-code"><a></a><span class="at">                          </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Covid Map"</span></span>
-<span id="cb19-268" class="hljs-ln-code"><a></a><span class="at">                            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/covid19-bicartogram/</span></span>
-<span id="cb19-269" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/interactive/shiny/index.qmd</span></span>
-<span id="cb19-270" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-271" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Introduction"</span></span>
-<span id="cb19-272" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/interactive/shiny/index.qmd</span></span>
-<span id="cb19-273" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/shiny/running.qmd</span></span>
-<span id="cb19-274" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/shiny/execution.qmd</span></span>
-<span id="cb19-275" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/shiny/resources.qmd</span></span>
-<span id="cb19-276" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Examples"</span></span>
-<span id="cb19-277" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-278" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Old Faithful"</span></span>
-<span id="cb19-279" class="hljs-ln-code"><a></a><span class="at">                        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/shiny-old-faithful/</span></span>
-<span id="cb19-280" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"K-Means"</span></span>
-<span id="cb19-281" class="hljs-ln-code"><a></a><span class="at">                        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/shiny-k-means/</span></span>
-<span id="cb19-282" class="hljs-ln-code"><a></a><span class="at">                      </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Diamonds"</span></span>
-<span id="cb19-283" class="hljs-ln-code"><a></a><span class="at">                        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://jjallaire.shinyapps.io/shiny-diamonds/</span></span>
-<span id="cb19-284" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Widgets"</span></span>
-<span id="cb19-285" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-286" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/widgets/jupyter.qmd</span></span>
-<span id="cb19-287" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> docs/interactive/widgets/htmlwidgets.qmd</span></span>
-<span id="cb19-288" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/interactive/layout.qmd</span></span>
-<span id="cb19-289" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Publishing"</span></span>
-<span id="cb19-290" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-291" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/index.qmd</span></span>
-<span id="cb19-292" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/quarto-pub.qmd</span></span>
-<span id="cb19-293" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/github-pages.qmd</span></span>
-<span id="cb19-294" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/rstudio-connect.qmd</span></span>
-<span id="cb19-295" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/netlify.qmd</span></span>
-<span id="cb19-296" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/confluence.qmd</span></span>
-<span id="cb19-297" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/publishing/other.qmd</span></span>
-<span id="cb19-298" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Publishing with CI"</span></span>
-<span id="cb19-299" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/publishing/ci.qmd</span></span>
-<span id="cb19-300" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Projects"</span></span>
-<span id="cb19-301" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-302" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/projects/quarto-projects.qmd</span></span>
-<span id="cb19-303" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/projects/code-execution.qmd</span></span>
-<span id="cb19-304" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/projects/profiles.qmd</span></span>
-<span id="cb19-305" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/projects/environment.qmd</span></span>
-<span id="cb19-306" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/projects/scripts.qmd</span></span>
-<span id="cb19-307" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/projects/virtual-environments.qmd</span></span>
-<span id="cb19-308" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Advanced"</span></span>
-<span id="cb19-309" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-310" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/includes.qmd</span></span>
-<span id="cb19-311" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/variables.qmd</span></span>
-<span id="cb19-312" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/output-formats/page-layout.qmd</span></span>
-<span id="cb19-313" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/language.qmd</span></span>
-<span id="cb19-314" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/authoring/conditional.qmd</span></span>
-<span id="cb19-315" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> docs/extensions/nbfilter.qmd</span></span>
-<span id="cb19-316" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> extensions</span></span>
-<span id="cb19-317" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Extensions"</span></span>
-<span id="cb19-318" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-319" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="st">"---"</span></span>
-<span id="cb19-320" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/extensions/index.qmd</span></span>
-<span id="cb19-321" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb19-322" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Shortcodes &amp; Filters"</span></span>
-<span id="cb19-323" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-filters.qmd</span></span>
-<span id="cb19-324" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Journal Articles"</span></span>
-<span id="cb19-325" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-journals.qmd</span></span>
-<span id="cb19-326" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Custom Formats"</span></span>
-<span id="cb19-327" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-formats.qmd</span></span>
-<span id="cb19-328" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Revealjs Extensions"</span></span>
-<span id="cb19-329" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/listing-revealjs.qmd</span></span>
-<span id="cb19-330" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/managing.qmd</span></span>
-<span id="cb19-331" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="st">"---"</span></span>
-<span id="cb19-332" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> docs/extensions/creating.qmd</span></span>
-<span id="cb19-333" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-334" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Overview"</span></span>
-<span id="cb19-335" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/creating.qmd</span></span>
-<span id="cb19-336" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/lua.qmd</span></span>
-<span id="cb19-337" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/lua-api.qmd</span></span>
-<span id="cb19-338" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Distribution"</span></span>
-<span id="cb19-339" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/distributing.qmd</span></span>
-<span id="cb19-340" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="st">"---"</span></span>
-<span id="cb19-341" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Shortcodes"</span></span>
-<span id="cb19-342" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/shortcodes.qmd</span></span>
-<span id="cb19-343" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Filters"</span></span>
-<span id="cb19-344" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/extensions/filters.qmd</span></span>
-<span id="cb19-345" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Journal Articles"</span></span>
-<span id="cb19-346" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/journals/formats.qmd</span></span>
-<span id="cb19-347" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-348" class="hljs-ln-code"><a></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/journals/formats.qmd</span></span>
-<span id="cb19-349" class="hljs-ln-code"><a></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/journals/templates.qmd</span></span>
-<span id="cb19-350" class="hljs-ln-code"><a></a><span class="at">                </span><span class="kw">-</span><span class="at"> docs/journals/authors.qmd</span></span>
-<span id="cb19-351" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/formats.qmd</span></span>
-<span id="cb19-352" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/revealjs.qmd</span></span>
-<span id="cb19-353" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/project-types.qmd</span></span>
-<span id="cb19-354" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> docs/extensions/starter-templates.qmd</span></span>
-<span id="cb19-355" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> manuscripts</span></span>
-<span id="cb19-356" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Manuscripts"</span></span>
-<span id="cb19-357" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">style</span><span class="kw">:</span><span class="at"> </span><span class="st">"floating"</span></span>
-<span id="cb19-358" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
-<span id="cb19-359" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">align</span><span class="kw">:</span><span class="at"> left</span></span>
-<span id="cb19-360" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-361" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Manuscripts Overview</span></span>
-<span id="cb19-362" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/index.qmd</span></span>
-<span id="cb19-363" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Authoring Manuscripts"</span></span>
-<span id="cb19-364" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb19-365" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Jupyter Lab</span></span>
-<span id="cb19-366" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/authoring/jupyterlab.qmd</span></span>
-<span id="cb19-367" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> VS Code</span></span>
-<span id="cb19-368" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/authoring/vscode.qmd</span></span>
-<span id="cb19-369" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> RStudio</span></span>
-<span id="cb19-370" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/authoring/rstudio.qmd</span></span>
-<span id="cb19-371" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Publishing Manuscripts"</span></span>
-<span id="cb19-372" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/publishing.qmd</span></span>
-<span id="cb19-373" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Next Steps"</span></span>
-<span id="cb19-374" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/next-steps.qmd</span></span>
-<span id="cb19-375" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"---"</span></span>
-<span id="cb19-376" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Manuscript Components"</span></span>
-<span id="cb19-377" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/manuscripts/components.qmd</span></span>
-<span id="cb19-378" class="hljs-ln-code"><a></a><span class="at">          </span></span>
-<span id="cb19-379" class="hljs-ln-code"><a></a><span class="at">        </span></span>
-<span id="cb19-380" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> reference</span></span>
-<span id="cb19-381" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reference"</span></span>
-<span id="cb19-382" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">3</span></span>
-<span id="cb19-383" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-384" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Reference"</span></span>
-<span id="cb19-385" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/index.qmd</span></span>
-<span id="cb19-386" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-387" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Formats"</span></span>
-<span id="cb19-388" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-389" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"HTML"</span></span>
-<span id="cb19-390" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/html.qmd</span></span>
-<span id="cb19-391" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"PDF"</span></span>
-<span id="cb19-392" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/pdf.qmd</span></span>
-<span id="cb19-393" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"MS Word"</span></span>
-<span id="cb19-394" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/docx.qmd</span></span>
-<span id="cb19-395" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"OpenOffice"</span></span>
-<span id="cb19-396" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/odt.qmd</span></span>
-<span id="cb19-397" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"ePub"</span></span>
-<span id="cb19-398" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/epub.qmd</span></span>
-<span id="cb19-399" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Presentations"</span></span>
-<span id="cb19-400" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-401" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Revealjs"</span></span>
-<span id="cb19-402" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/presentations/revealjs.qmd</span></span>
-<span id="cb19-403" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"PowerPoint"</span></span>
-<span id="cb19-404" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/presentations/pptx.qmd</span></span>
-<span id="cb19-405" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Beamer"</span></span>
-<span id="cb19-406" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/presentations/beamer.qmd</span></span>
-<span id="cb19-407" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Markdown"</span></span>
-<span id="cb19-408" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-409" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"GitHub"</span></span>
-<span id="cb19-410" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/markdown/gfm.qmd</span></span>
-<span id="cb19-411" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"CommonMark"</span></span>
-<span id="cb19-412" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/markdown/commonmark.qmd</span></span>
-<span id="cb19-413" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Markua"</span></span>
-<span id="cb19-414" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/markdown/markua.qmd</span></span>
-<span id="cb19-415" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Wikis"</span></span>
-<span id="cb19-416" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-417" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"MediaWiki"</span></span>
-<span id="cb19-418" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/mediawiki.qmd</span></span>
-<span id="cb19-419" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"DokuWiki"</span></span>
-<span id="cb19-420" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/dokuwiki.qmd</span></span>
-<span id="cb19-421" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"ZimWiki"</span></span>
-<span id="cb19-422" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/zimwiki.qmd</span></span>
-<span id="cb19-423" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jira Wiki"</span></span>
-<span id="cb19-424" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/jira.qmd</span></span>
-<span id="cb19-425" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"XWiki"</span></span>
-<span id="cb19-426" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/wiki/xwiki.qmd</span></span>
-<span id="cb19-427" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"More Formats"</span></span>
-<span id="cb19-428" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-429" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"JATS"</span></span>
-<span id="cb19-430" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/jats.qmd</span></span>
-<span id="cb19-431" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jupyter"</span></span>
-<span id="cb19-432" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/ipynb.qmd</span></span>
-<span id="cb19-433" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"ConTeXt"</span></span>
-<span id="cb19-434" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/context.qmd</span></span>
-<span id="cb19-435" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"RTF"</span></span>
-<span id="cb19-436" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/rtf.qmd</span></span>
-<span id="cb19-437" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"reST"</span></span>
-<span id="cb19-438" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/rst.qmd</span></span>
-<span id="cb19-439" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"AsciiDoc"</span></span>
-<span id="cb19-440" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/asciidoc.qmd</span></span>
-<span id="cb19-441" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Org-Mode"</span></span>
-<span id="cb19-442" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/org.qmd</span></span>
-<span id="cb19-443" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Muse"</span></span>
-<span id="cb19-444" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/muse.qmd</span></span>
-<span id="cb19-445" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"GNU TexInfo"</span></span>
-<span id="cb19-446" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/texinfo.qmd</span></span>
-<span id="cb19-447" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Groff Man Page"</span></span>
-<span id="cb19-448" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/man.qmd</span></span>
-<span id="cb19-449" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Groff Manuscript"</span></span>
-<span id="cb19-450" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/ms.qmd</span></span>
-<span id="cb19-451" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Haddock markup"</span></span>
-<span id="cb19-452" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/haddock.qmd</span></span>
-<span id="cb19-453" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"OPML"</span></span>
-<span id="cb19-454" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/opml.qmd</span></span>
-<span id="cb19-455" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Textile"</span></span>
-<span id="cb19-456" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/textile.qmd</span></span>
-<span id="cb19-457" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"DocBook"</span></span>
-<span id="cb19-458" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/docbook.qmd</span></span>
-<span id="cb19-459" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"InDesign"</span></span>
-<span id="cb19-460" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/icml.qmd</span></span>
-<span id="cb19-461" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"TEI Simple"</span></span>
-<span id="cb19-462" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/tei.qmd</span></span>
-<span id="cb19-463" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"FictionBook"</span></span>
-<span id="cb19-464" class="hljs-ln-code"><a></a><span class="at">                    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/formats/fb2.qmd</span></span>
-<span id="cb19-465" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Code Cells"</span></span>
-<span id="cb19-466" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/index.qmd</span></span>
-<span id="cb19-467" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-468" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jupyter"</span></span>
-<span id="cb19-469" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/cells-jupyter.qmd</span></span>
-<span id="cb19-470" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Knitr"</span></span>
-<span id="cb19-471" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/cells-knitr.qmd</span></span>
-<span id="cb19-472" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Observable"</span></span>
-<span id="cb19-473" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/cells/cells-ojs.qmd</span></span>
-<span id="cb19-474" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Projects"</span></span>
-<span id="cb19-475" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-476" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Options"</span></span>
-<span id="cb19-477" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/projects/options.qmd</span></span>
-<span id="cb19-478" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Websites"</span></span>
-<span id="cb19-479" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/projects/websites.qmd</span></span>
-<span id="cb19-480" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Books"</span></span>
-<span id="cb19-481" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/projects/books.qmd</span></span>
-<span id="cb19-482" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"More"</span></span>
-<span id="cb19-483" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-484" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dates"</span></span>
-<span id="cb19-485" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/dates.qmd</span></span>
-<span id="cb19-486" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Globs"</span></span>
-<span id="cb19-487" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/globs.qmd</span></span>
-<span id="cb19-488" class="hljs-ln-code"><a></a><span class="at">              </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Citations"</span></span>
-<span id="cb19-489" class="hljs-ln-code"><a></a><span class="at">                </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/reference/metadata/citation.qmd</span></span>
-<span id="cb19-490" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> prerelease</span></span>
-<span id="cb19-491" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto 1.3"</span></span>
-<span id="cb19-492" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-493" class="hljs-ln-code"><a></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Highlights"</span></span>
-<span id="cb19-494" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/prerelease/1.3/index.qmd</span></span>
-<span id="cb19-495" class="hljs-ln-code"><a></a><span class="at">          </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-496" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Confluence Publishing"</span></span>
-<span id="cb19-497" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/publishing/confluence.qmd</span></span>
-<span id="cb19-498" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Multi-Format"</span></span>
-<span id="cb19-499" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/output-formats/html-multi-format.qmd</span></span>
-<span id="cb19-500" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Cell Embedding"</span></span>
-<span id="cb19-501" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/authoring/notebook-embed.qmd</span></span>
-<span id="cb19-502" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Grid Customization"</span></span>
-<span id="cb19-503" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/output-formats/page-layout.qmd</span><span class="co">#grid-customization</span></span>
-<span id="cb19-504" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Code Annotation"</span></span>
-<span id="cb19-505" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/authoring/code-annotation.qmd</span></span>
-<span id="cb19-506" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto AST"</span></span>
-<span id="cb19-507" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/prerelease/1.3/ast.qmd</span></span>
-<span id="cb19-508" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">contents</span><span class="kw">:</span></span>
-<span id="cb19-509" class="hljs-ln-code"><a></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Callouts</span></span>
-<span id="cb19-510" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/prerelease/1.3/custom-ast-nodes/callout.qmd</span></span>
-<span id="cb19-511" class="hljs-ln-code"><a></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Tabsets</span></span>
-<span id="cb19-512" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/prerelease/1.3/custom-ast-nodes/tabset.qmd</span></span>
-<span id="cb19-513" class="hljs-ln-code"><a></a><span class="at">                </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Conditional Blocks</span></span>
-<span id="cb19-514" class="hljs-ln-code"><a></a><span class="at">                  </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/prerelease/1.3/custom-ast-nodes/conditional-block.qmd</span></span>
-<span id="cb19-515" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Mermaid Theming"</span></span>
-<span id="cb19-516" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/authoring/diagrams.qmd</span><span class="co">#mermaid-theming</span></span>
-<span id="cb19-517" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"PDF Images"</span></span>
-<span id="cb19-518" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/prerelease/1.3/pdf.qmd</span></span>
-<span id="cb19-519" class="hljs-ln-code"><a></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"`kbd` Shortcode"</span></span>
-<span id="cb19-520" class="hljs-ln-code"><a></a><span class="at">              </span><span class="fu">href</span><span class="kw">:</span><span class="at"> docs/authoring/markdown-basics.qmd</span><span class="co">#keyboard-shortcuts</span></span>
-<span id="cb19-521" class="hljs-ln-code"><a></a></span>
-<span id="cb19-522" class="hljs-ln-code"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb19-523" class="hljs-ln-code"><a></a></span>
-<span id="cb19-524" class="hljs-ln-code"><a></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb19-525" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb19-526" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-527" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span></span>
-<span id="cb19-528" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> theme.scss</span><span class="kw">]</span></span>
-<span id="cb19-529" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">code-copy</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-530" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">code-overflow</span><span class="kw">:</span><span class="at"> wrap</span></span>
-<span id="cb19-531" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
-<span id="cb19-532" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">include-after-body</span><span class="kw">:</span><span class="at"> js.html</span></span>
-<span id="cb19-533" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">grid</span><span class="kw">:</span></span>
-<span id="cb19-534" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">sidebar-width</span><span class="kw">:</span><span class="at"> 250px</span></span>
-<span id="cb19-535" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">body-width</span><span class="kw">:</span><span class="at"> 900px</span></span>
-<span id="cb19-536" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">margin-width</span><span class="kw">:</span><span class="at"> 300px</span></span>
-<span id="cb19-537" class="hljs-ln-code"><a></a></span>
-<span id="cb19-538" class="hljs-ln-code"><a></a><span class="fu">filters</span><span class="kw">:</span></span>
-<span id="cb19-539" class="hljs-ln-code"><a></a><span class="at">  </span><span class="kw">-</span><span class="at"> filters/tools-tabset.lua</span></span>
-<span id="cb19-540" class="hljs-ln-code"><a></a></span>
-<span id="cb19-541" class="hljs-ln-code"><a></a><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb19-542" class="hljs-ln-code"><a></a></span>
-<span id="cb19-543" class="hljs-ln-code"><a></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> visual</span></span>
-<span id="cb19-544" class="hljs-ln-code"><a></a></span>
-<span id="cb19-545" class="hljs-ln-code"><a></a><span class="fu">profile</span><span class="kw">:</span></span>
-<span id="cb19-546" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">group</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb19-547" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="kw">[</span><span class="at">prerelease</span><span class="kw">,</span><span class="at">rc</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb37" data-filename="_quarto.yml"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb37-1" class="hljs-ln-code"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb37-2" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb37-3" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span>
+<span id="cb37-4" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">resources</span><span class="kw">:</span></span>
+<span id="cb37-5" class="hljs-ln-code"><a></a><span class="at">    </span><span class="kw">-</span><span class="at"> images/python-logo.png</span></span>
+<span id="cb37-6" class="hljs-ln-code"><a></a></span>
+<span id="cb37-7" class="hljs-ln-code"><a></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb37-8" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-9" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"From Notebooks to Dashboards with Quarto"</span></span>
+<span id="cb37-10" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"Small Data SF - From Notebooks to Dashboards with Quarto Workshop"</span></span>
+<span id="cb37-11" class="hljs-ln-code"><a></a></span>
+<span id="cb37-12" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">repo-url</span><span class="kw">:</span><span class="at"> https://github.com/posit-dev/small-data-sf-quarto-workshop</span></span>
+<span id="cb37-13" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
+<span id="cb37-14" class="hljs-ln-code"><a></a></span>
+<span id="cb37-15" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">open-graph</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-16" class="hljs-ln-code"><a></a></span>
+<span id="cb37-17" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb37-18" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#FF6349"</span></span>
+<span id="cb37-19" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"images/logo.png"</span></span>
+<span id="cb37-20" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">pinned</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-21" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">align</span><span class="kw">:</span><span class="at"> center</span></span>
+<span id="cb37-22" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">tools</span><span class="kw">:</span></span>
+<span id="cb37-23" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb37-24" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/posit-dev/small-data-sf-quarto-workshop</span></span>
+<span id="cb37-25" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"GitHub"</span></span>
+<span id="cb37-26" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> code-square</span></span>
+<span id="cb37-27" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://posit.cloud</span></span>
+<span id="cb37-28" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Posit Cloud"</span></span>
+<span id="cb37-29" class="hljs-ln-code"><a></a></span>
+<span id="cb37-30" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">style</span><span class="kw">:</span><span class="at"> docked</span></span>
+<span id="cb37-31" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">search</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-32" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb37-33" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb37-34" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb37-35" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb37-36" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> setup.qmd</span></span>
+<span id="cb37-37" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Setup</span></span>
+<span id="cb37-38" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Modules"</span></span>
+<span id="cb37-39" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb37-40" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 0-intro-to-quarto/index.qmd</span></span>
+<span id="cb37-41" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 1-hello-dashboards/index.qmd</span></span>
+<span id="cb37-42" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 2-components-theming/index.qmd</span></span>
+<span id="cb37-43" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 3-deployment/index.qmd</span></span>
+<span id="cb37-44" class="hljs-ln-code"><a></a></span>
+<span id="cb37-45" class="hljs-ln-code"><a></a></span>
+<span id="cb37-46" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span></span>
+<span id="cb37-47" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span><span class="at"> </span><span class="st">"This page is built with 🩷 and [Quarto](https://quarto.org/)."</span></span>
+<span id="cb37-48" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span><span class="st">"&amp;copy; Copyright 2024"</span></span>
+<span id="cb37-49" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#FF6A8A"</span></span>
+<span id="cb37-50" class="hljs-ln-code"><a></a></span>
+<span id="cb37-51" class="hljs-ln-code"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb37-52" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb37-53" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb37-54" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> style/light.scss</span><span class="kw">]</span></span>
+<span id="cb37-55" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> style/light.scss</span><span class="kw">,</span><span class="at"> style/dark.scss</span><span class="kw">]</span></span>
+<span id="cb37-56" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#FF75EF"</span></span>
+<span id="cb37-57" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-58" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">code-copy</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-59" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">code-overflow</span><span class="kw">:</span><span class="at"> wrap</span></span>
+<span id="cb37-60" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">mainfont</span><span class="kw">:</span><span class="at"> </span><span class="st">"Space Grotesk"</span></span>
+<span id="cb37-61" class="hljs-ln-code"><a></a><span class="at">  </span></span>
+<span id="cb37-62" class="hljs-ln-code"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
+<span id="cb37-63" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span></span>
+<span id="cb37-64" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb37-65" class="hljs-ln-code"><a></a></span>
+<span id="cb37-66" class="hljs-ln-code"><a></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> source</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="quarto-projects" class="slide level2">
@@ -1648,6 +1516,17 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <section id="wrap-up" class="title-slide slide level1 center">
 <h1>Wrap up</h1>
 
+</section>
+<section id="a-tour-of-quarto-1" class="slide level2">
+<h2>A tour of Quarto</h2>
+<div class="demo">
+<ul>
+<li>Understanding the relationship between Quarto and the Jupyter engine</li>
+<li>Using Quarto in VS Code</li>
+<li>Creating Quarto documents (metadata, markdown text, and code)</li>
+<li>Working with Quarto projects</li>
+</ul>
+</div>
 </section>
 <section id="section" class="slide level2" data-menu="thank you" data-background-image="images/thank-you.png">
 <h2></h2>

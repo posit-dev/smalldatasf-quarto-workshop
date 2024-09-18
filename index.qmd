@@ -24,11 +24,9 @@ Quarto is an innovative, open-source publishing system from Posit that transform
 
 ## Instructor(s)
 
-
-
 [**Isabella Velásquez**](https://ivelasq.rbind.io/) is a Senior Product Marketing Manager at Posit Software, where she develops strategic content to increase brand visibility and drive product adoption. With a background in data analysis, reporting, and visualization using tools like R, SQL, and Python, Isabella has honed her skills across multiple industries, including her previous role at the Bill & Melinda Gates Foundation. She holds an MS in Analytics and a BA in Economics and East Asian Languages and Civilizations from the University of Chicago. Isabella is also an educator, sharing her expertise in data science as an instructor and teaching assistant at the University of Tennessee, Knoxville and the University of Chicago.
 
-[**Sara Altman**] is a Data Science Educator at Posit on the Developer Relations team. She creates technical content to help developers and data scientists achieve their goals with Posit tools. Prior to joining the Developer Relations team, she worked on [Posit Academy](https://posit.co/products/enterprise/academy/), Posit's educational platform. Before Posit, Sara taught data science and R at Stanford. She holds a MS and BS in Symbolic Systems from Stanford.  
+[**Sara Altman**](https://www.linkedin.com/in/sarakaltman) is a Data Science Educator at Posit on the Developer Relations team. She creates technical content to help developers and data scientists achieve their goals with Posit tools. Prior to joining the Developer Relations team, she worked on [Posit Academy](https://posit.co/products/enterprise/academy/), Posit's educational platform. Before Posit, Sara taught data science and R at Stanford. She holds a MS and BS in Symbolic Systems from Stanford.  
 
 ------------------------------------------------------------------------
 

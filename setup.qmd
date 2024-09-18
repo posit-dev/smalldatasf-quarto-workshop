@@ -1,30 +1,35 @@
 ---
-title: "Setup instructions"
+title: "Setup"
 ---
 
-**1. Software:** Download and install Python and Quarto:
+**1. Software:** Download and install Python and the latest version of Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
--   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
+-   Quarto 1.5.57: <https://quarto.org/docs/get-started/>
 
-**2. Tools:** Dowload and install VS Code and Jupyter and Quarto extensions.
+**2. Tools:** Dowload and install VS Code and Jupyter and the Quarto extensions:
 
--   VS Code: <https://code.visualstudio.com/>
--   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
--   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
+- VS Code: <https://code.visualstudio.com/>
+- Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
+- Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
-**3. Exercises:** Go to [`pos.it/smalldatasf-quarto-exercises`](https://pos.it/smalldatasf-quarto-exercises), click on "Use this template" then "Create a new repository". Click on the green *Code* button and copy the URL of the repo.
+**3. Exercises:** Go to [`pos.it/smalldatasf-quarto-exercises`](https://pos.it/smalldatasf-quarto-exercises), click on *Use this template* then *Create a new repository*.
 
-**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then choose the (latest) Python version you have installed. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.
+**4. Packages:**  Open *VS Code*. Under *Start*, click on *Clone Git Repository*, and paste the URL of your exercise repo. 
+
+  * Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then choose the (latest) Python version you have installed. 
+  * Check the box for `requirements.txt` in the *Select dependencies to install* menu and hit *OK*.
 
 ::: callout-note
 The packages you need are as follows:
 
 ``` {.bash filename="requirements.txt"}
-great_tables==0.9.0
 ipykernel==6.29.5
 jupyter==1.0.0
-palmerpenguins==0.1.4
+PyYAML==6.0.2
+nbclient==0.10.0
+nbformat==5.10.4
+great_tables==0.10.0
 pandas==2.2.2
 plotnine==0.13.6
 ```

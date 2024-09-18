@@ -11,10 +11,4 @@ title: "Intro to Quarto"
 ```
 ## Exercises
 
--   R:
-
-    -   Option 1 - Cloud: Go to Posit Cloud for the workshop, open project titled `1 - Hello, Dashboards!`.
-
-    -   Option 2 - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-r-1.qmd.`
-
--   Python - Local: Clone the GitHub repo `posit-conf-2024/olympicdash` (<https://github.com/posit-conf-2024/olympicdash>) and work on `olympicdash-py-1.qmd.`
+-    Use the template `pos.it/smalldatasf-quarto-exercises` (<hhttps://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-0.ipynb.`

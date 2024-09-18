@@ -2,9 +2,9 @@
   {
     "objectID": "setup.html",
     "href": "setup.html",
-    "title": "Setup instructions",
+    "title": "Setup",
     "section": "",
-    "text": "1. Software: Download and install Python and Quarto:\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.",
+    "text": "1. Software: Download and install Python and the latest version of Quarto:\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.",
     "crumbs": [
       "Setup"
     ]
@@ -12,7 +12,7 @@
   {
     "objectID": "setup.html#publishing-accounts",
     "href": "setup.html#publishing-accounts",
-    "title": "Setup instructions",
+    "title": "Setup",
     "section": "Publishing accounts",
     "text": "Publishing accounts\nYou do not need to publish your dashboard during the workshop, but it would be good practice!\nTo publish your website you’ll need an account on one of Quarto’s publishing venues:\n\n(Recommended) Posit Connect Cloud if you are already a Git/GitHub user\nQuarto Pub",
     "crumbs": [
@@ -46,7 +46,7 @@
     "href": "1-hello-dashboards/index.html#exercises",
     "title": "Hello, Dashboards!",
     "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-1.qmd.",
+    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-1.qmd.",
     "crumbs": [
       "Modules",
       "Hello, Dashboards!"
@@ -463,7 +463,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto",
     "title": "Intro to Quarto",
     "section": "Quarto …",
-    "text": "Quarto …\nis an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular media.\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "text": "Quarto …\nis an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular media."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#with-quarto",
@@ -519,7 +519,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#rendering",
     "title": "Intro to Quarto",
     "section": "Rendering",
-    "text": "Rendering\nin VS Code\n\nOption 1: In the Terminal via quarto render\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
+    "text": "Rendering\nin VS Code\n\nOption 1: In the Terminal via quarto render\n\n\n\nTerminal\n\nquarto render\n\n\n\nOption 2: Use the Command Palette: Quarto: Render Project"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#one-install-batteries-included",
@@ -540,14 +540,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn",
     "title": "Intro to Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\nIn VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert. Preview the file.\nIn the YAML, add an author field and add your name.\nAdd a markdown cell and write some text.\nFor one of the tables, add the chunk option echo: false.\nAdd this to the top of the plotnine chart to set the order of medal variable.\n\nolympics['medal'] = pd.Categorical(\n    olympics['medal'], \n    categories=[\"Gold\", \"Silver\", \"Bronze\"], \n    ordered=True\n)\n\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+    "text": "Your turn\n\n1. Software: Download and install Python and the latest version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
     "title": "Intro to Quarto",
     "section": "A pause",
-    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\nQuarto on Wikipedia\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\nQuarto on Wikipedia\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document",
@@ -561,49 +561,49 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-1",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\n\nYet another markup language”\nMetadata of your document\nDemarcated by three dashes (---) on either end\nUses key-value pairs in the format key: value"
+    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\n\n\nYet another markup language”\nMetadata of your document\nDemarcated by three dashes (---) on either end\nUses key-value pairs in the format key: value"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-2",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-2",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\ntheme: sketchy\n---"
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-3",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-3",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nText: Markdown\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax"
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nThe `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins \"palmerpenguins R package\") package contains size measurements for `r nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\n\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-4",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-4",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nThe `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins \"palmerpenguins R package\") package contains size measurements for `r nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\n\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\n\n\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-5",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-5",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+    "text": "Anatomy of a Quarto document\nCode\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-6",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-6",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode\n\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\nCode chunks begin and end with three backticks (usually)\nCode chunks are identified with a programming language in between {}"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode\n\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\nCode chunks begin and end with three backticks (usually)\nCode chunks are identified with a programming language in between {}"
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-project",
@@ -617,14 +617,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto.yml",
     "title": "Intro to Quarto",
     "section": "_quarto.yml",
-    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  title: \"A Barebones Project\""
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  title: \"Olympic Games\""
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto.yml-1",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto.yml-1",
     "title": "Intro to Quarto",
     "section": "_quarto.yml",
-    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: _site\n  resources:\n    - \"/docs/download/_download.json\"\n    - \"/docs/download/_prerelease.json\"\n    - \"/_redirects\"\n\nwebsite:\n  title: \"Quarto\"\n  image: \"quarto-dark-bg.jpeg\"\n  favicon: \"favicon.png\"\n  google-analytics: \"G-FV9Z7SDZ0M\"\n  open-graph: true\n  twitter-card: true\n  site-url: https://quarto.org\n  repo-url: https://github.com/quarto-dev/quarto-web\n  issue-url: https://github.com/quarto-dev/quarto-cli/issues/new/choose\n  repo-actions: [edit, issue]\n  page-navigation: true\n  bread-crumbs: true\n  search:\n    show-item-context: true\n    type: overlay\n    algolia:\n      index-name: prod_QUARTO\n      application-id: ZPJB5I1QN7\n      search-only-api-key: 41be6c1e0a7fea4a51b107810facf577\n      analytics-events: true\n      show-logo: true\n  page-footer:\n    left: |\n      Proudly supported by\n      [![](https://www.rstudio.com/assets/img/posit-logo-fullcolor-TM.svg){fig-alt=\"Posit\" width=65px}](https://posit.co)\n    center:\n      - text: \"About\"\n        href: about.qmd\n      - text: \"FAQ\"\n        href: docs/faq/index.qmd\n      - text: \"License\"\n        href: license.qmd\n      - text: \"Trademark\"\n        href: trademark.qmd\n    right:\n      - icon: twitter\n        href: https://twitter.com/quarto_pub\n        aria-label: Quarto Twitter\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: Quarto GitHub\n      - icon: rss\n        href: https://quarto.org/docs/blog/index.xml\n        aria-label: Quarto Blog RSS        \n  navbar:\n    background: light\n    logo: quarto.png\n    logo-alt: \"Quarto logo.\"\n    title: false\n    collapse-below: lg\n    left:\n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Get Started\"\n        href: docs/get-started/index.qmd\n      - text: \"Guide\"\n        href: docs/guide/index.qmd\n      - text: Extensions\n        href: docs/extensions/index.qmd\n      - text: \"Reference\"\n        href: docs/reference/index.qmd\n      - text: \"Gallery\"\n        href: docs/gallery/index.qmd\n      - text: \"Blog\"\n        href: docs/blog/index.qmd\n      - text: \"Help\"\n        menu:\n          - text: \"Report a Bug\"\n            icon: \"bug\"\n            href: \"https://github.com/quarto-dev/quarto-cli/issues\"\n          - text: \"Ask a Question\"\n            icon: \"chat-right-text\"\n            href: \"https://github.com/quarto-dev/quarto-cli/discussions\"\n          - text: \"FAQ\"\n            icon: \"question-circle\"\n            href: docs/faq/index.qmd\n    tools:\n      - icon: twitter\n        href: https://twitter.com/quarto_pub\n        text: Quarto Twitter\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        text: Quarto GitHub\n      - icon: rss\n        href: https://quarto.org/docs/blog/index.xml\n        text: Quarto Blog RSS        \n\n  sidebar:\n    - id: get-started\n      title: \"Get Started\"\n      style: \"floating\"\n      collapse-level: 2\n      align: left\n      contents:\n        - docs/get-started/index.qmd\n        - text: \"Tutorial: Hello, Quarto\"\n          href: docs/get-started/hello/\n        - text: \"Tutorial: Computations\"\n          href: docs/get-started/computations/\n        - text: \"Tutorial: Authoring\"\n          href: docs/get-started/authoring/\n\n    - id: guide\n      collapse-level: 1\n      contents:\n        - section: \"Guide\"\n          href: docs/guide/index.qmd\n          contents:\n          - section: \"Authoring\"\n            contents:\n              - docs/authoring/markdown-basics.qmd\n              - docs/authoring/figures.qmd\n              - docs/authoring/tables.qmd\n              - docs/authoring/diagrams.qmd\n              - docs/authoring/videos.qmd\n              - text: \"Jupyter Notebooks\"\n                href: docs/authoring/notebook-embed.qmd\n              - docs/authoring/callouts.qmd\n              - docs/authoring/code-annotation.qmd\n              - docs/authoring/article-layout.qmd\n              - section: \"Scholarly Writing\"\n                contents:\n                  - docs/authoring/front-matter.qmd\n                  - docs/authoring/title-blocks.qmd\n                  - docs/authoring/footnotes-and-citations.qmd\n                  - docs/authoring/cross-references.qmd\n                  - docs/authoring/create-citeable-articles.qmd\n                  - docs/authoring/appendices.qmd\n          - section: \"Computations\"\n            contents:\n              - docs/computations/python.qmd\n              - docs/computations/r.qmd\n              - docs/computations/julia.qmd\n              - docs/computations/ojs.qmd\n              - docs/computations/execution-options.qmd\n              - docs/computations/parameters.qmd\n          - section: \"Tools\"\n            contents:\n              - section: \"JupyterLab\"\n                contents:\n                  - text: \"JupyterLab Basics\"\n                    href: docs/tools/jupyter-lab.qmd\n                  - text: \"JupyterLab Extension\"\n                    href: docs/tools/jupyter-lab-extension.qmd\n              - section: \"RStudio IDE\"\n                contents: \n                  - text: \"RStudio Basics\"\n                    href: docs/tools/rstudio.qmd\n                  - section: \"Visual Editor\"\n                    href: docs/visual-editor/index.qmd\n                    contents:\n                      - text: Editor Basics\n                        href: docs/visual-editor/index.qmd\n                      - docs/visual-editor/technical.qmd\n                      - docs/visual-editor/content.qmd\n                      - docs/visual-editor/options.qmd\n                      - docs/visual-editor/markdown.qmd\n              - section: \"VS Code\"\n                href: docs/tools/vscode.qmd\n                contents:\n                  - text: \"VS Code Basics\"\n                    href: docs/tools/vscode.qmd\n                  - text: \"Visual Editor\"\n                    href: docs/visual-editor/vscode/index.qmd\n                  - text: \"Notebook Editor\"\n                    href: docs/tools/vscode-notebook.qmd\n                \n              - docs/tools/neovim.qmd\n              - docs/tools/text-editors.qmd\n          - section: \"Documents\"\n            contents:\n              - section: \"HTML\"\n                contents:\n                  - docs/output-formats/html-basics.qmd\n                  - docs/output-formats/html-code.qmd\n                  - docs/output-formats/html-themes.qmd\n                  - docs/output-formats/html-multi-format.qmd\n                  - docs/output-formats/html-publishing.qmd\n              - section: \"PDF\"\n                contents:\n                  - docs/output-formats/pdf-basics.qmd\n                  - docs/output-formats/pdf-engine.qmd\n              - section: \"MS Word\"\n                contents:\n                  - docs/output-formats/ms-word.qmd\n                  - docs/output-formats/ms-word-templates.qmd\n              - section: \"Markdown\"\n                contents:\n                  - docs/output-formats/gfm.qmd\n                  - docs/output-formats/hugo.qmd\n                  - docs/output-formats/docusaurus.qmd\n              - docs/output-formats/all-formats.qmd\n          - section: \"Presentations\"\n            contents:\n              - text: \"Overview\"\n                href: docs/presentations/index.qmd\n              - section: docs/presentations/revealjs/index.qmd\n                contents:\n                  - text: \"Reveal Basics\"\n                    href: docs/presentations/revealjs/index.qmd\n                  - docs/presentations/revealjs/presenting.qmd\n                  - docs/presentations/revealjs/advanced.qmd\n                  - docs/presentations/revealjs/themes.qmd\n              - docs/presentations/powerpoint.qmd\n              - docs/presentations/beamer.qmd\n          - section: \"Websites\"\n            href: docs/websites/website-basics.qmd\n            contents:\n              - docs/websites/website-basics.qmd\n              - docs/websites/website-navigation.qmd\n              - docs/websites/website-blog.qmd\n              - docs/websites/website-search.qmd\n              - docs/websites/website-tools.qmd\n              - docs/websites/website-about.qmd\n              - section: \"Listing Pages\"\n                href: docs/websites/website-listings.qmd\n                contents:\n                  - docs/websites/website-listings.qmd\n                  - docs/websites/website-listings-custom.qmd\n          - section: \"Books\"\n            href: docs/books/book-basics.qmd\n            contents:\n              - docs/books/book-basics.qmd\n              - docs/books/book-structure.qmd\n              - docs/books/book-crossrefs.qmd\n              - text: \"Customizing Output\"\n                href: docs/books/book-output.qmd\n          - section: \"Interactivity\"\n            contents:\n              - text: \"Overview\"\n                href: docs/interactive/index.qmd\n              - section: docs/interactive/ojs/index.qmd\n                contents:\n                  - text: \"Introduction\"\n                    href: docs/interactive/ojs/index.qmd\n                  - docs/interactive/ojs/libraries.qmd\n                  - docs/interactive/ojs/data-sources.qmd\n                  - docs/interactive/ojs/ojs-cells.qmd\n                  - docs/interactive/ojs/shiny.qmd\n                  - docs/interactive/ojs/code-reuse.qmd\n                  - section: \"Examples\"\n                    contents:\n                      - docs/interactive/ojs/examples/penguins.qmd\n                      - docs/interactive/ojs/examples/sunburst.qmd\n                      - docs/interactive/ojs/examples/arquero.qmd\n                      - docs/interactive/ojs/examples/population.qmd\n                      - docs/interactive/ojs/examples/noaa-co2.qmd\n                      - docs/interactive/ojs/examples/github.qmd\n                      - docs/interactive/ojs/examples/layout.qmd\n                      - section: \"Shiny\"\n                        contents:\n                          - text: \"K-Means\"\n                            href: https://jjallaire.shinyapps.io/kmeans-shiny-ojs/\n                          - text: \"Binning\"\n                            href: https://jjallaire.shinyapps.io/binning-shiny-ojs/\n                          - text: \"Data Binding\"\n                            href: https://jjallaire.shinyapps.io/data-shiny-ojs/\n                          - text: \"Covid Map\"\n                            href: https://jjallaire.shinyapps.io/covid19-bicartogram/\n              - section: docs/interactive/shiny/index.qmd\n                contents:\n                  - text: \"Introduction\"\n                    href: docs/interactive/shiny/index.qmd\n                  - docs/interactive/shiny/running.qmd\n                  - docs/interactive/shiny/execution.qmd\n                  - docs/interactive/shiny/resources.qmd\n                  - section: \"Examples\"\n                    contents:\n                      - text: \"Old Faithful\"\n                        href: https://jjallaire.shinyapps.io/shiny-old-faithful/\n                      - text: \"K-Means\"\n                        href: https://jjallaire.shinyapps.io/shiny-k-means/\n                      - text: \"Diamonds\"\n                        href: https://jjallaire.shinyapps.io/shiny-diamonds/\n              - section: \"Widgets\"\n                contents:\n                  - docs/interactive/widgets/jupyter.qmd\n                  - docs/interactive/widgets/htmlwidgets.qmd\n              - docs/interactive/layout.qmd\n          - section: \"Publishing\"\n            contents:\n              - docs/publishing/index.qmd\n              - docs/publishing/quarto-pub.qmd\n              - docs/publishing/github-pages.qmd\n              - docs/publishing/rstudio-connect.qmd\n              - docs/publishing/netlify.qmd\n              - docs/publishing/confluence.qmd\n              - docs/publishing/other.qmd\n              - text: \"Publishing with CI\"\n                href: docs/publishing/ci.qmd\n          - section: \"Projects\"\n            contents:\n              - docs/projects/quarto-projects.qmd\n              - docs/projects/code-execution.qmd\n              - docs/projects/profiles.qmd\n              - docs/projects/environment.qmd\n              - docs/projects/scripts.qmd\n              - docs/projects/virtual-environments.qmd\n          - section: \"Advanced\"\n            contents:\n              - docs/authoring/includes.qmd\n              - docs/authoring/variables.qmd\n              - docs/output-formats/page-layout.qmd\n              - docs/authoring/language.qmd\n              - docs/authoring/conditional.qmd\n              - docs/extensions/nbfilter.qmd\n    - id: extensions\n      title: \"Extensions\"\n      contents:\n        - \"---\"\n        - section: docs/extensions/index.qmd\n          contents: \n            - text: \"Shortcodes & Filters\"\n              href: docs/extensions/listing-filters.qmd\n            - text: \"Journal Articles\"\n              href: docs/extensions/listing-journals.qmd\n            - text: \"Custom Formats\"\n              href: docs/extensions/listing-formats.qmd\n            - text: \"Revealjs Extensions\"\n              href: docs/extensions/listing-revealjs.qmd\n            - docs/extensions/managing.qmd\n        - \"---\"\n        - section: docs/extensions/creating.qmd\n          contents:\n            - text: \"Overview\"\n              href: docs/extensions/creating.qmd\n            - docs/extensions/lua.qmd\n            - docs/extensions/lua-api.qmd\n            - text: \"Distribution\"\n              href: docs/extensions/distributing.qmd\n            - \"---\"\n            - text: \"Shortcodes\"\n              href: docs/extensions/shortcodes.qmd\n            - text: \"Filters\"\n              href: docs/extensions/filters.qmd\n            - section: \"Journal Articles\"\n              href: docs/journals/formats.qmd\n              contents:\n                - docs/journals/formats.qmd\n                - docs/journals/templates.qmd\n                - docs/journals/authors.qmd\n            - docs/extensions/formats.qmd\n            - docs/extensions/revealjs.qmd\n            - docs/extensions/project-types.qmd\n            - docs/extensions/starter-templates.qmd\n    - id: manuscripts\n      title: \"Manuscripts\"\n      style: \"floating\"\n      collapse-level: 2\n      align: left\n      contents:\n        - text: Manuscripts Overview\n          href: docs/manuscripts/index.qmd\n        - text: \"Authoring Manuscripts\"\n          contents: \n            - text: Jupyter Lab\n              href: docs/manuscripts/authoring/jupyterlab.qmd\n            - text: VS Code\n              href: docs/manuscripts/authoring/vscode.qmd\n            - text: RStudio\n              href: docs/manuscripts/authoring/rstudio.qmd\n        - text: \"Publishing Manuscripts\"\n          href: docs/manuscripts/publishing.qmd\n        - text: \"Next Steps\"\n          href: docs/manuscripts/next-steps.qmd\n        - text: \"---\"\n        - text: \"Manuscript Components\"\n          href: docs/manuscripts/components.qmd\n          \n        \n    - id: reference\n      title: \"Reference\"\n      collapse-level: 3\n      contents:\n        - section: \"Reference\"\n          href: docs/reference/index.qmd\n          contents:\n          - section: \"Formats\"\n            contents:\n              - text: \"HTML\"\n                href: docs/reference/formats/html.qmd\n              - text: \"PDF\"\n                href: docs/reference/formats/pdf.qmd\n              - text: \"MS Word\"\n                href: docs/reference/formats/docx.qmd\n              - text: \"OpenOffice\"\n                href: docs/reference/formats/odt.qmd\n              - text: \"ePub\"\n                href: docs/reference/formats/epub.qmd\n              - section: \"Presentations\"\n                contents:\n                  - text: \"Revealjs\"\n                    href: docs/reference/formats/presentations/revealjs.qmd\n                  - text: \"PowerPoint\"\n                    href: docs/reference/formats/presentations/pptx.qmd\n                  - text: \"Beamer\"\n                    href: docs/reference/formats/presentations/beamer.qmd\n              - section: \"Markdown\"\n                contents:\n                  - text: \"GitHub\"\n                    href: docs/reference/formats/markdown/gfm.qmd\n                  - text: \"CommonMark\"\n                    href: docs/reference/formats/markdown/commonmark.qmd\n                  - text: \"Markua\"\n                    href: docs/reference/formats/markdown/markua.qmd\n              - section: \"Wikis\"\n                contents:\n                  - text: \"MediaWiki\"\n                    href: docs/reference/formats/wiki/mediawiki.qmd\n                  - text: \"DokuWiki\"\n                    href: docs/reference/formats/wiki/dokuwiki.qmd\n                  - text: \"ZimWiki\"\n                    href: docs/reference/formats/wiki/zimwiki.qmd\n                  - text: \"Jira Wiki\"\n                    href: docs/reference/formats/wiki/jira.qmd\n                  - text: \"XWiki\"\n                    href: docs/reference/formats/wiki/xwiki.qmd\n              - section: \"More Formats\"\n                contents:\n                  - text: \"JATS\"\n                    href: docs/reference/formats/jats.qmd\n                  - text: \"Jupyter\"\n                    href: docs/reference/formats/ipynb.qmd\n                  - text: \"ConTeXt\"\n                    href: docs/reference/formats/context.qmd\n                  - text: \"RTF\"\n                    href: docs/reference/formats/rtf.qmd\n                  - text: \"reST\"\n                    href: docs/reference/formats/rst.qmd\n                  - text: \"AsciiDoc\"\n                    href: docs/reference/formats/asciidoc.qmd\n                  - text: \"Org-Mode\"\n                    href: docs/reference/formats/org.qmd\n                  - text: \"Muse\"\n                    href: docs/reference/formats/muse.qmd\n                  - text: \"GNU TexInfo\"\n                    href: docs/reference/formats/texinfo.qmd\n                  - text: \"Groff Man Page\"\n                    href: docs/reference/formats/man.qmd\n                  - text: \"Groff Manuscript\"\n                    href: docs/reference/formats/ms.qmd\n                  - text: \"Haddock markup\"\n                    href: docs/reference/formats/haddock.qmd\n                  - text: \"OPML\"\n                    href: docs/reference/formats/opml.qmd\n                  - text: \"Textile\"\n                    href: docs/reference/formats/textile.qmd\n                  - text: \"DocBook\"\n                    href: docs/reference/formats/docbook.qmd\n                  - text: \"InDesign\"\n                    href: docs/reference/formats/icml.qmd\n                  - text: \"TEI Simple\"\n                    href: docs/reference/formats/tei.qmd\n                  - text: \"FictionBook\"\n                    href: docs/reference/formats/fb2.qmd\n          - section: \"Code Cells\"\n            href: docs/reference/cells/index.qmd\n            contents:\n              - text: \"Jupyter\"\n                href: docs/reference/cells/cells-jupyter.qmd\n              - text: \"Knitr\"\n                href: docs/reference/cells/cells-knitr.qmd\n              - text: \"Observable\"\n                href: docs/reference/cells/cells-ojs.qmd\n          - section: \"Projects\"\n            contents:\n              - text: \"Options\"\n                href: docs/reference/projects/options.qmd\n              - text: \"Websites\"\n                href: docs/reference/projects/websites.qmd\n              - text: \"Books\"\n                href: docs/reference/projects/books.qmd\n          - section: \"More\"\n            contents:\n              - text: \"Dates\"\n                href: docs/reference/dates.qmd\n              - text: \"Globs\"\n                href: docs/reference/globs.qmd\n              - text: \"Citations\"\n                href: docs/reference/metadata/citation.qmd\n    - id: prerelease\n      title: \"Quarto 1.3\"\n      contents:\n        - section: \"Highlights\"\n          href: docs/prerelease/1.3/index.qmd\n          contents:\n            - text: \"Confluence Publishing\"\n              href: docs/publishing/confluence.qmd\n            - text: \"Multi-Format\"\n              href: docs/output-formats/html-multi-format.qmd\n            - text: \"Cell Embedding\"\n              href: docs/authoring/notebook-embed.qmd\n            - text: \"Grid Customization\"\n              href: docs/output-formats/page-layout.qmd#grid-customization\n            - text: \"Code Annotation\"\n              href: docs/authoring/code-annotation.qmd\n            - section: \"Quarto AST\"\n              href: docs/prerelease/1.3/ast.qmd\n              contents:\n                - text: Callouts\n                  href: docs/prerelease/1.3/custom-ast-nodes/callout.qmd\n                - text: Tabsets\n                  href: docs/prerelease/1.3/custom-ast-nodes/tabset.qmd\n                - text: Conditional Blocks\n                  href: docs/prerelease/1.3/custom-ast-nodes/conditional-block.qmd\n            - text: \"Mermaid Theming\"\n              href: docs/authoring/diagrams.qmd#mermaid-theming\n            - text: \"PDF Images\"\n              href: docs/prerelease/1.3/pdf.qmd\n            - text: \"`kbd` Shortcode\"\n              href: docs/authoring/markdown-basics.qmd#keyboard-shortcuts\n\nbibliography: references.bib\n\nformat:\n  html:\n    toc: true\n    theme:\n      light: [cosmo, theme.scss]\n    code-copy: true\n    code-overflow: wrap\n    css: styles.css\n    include-after-body: js.html\n    grid:\n      sidebar-width: 250px\n      body-width: 900px\n      margin-width: 300px\n\nfilters:\n  - filters/tools-tabset.lua\n\nfreeze: true\n\neditor: visual\n\nprofile:\n  group: \n    - [prerelease,rc]"
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n  resources:\n    - images/python-logo.png\n\nwebsite:\n  page-navigation: true\n  title: \"From Notebooks to Dashboards with Quarto\"\n  description: \"Small Data SF - From Notebooks to Dashboards with Quarto Workshop\"\n\n  repo-url: https://github.com/posit-dev/small-data-sf-quarto-workshop\n  repo-actions: [edit, issue]\n\n  open-graph: true\n\n  sidebar:\n    background: \"#FF6349\"\n    logo: \"images/logo.png\"\n    pinned: true\n    align: center\n    tools:\n      - icon: github\n        href: https://github.com/posit-dev/small-data-sf-quarto-workshop\n        text: \"GitHub\"\n      - icon: code-square\n        href: https://posit.cloud\n        text: \"Posit Cloud\"\n\n    style: docked\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: setup.qmd\n        text: Setup\n      - section: \"Modules\"\n        contents:\n          - href: 0-intro-to-quarto/index.qmd\n          - href: 1-hello-dashboards/index.qmd\n          - href: 2-components-theming/index.qmd\n          - href: 3-deployment/index.qmd\n\n\n  page-footer:\n    right: \"This page is built with 🩷 and [Quarto](https://quarto.org/).\"\n    left: \"&copy; Copyright 2024\"\n    background: \"#FF6A8A\"\n\nformat:\n  html:\n    theme:\n      light: [cosmo, style/light.scss]\n      dark: [cosmo, style/light.scss, style/dark.scss]\n    linkcolor: \"#FF75EF\"\n    toc: true\n    code-copy: true\n    code-overflow: wrap\n    mainfont: \"Space Grotesk\"\n  \nexecute:\n  freeze: auto\n  echo: true\n\neditor: source"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-projects",
@@ -652,7 +652,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
     "title": "Intro to Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site.\n\nNot inspired to generate content? Feel free to copy the contents of https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed/blob/main/posts/islands-species.ipynb.\n\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site.\nRe-publish on GitHub pages with quarto publish.\n\n\n\n\n\n−+\n10:00"
+    "text": "Your turn\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\nSee full instructions under Setup: pos.it/smalldatasf-quarto-workshop\nThen: In VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert.\nPreview the .qmd file."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#listings-1",
@@ -882,7 +882,7 @@
     "href": "0-intro-to-quarto/index.html#exercises",
     "title": "Intro to Quarto",
     "section": "Exercises",
-    "text": "Exercises\n\nR:\n\nOption 1 - Cloud: Go to Posit Cloud for the workshop, open project titled 1 - Hello, Dashboards!.\nOption 2 - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-r-1.qmd.\n\nPython - Local: Clone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-1.qmd.",
+    "text": "Exercises\n\nUse the template pos.it/smalldatasf-quarto-exercises (&lt;hhttps://pos.it/smalldatasf-quarto-exercises&gt;) and work on olympicdash-0.ipynb.",
     "crumbs": [
       "Modules",
       "Intro to Quarto"
@@ -999,7 +999,7 @@
     "href": "index.html#instructors",
     "title": "From Notebooks to Dashboards with Quarto",
     "section": "Instructor(s)",
-    "text": "Instructor(s)\nIsabella Velásquez is a Senior Product Marketing Manager at Posit Software, where she develops strategic content to increase brand visibility and drive product adoption. With a background in data analysis, reporting, and visualization using tools like R, SQL, and Python, Isabella has honed her skills across multiple industries, including her previous role at the Bill & Melinda Gates Foundation. She holds an MS in Analytics and a BA in Economics and East Asian Languages and Civilizations from the University of Chicago. Isabella is also an educator, sharing her expertise in data science as an instructor and teaching assistant at the University of Tennessee, Knoxville and the University of Chicago.\n[Sara Altman] is a Data Science Educator at Posit on the Developer Relations team. She creates technical content to help developers and data scientists achieve their goals with Posit tools. Prior to joining the Developer Relations team, she worked on Posit Academy, Posit’s educational platform. Before Posit, Sara taught data science and R at Stanford. She holds a MS and BS in Symbolic Systems from Stanford.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "text": "Instructor(s)\nIsabella Velásquez is a Senior Product Marketing Manager at Posit Software, where she develops strategic content to increase brand visibility and drive product adoption. With a background in data analysis, reporting, and visualization using tools like R, SQL, and Python, Isabella has honed her skills across multiple industries, including her previous role at the Bill & Melinda Gates Foundation. She holds an MS in Analytics and a BA in Economics and East Asian Languages and Civilizations from the University of Chicago. Isabella is also an educator, sharing her expertise in data science as an instructor and teaching assistant at the University of Tennessee, Knoxville and the University of Chicago.\nSara Altman is a Data Science Educator at Posit on the Developer Relations team. She creates technical content to help developers and data scientists achieve their goals with Posit tools. Prior to joining the Developer Relations team, she worked on Posit Academy, Posit’s educational platform. Before Posit, Sara taught data science and R at Stanford. She holds a MS and BS in Symbolic Systems from Stanford.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
     "crumbs": [
       "Home"
     ]
@@ -1621,7 +1621,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#setup-continued",
     "title": "Intro to Quarto",
     "section": "Setup, continued",
-    "text": "Setup, continued\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\n\n\n\nLet’s get started!"
+    "text": "Setup, continued\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
@@ -1635,20 +1635,188 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
     "title": "Intro to Quarto",
     "section": "Converting notebooks",
-    "text": "Converting notebooks\nYou can convert between .ipynb and .qmd representations of a notebook using the quarto convert command.\nFor example:\n\n\nTerminal\n\nquarto convert basics-jupyter.ipynb # converts to qmd\nquarto convert basics-jupyter.qmd   # converts to ipynb"
+    "text": "Converting notebooks\nYou can convert between .ipynb and .qmd representations of a notebook using the quarto convert command.\nFor example:\n\n\nTerminal\n\nquarto convert my-document.ipynb # converts to qmd\nquarto convert my-document.qmd   # converts to ipynb"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"My first Quarto dashboard\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nradius = 5\n```\n\nThe radius of the circle is `{python} radius`\n\nResults in:\nThe radius of the circle is 5."
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
+    "title": "Intro to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nradius = 5\n```\n\nThe radius of the circle is `{python} radius`\n\nResults in:\nThe radius of the circle is 5."
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
+    "title": "Intro to Quarto",
+    "section": "Quarto VS Code extension",
+    "text": "Quarto VS Code extension\n\n\nIntegrated render and preview for Quarto documents.\nSyntax highlighting for markdown and embedded languages\nCompletion and diagnostics for YAML options\nCompletion for embedded languages (e.g. Python, R, Julia, etc.)\nCommands and key-bindings for running cells and selected lines"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#rendering-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#rendering-1",
+    "title": "Intro to Quarto",
+    "section": "Rendering",
+    "text": "Rendering\nin VS Code\n\nOption 1: In the Terminal via quarto render\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
+    "title": "Intro to Quarto",
+    "section": "Previewing and rendering",
+    "text": "Previewing and rendering"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-1",
+    "title": "Intro to Quarto",
+    "section": "Previewing and rendering",
+    "text": "Previewing and rendering"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-2",
+    "title": "Intro to Quarto",
+    "section": "Previewing and rendering",
+    "text": "Previewing and rendering"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing",
+    "title": "Intro to Quarto",
+    "section": "Previewing",
+    "text": "Previewing\nin VS Code\n\nOption 1: In the Terminal via quarto preview\n\n\n\nTerminal\n\nquarto preview my-document.qmd\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto-1",
+    "title": "Intro to Quarto",
+    "section": "A tour of Quarto",
+    "text": "A tour of Quarto\n\n\nUnderstanding the relationship between Quarto and the Jupyter engine\nUsing Quarto in VS Code\nCreating Quarto documents (metadata, markdown text, and code)\nWorking with Quarto projects"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#images-and-links",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#images-and-links",
+    "title": "Intro to Quarto",
+    "section": "Images and links",
+    "text": "Images and links\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![](penguin.jpg)"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#tables",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#tables",
+    "title": "Intro to Quarto",
+    "section": "Tables",
+    "text": "Tables\nTables\n```{markdown}\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|    12 | 12   | 12      |   12   |\n|   123 | 123  | 123     |  123   |\n|     1 | 1    | 1       |   1    |\n```\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-and-spans",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-and-spans",
+    "title": "Intro to Quarto",
+    "section": "Divs and Spans",
+    "text": "Divs and Spans\nYou can add classes, attributes, and other identifiers to content using Divs and Spans.\nDivs\n::: {.border}\nThis content can be styled with a border\n:::\nSpans\n[This is *some text*]{.class key=\"val\"}"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#callout-blocks",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#callout-blocks",
+    "title": "Intro to Quarto",
+    "section": "Callout blocks",
+    "text": "Callout blocks\n:::{.callout-tip}\n\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\nTip\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#tabsets",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#tabsets",
+    "title": "Intro to Quarto",
+    "section": "Tabsets",
+    "text": "Tabsets\n```{markdown}\n::: {.panel-tabset group=\"language\"}\n## R\n\n`library(dplyr)`\n\n## Python\n\n`import pandas as pd`\n:::\n```\n\nRPython\n\n\nlibrary(dplyr)\n\n\nimport pandas as pd"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs",
+    "title": "Intro to Quarto",
+    "section": "Divs",
+    "text": "Divs\nCallout blocks\n\n\nmy-document.qmd\n\n:::{.callout-tip}\n\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nTip\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
+    "title": "Intro to Quarto",
+    "section": "Divs",
+    "text": "Divs\nMultiple columns\n\n\nmy-document.qmd\n\n::: {layout-ncol=2}\n\n![](penguin.jpg)\n\nPhoto by &lt;a href=\"https://unsplash.com/@corneliusventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Cornelius Ventures&lt;/a&gt; on &lt;a href=\"https://unsplash.com/s/photos/penguin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Unsplash&lt;/a&gt;\n:::\n\n\n\n\n\n\n\n\n\n\n\nPhoto by Cornelius Ventures on Unsplash"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
+    "title": "Intro to Quarto",
+    "section": "Divs",
+    "text": "Divs\nTabsets\n\n\nmy-document.qmd\n\n::: {.panel-tabset group=\"language\"}\n## R\n\n`library(dplyr)`\n\n## Python\n\n`import pandas as pd`\n:::\n\n\nRPython\n\n\nlibrary(dplyr)\n\n\nimport pandas as pd"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#spans",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#spans",
+    "title": "Intro to Quarto",
+    "section": "Spans",
+    "text": "Spans\n\n\nmy-document.qmd\n\nThis is text that is [red]{style=\"color:red;\"}.\n\n\nThis is text that is red.\n\n\nmy-document.qmd\n\n![](penguin.jpg){fig-alt=\"A photo of a penguin jumping\"}"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-2",
+    "title": "Intro to Quarto",
+    "section": "Your turn",
+    "text": "Your turn\nIn VS Code, open the olympicdash-0.qmd file.\n\n\nIn the YAML, add an author field and add your name.\nAdd some Markdown text to the document.\nFor one of the tables, add the chunk option echo: false.\nAdd this to the top of the plotnine chart to set the order of medal variable.\n\nolympics['medal'] = pd.Categorical(\n    olympics['medal'], \n    categories=[\"Gold\", \"Silver\", \"Bronze\"], \n    ordered=True\n)\n\nSave in between each step and see how the preview changes.\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#theming",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#theming",
+    "title": "Intro to Quarto",
+    "section": "Theming",
+    "text": "Theming\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\ntheme: sketchy\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-3",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-3",
+    "title": "Intro to Quarto",
+    "section": "Your turn",
+    "text": "Your turn\n\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\nEdit the Markdown text you wrote in the previous exercise so that one of the words is blue.\nAdd a code chunk cell with the option include: false. Use the dataset to find the most gold medals by team.\nUse inline code to write a sentence such as: “The most gold medals won by a single team are [count].”\nAdd a Div of your choice.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: pdf\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-1",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-2",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: pdf\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-3",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-3",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\ntheme: sketchy\n---"
   }
 ]
