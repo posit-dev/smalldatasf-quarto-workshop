@@ -147,20 +147,30 @@ We'll teach you
 ## Setup {.smaller}
 
 ::: task
-**1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
-
-**2. Software:** Download and install Python and the pre-release version of Quarto:
+**1. Software:** Download and install Python and the latest version of Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
 -   Quarto 1.5.57: <https://quarto.org/docs/get-started/>
 
-**3. Packages:** Install the following packages:
+**2. Tools:** Dowload and install VS Code and Jupyter and the Quarto extensions:
 
-``` {.bash filename="Terminal"}
-python3 -m pip install tabulate pandas seaborn plotnine
-```
+- VS Code: <https://code.visualstudio.com/>
+- Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
+- Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
-**4. Exercises:** Go to [`bit.ly/quarto-pydata-website`](https://bit.ly/quarto-pydata-website), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
+:::
+
+## Setup, continued {.smaller}
+
+::: task
+
+**3. Exercises:** Go to [`pos.it/smalldatasf-quarto-exercises`](https://pos.it/smalldatasf-quarto-exercises), click on *Use this template* then *Create a new repository*.
+
+**4. Packages:**  Open *VS Code*. Under *Start*, click on *Clone Git Repository*, and paste the URL of your exercise repo. 
+
+  * Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then choose the (latest) Python version you have installed. 
+  * Check the box for `requirements.txt` in the *Select dependencies to install* menu and hit *OK*.
+
 :::
 
 . . .
@@ -173,18 +183,34 @@ Let's get started!
 
 ## Quarto ...
 
-is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular mediums.
+is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular media.
 
 ![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst-quarto-schematic.png){fig-alt="A schematic representing the multi-language input (e.g. Python, R, Observable, Julia) and multi-format output (e.g. PDF, html, Word documents, and more) versatility of Quarto." fig-align="center"}
 
 ## With Quarto ...
 
-you can **weave** together **narrative** and **code** to produce elegantly formatted output as documents, web pages, blog posts, books and more, with...
+you can **weave** together **narrative** and **code** to produce elegantly formatted output such as documents, web pages, blog posts, books, dashboards, and more, with...
 
 ::: incremental
 -   **consistent** implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.
 -   defaults that meet accessibility guidelines as well as features that enable good practices for producing **accessible** documents
 -   natively **multi-lingual**, supporting for multiple languages like Python, Julia, Observable, and more via the Jupyter engine for executable code chunks
+:::
+
+## A pause
+
+::: task
+Where does the name "Quarto" come from?
+:::
+
+. . .
+
+
+[Quarto on Wikipedia](https://en.wikipedia.org/wiki/Quarto){preview-link="true"}
+
+
+::: aside
+Source: <https://en.wikipedia.org/wiki/Quarto>
 :::
 
 ## A tour of Quarto
@@ -201,7 +227,7 @@ Sit back and enjoy!
 -   Lightbox effect
 :::
 
-# How it Works
+# How it works
 
 ## Revisit: What is Quarto? {.smaller}
 
@@ -312,7 +338,7 @@ return {
 
 # Quarto formats
 
-## One install, "Batteries included"
+## One install, "Batteries included" {.smaller}
 
 -   Quarto comes **"batteries included"** straight out of the box:
 
@@ -326,7 +352,7 @@ return {
 
     -   Books
 
-    -   Manuscripts
+    -   Dashboards
 
     -   ...
 
@@ -348,42 +374,9 @@ return {
 | Books            | [Quarto Books](https://quarto.org/docs/books/)                                                                                                                                              |
 | Interactivity    | [Quarto Interactive Documents](https://quarto.org/docs/interactive/shiny/)                                                                                                                  |
 | Journal Articles | [Journal Articles](https://quarto.org/docs/journals/index.html)                                                                                                                             |
-| Dashboards       | More on this on Friday's keynote!                                                                                                                                                           |
+| Dashboards       | [Dashboards](https://quarto.org/docs/dashboards/)                                                                                                                                                           |
 
 : {tbl-colwidths="\[25,75\]"}
-
-## Your turn
-
-::: task
-In VS Code, open the `hello-penquins.ipynb` file. Render the document to HTML.
-
--   In the YAML: Add an `author` field and add your name.
-
--   Add a markdown cell and write some text.
-
--   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.
-
--   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
-:::
-
-```{r}
-countdown(minutes = 10)
-```
-
-## A pause
-
-::: task
-Where does the name "Quarto" come from?
-:::
-
-. . .
-
-```{=html}
-<iframe src="https://en.wikipedia.org/wiki/Quarto" title = "Quarto on Wikipedia" frameborder="1" height="450" width="900"></iframe>
-```
-::: aside
-Source: <https://en.wikipedia.org/wiki/Quarto>
-:::
 
 # Documents to projects
 
@@ -448,7 +441,7 @@ Quarto enables you to weave together content and executable code.
 
 **Code**
 
-````md
+````{.markdown code-line-numbers=|8-16}
 ```
 title: "My first Quarto dashboard"
 format: html
@@ -475,7 +468,7 @@ from plotnine.data import mpg
 :::: columns
 ::: {.column}
 
-````md
+````{.markdown code-line-numbers=8-16}
 ```
 title: "My first Quarto dashboard"
 format: html
@@ -508,31 +501,7 @@ from plotnine.data import mpg
 
 **Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
 
-````md
-```
-title: "My first Quarto dashboard"
-format: html
-```
-
-Quarto enables you to weave together content and executable code.
-
-```{{python}}
-from plotnine import ggplot, aes, geom_point
-from plotnine.data import mpg
-
-(
-    ggplot(mpg, aes(x = "cty", y = "hwy"))
-    + geom_point()
-)
-```
-
-````
-
-## Anatomy of a Quarto document
-
-**Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
-
-````md
+````{.markdown code-line-numbers=|9}
 ```
 title: "My first Quarto dashboard"
 format: html
@@ -557,7 +526,7 @@ from plotnine.data import mpg
 
 **Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
 
-````md
+````{.markdown code-line-numbers=9-10}
 ```
 title: "My first Quarto dashboard"
 format: html
@@ -578,6 +547,24 @@ from plotnine.data import mpg
 ```
 
 ````
+
+## Your turn
+
+::: task
+In VS Code, open the `olympicdash-0.ipynb` file. Render the document to HTML.
+
+-   In the YAML: Add an `author` field and add your name.
+
+-   Add a markdown cell and write some text.
+
+-   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.
+
+-   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
+:::
+
+```{r}
+countdown(minutes = 10)
+```
 
 ## Anatomy of a Quarto project
 
@@ -1226,160 +1213,9 @@ Let's build a website that features the Jupyter notebook we worked on and highli
 countdown(minutes = 10)
 ```
 
-# Listings
-
-## Listings
-
--   Listings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data
-
--   Useful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed
-
-## Blogs
-
-::: demo
-Let's now add a blog component to our website:
-
--   Move your two notebook files into a new a folder called `posts`.
--   Collect these notebooks in a new blog page using the [listings feature](https://quarto.org/docs/websites/website-listings.html).
-    -   Don't forget to make corresponding changes in your `_quarto.yml` file.
-:::
-
-## Customizing your blog
-
-::: task
-Experiment with the style of listings and choose one you like.
-:::
-
-```{r}
-#| echo: false
-
-countdown(minutes = 5)
-```
-
-# Computations
-
-## When should code be re-run? {.smaller}
-
-::: incremental
--   You might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website.
-
--   But, chances are, that's not what you want.
-
-    -   Just playing around styling -- you probably don't want to run the code again
-
-    -   Changed some code in a document -- you probably want to re-run the code in that document, but not necessarily others
-
-    -   Made a big change affecting computations on many or all pages -- you probably want to re-run all code
-
--   `freeze` and `cache` options give you fine control over these decisions
-:::
-
-## Freeze {.smaller}
-
--   The `freeze` option controls when/if computational documents be re-rendered during a global project render:
-
-``` yaml
-execute:
-  freeze: true  # never re-render during project render
-```
-
-``` yaml
-execute:
-  freeze: auto  # re-render only when source changes
-```
-
-``` yaml
-execute:
-  freeze: false  # always re-render
-```
-
--   The `freeze` option is typically added to a `_metadata.yml` file within a specific directory, affecting all files in that directory.
-
--   For blogs, set `feeze` in `_metadata.yml` at the root of the `posts` directory.
-
--   You can have it only within specific subdirectories for more complex sites.
-
-## Freeze and Jupyter notebooks
-
-- When rendering an `.ipynb`, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook
-
-- To execute the cells, pass the `--execute` flag to render:
-
-``` {.bash filename="Terminal"}
-quarto render notebook.ipynb --execute
-```
-
-- Or specify this behavior within the notebook’s YAML front matter:
-
-``` yaml
----
-execute:
-  enabled: true
----
-```
-
-## Cache
-
--   Cache stores the results of computations for a specific file
-
--   Cache invalidation is triggered by changes in chunk source code (or other cache attributes you've defined)
-
--   `cache` can also be set at the chunk level, particularly useful for computationally expensive chunks
-
-## Freeze vs. cache {.smaller}
-
--   Freeze option is typically set
-
-    -   for the whole website in `_quarto.yml`, or
-
-    -   for files within a directory in `_metadata.yml` in that directory
-
-``` yaml
-execute: 
-  freeze: auto
-```
-
--   Cache option is typically set for a given file or for individual chunk(s) in a file.
-
-``` yaml
-execute:
-  cache: true
-```
-
-or
-
-```{r}
-#| echo: fenced
-#| cache: true
-
-1 + 1
-```
-
-## Freezing
-
-::: demo
-Add a `_metadata.yml` file to the `posts` directory of your website and update the YAML front matter of your blog posts to execute the cells when `quarto render`ing.
-:::
-
 # Wrap up
 
-## Learn more
 
-::: learn-more
-[quarto.org/docs/websites](https://quarto.org/docs/websites/)
-
-```{=html}
-<iframe src="https://quarto.org/docs/websites" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Journal Articles"></iframe>
-```
-:::
-
-## Links for reviewing tutorial materials
-
-- Slides: <https://bit.ly/quarto-pydata>
-  - If you're interested, source code for slides: <https://github.com/mine-cetinkaya-rundel/quarto-pydata-slides>
-- Starter repo: <https://github.com/mine-cetinkaya-rundel/quarto-pydata-website>
-- Complete repo: <https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed>
-  - Published website: <https://mine-cetinkaya-rundel.github.io/quarto-pydata-website-completed> 
 
 ##  {menu="thank you" background-image="images/thank-you.png"}
 
@@ -1390,13 +1226,3 @@ thank you!
 ::: large
 any questions?
 :::
-
-<br>
-       
-{{< fa brands github >}} [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel) \
-{{< fa brands mastodon >}} [fosstodon.org/@minecr](https://fosstodon.org/@minecr)
-
-## Acknowledgements
-
-- Artwork by Allison Horst: <https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote>
-- Code examples from `palmerpenguins`: <https://github.com/mcnakhaee/palmerpenguins>

@@ -1,7 +1,7 @@
 /*-- scss:defaults --*/
 
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Space+Grotesk:wght@300..700&display=swap&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Space+Grotesk:wght@300..700&display=swap&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $font-family-sans-serif: "Space Grotesk", sans-serif;
 $font-family-monospace: "Inconsolata", monospace;
@@ -52,26 +52,27 @@ details>summary {
 }
 
 .reveal .hand {
-  font-family: 'Satisfy', cursive;
-  font-size: 1.2em
+  font-family: 'Montserrat';
+  weight: 900;
 }
 
 .reveal .hand-green {
-  font-family: 'Satisfy', cursive;
-  color: #48A098;
+  font-family: 'Montserrat';
+  color: #000;
   font-size: 1.2em
 }
 
 .reveal .hand-green-large {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Montserrat';
   color: #48A098;
   font-size: 3em
 }
 
 .reveal .hand-blue-large {
-  font-family: 'Satisfy', cursive;
-  color: #2F1DF5;
-  font-size: 3em
+  font-family: 'Montserrat';
+  font-weight: 900;
+  color: #FFF;
+  font-size: 1.2em
 }
 
 .reveal .hand-green {

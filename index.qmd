@@ -11,7 +11,12 @@ subtitle: "Small Data SF"
 
 ## Schedule
 
-[to add]
+| Time          | Activity                                                                            |
+|:--------------|:------------------------------------------------------------------------------------|
+| 13:00 - 14:25 | [Intro to Quarto](0-intro-to-quarto/)                                           |
+| 14:25 - 14:30 | ☕ *Break*                                                                   |
+| 14:30 - 15:50 | Quarto Dashboards                                    |
+| 15:50 - 16:00 | Q & A                                                                        |
 
 ## Overview
 
