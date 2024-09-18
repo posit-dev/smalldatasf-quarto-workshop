@@ -2,12 +2,14 @@
 title: "Dashboard components and themes"
 subtitle: "Small Data SF"
 author:   
-  - name: Sara Altman and Isabella Velásquez
+  - name: Sara Altman
+    affiliations:
+      - name: Posit, PBC
+  - name: Isabella Velásquez
     affiliations:
       - name: Posit, PBC
 date: "2024-09-23"
-# TODO: fix link
-footer: "[pos.it/quarto-dashboards-24](https://pos.it/quarto-dashboards-24)"
+footer: "[pos.it/small-data-sf-quarto-workshop](https://pos.it/small-data-sf-quarto-workshop)"
 logo: "../images/slides-logo.png"
 format:
   revealjs:
@@ -527,66 +529,67 @@ Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/s
 
 Your goal is to create a dashboard that looks like the following:
 
-![](images/olympicdash-r-2.png)
+![](images/olympicdash-2.png)
 
 ## Step 1 {.smaller}
 
 ::: your-turn
--   Add two pages - one for Summer Olympics and one for Winter Olympics.
--   Duplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.
-:::
-
-![](images/olympicdash-r-2-step-1.png)
-
-{{< countdown minutes=5 >}}
-
-## Step 2 {.smaller}
-
-::: your-turn
-In the Summer Olympics page:
 
 -   Make the columns 65% (first) and 35% (second) of width of the dashboard.
 -   Divide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.
 -   In the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.
 :::
 
-![](images/olympicdash-r-2-step-2.png)
+![](images/olympicdash-2-step-1.png)
 
 {{< countdown minutes=5 >}}
+
+## Step 2 {.smaller}
+
+::: your-turn
+-   Divide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.
+-   In the first row of this second column, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the `award-fill` icon.
+:::
+
+::: callout-tip
+Use the code (commented with `TODO for Step 2`) at the bottom of the document to help you create the value boxes. Un-comment the code and move the code chunk to the appropriate location. Then, use the resulting variables to create the value boxes.   
+:::
+
+![](images/olympicdash-2-step-2.png)
+
+{{< countdown minutes=10 >}}
 
 ## Step 3 {.smaller}
 
 ::: your-turn
-In the Summer Olympics page:
 
--   Divide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.
--   In the second row of the second column, create tables (using **great_tables** for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
+-   In the second row of the second column, create tables (using the **great_tables** library) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
 -   Place these tables in tabsets with descriptive text about table content in the same card/tab.
 :::
 
-![](images/olympicdash-r-2-step-3.png)
+::: callout-tip
+Use the code (commented with `TODO for Step 3`) at the bottom of the document to help you create the tables. Un-comment the code and move the code chunk to the appropriate location. Then, use `olympics_sorted_descending_top30` and `olympics_sorted_ascending_bottom30` to create the tables.   
+:::
+
+![](images/olympicdash-2-step-3.png)
 
 {{< countdown minutes=10 >}}
 
-## Step 4 {.smaller}
+## Interactive plotting {.smaller}
 
-::: your-turn
-In the first row of the second column of the Summer Olympics page, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the `award-fill` icon.
+-   We've been creating static plots with `plotnine`
+-   But you can also add interactive plots to your dashboard, e.g., with `plotly`
+
+::: python-box
+🔗  [https://saraaltman.quarto.pub/olympicdash-plotly/](https://saraaltman.quarto.pub/olympicdash-plotly/)
 :::
 
-![](images/olympicdash-r-2-step-4.png)
 
-{{< countdown minutes=10 >}}
+## 
 
-## Step 5 {.smaller}
-
-::: your-turn
-Duplicate dashboard content for the Winter Olympics page, share your results with your neighbor, and discuss approaches for not repeating yourself in your code.
-:::
-
-![](images/olympicdash-r-2-step-5.png)
-
-{{< countdown minutes=5 >}}
+```{=html}
+<iframe src="https://saraaltman.quarto.pub/olympicdash-plotly/" title = "Olympic Games dashboard, with plotly"  height="900" width="1440"></iframe>
+```
 
 # Theming
 
@@ -653,17 +656,15 @@ Quarto dashboards can be styled with one of the 25 themes from the Bootswatch pr
 
 Your goal is to create a dashboard that looks like the following:
 
-![](images/olympicdash-py-3.png)
+![](images/olympicdash-3.png)
+
+## Step 1 {.smaller}
 
 ::: your-turn
 - Update the theme to the appropriate Bootswatch theme.
 :::
 
-::: callout-tip
-Work with your neighbor if you're having difficulty finding which theme to use.
-:::
-
-![](images/olympicdash-py-3.png)
+![](images/olympicdash-3.png)
 
 {{< countdown minutes=3 >}}
 
