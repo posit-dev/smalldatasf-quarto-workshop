@@ -41,25 +41,52 @@ quarto --version
 
 ##  {.no-line background-image="images/dashboards/customer-churn.png" background-size="contain"}
 
+::: {.notes}
+rows and columns
+value boxes
+multiple pages
+:::
+
 ##  {.no-line background-image="images/dashboards/dashing-through-snow.png" background-size="contain"}
+
+::: {.notes}
+sidebar
+:::
 
 ##  {.no-line background-image="images/dashboards/earthquakes.png" background-size="contain"}
 
+::: {.notes}
+interactive leaflet widget
+html widget
+:::
+
 ##  {.no-line background-image="images/dashboards/gapminder.png" background-size="contain"}
 
-##  {.no-line background-image="images/dashboards/housing-market.png" background-size="contain"}
-
-##  {.no-line background-image="images/dashboards/labor.png" background-size="contain"}
+::: {.notes}
+interactive plotly code
+:::
 
 ##  {.no-line background-image="images/dashboards/model-card.png" background-size="contain"}
 
+::: {.notes}
+dashboard for a model
+provides context into the model by adding narrative to the dashboard
+not just raw json dump
+:::
+
 ##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
 
-##  {.no-line background-image="images/dashboards/nfl-injuries.png" background-size="contain"}
-
-##  {.no-line background-image="images/dashboards/retirement.png" background-size="contain"}
+::: {.notes}
+tabset
+:::
 
 ##  {.no-line background-image="images/dashboards/shiny-penguins.png" background-size="contain"}
+
+::: {.notes}
+uses shiny for python
+select island and penguins and distributions will change
+can see all these dashboards and their code on the quarto website under gallery
+:::
 
 ##  {.no-line background-image="images/dashboards/stock-explorer.png" background-size="contain"}
 
@@ -73,10 +100,15 @@ quarto --version
 <iframe src="https://saraaltman.quarto.pub/olympic-games/" title = "Olympic Games dashboard" frameborder="1" height="575" width="1200"></iframe>
 ```
 
+::: {.notes}
+Walk through
+Click link to interact with the dashboard yourself
+:::
+
 ## Notebook ➝ Dashboard
 
 ::: python-box
-``` {.markdown filename="olympicdash-py.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
+``` {.markdown filename="olympicdash.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
 ---
 title: "Olympic Games"
 format: dashboard
@@ -86,11 +118,27 @@ format: dashboard
 ```
 :::
 
+::: {.notes}
+How did we create this dashboard? 
+One change to notebook
+format
+
+Once you done that
+Many components you can add
+all components offered in ipynb or plain text qmd
+:::
+
 # Dashboard basics
 
 ## Cards {auto-animate="true" auto-animate-easing="ease-in-out"}
 
 Dashboards are composed of **cards**.
+
+::: {.notes}
+cards are the basic building blocks of dashboards
+you often won't need to manually define a card -- they will typically map to cells in your notebook that create plots, display data, display text, etc.
+:::
+
 
 ::: r-hstack
 ::: {data-id="box1" auto-animate-delay="0" style="background: #FF6349; width: 200px; height: 150px; margin: 10px; border: 3px solid #000;"}
@@ -118,6 +166,11 @@ Cards are arranged into **rows** and **columns**.
 :::
 :::
 
+::: {.notes}
+to organize content 
+arrange into rows and columns
+:::
+
 ## Layouts {auto-animate="true" auto-animate-easing="ease-in-out"}
 
 **Pages**, **tabsets**, and **sidebars** allow for more advanced layouts.
@@ -136,6 +189,11 @@ Cards are arranged into **rows** and **columns**.
 :::
 :::
 
+::: {.notes}
+can also control the general layout of the page with things like pages, tabsets, and sidebars
+talk about this in the next slide deck
+:::
+
 ## Step-by-step
 
 Let's make a dashboard, step-by-step
@@ -145,7 +203,7 @@ Let's make a dashboard, step-by-step
 ## Step 1: `format: dashboard` {auto-animate="true"}
 
 ::: python-box
-``` {.yaml filename="dashboard-py.qmd"}
+``` {.yaml filename="dashboard.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -153,10 +211,14 @@ format: dashboard
 ```
 :::
 
+::: {.notes}
+first, need to add that format: dashboard line
+:::
+
 ## Step 2: Add a card {auto-animate="true"}
 
 ::: python-box
-```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|10-16"}
+```` {.yaml filename="dashboard.qmd" code-line-numbers="|10-16"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -176,12 +238,18 @@ from plotnine.data import mpg
 ````
 :::
 
+::: {.notes}
+now, add a card creating a plot
+this is plotnine code
+see what it looks like
+:::
+
 ## Step 2: Add a card {.smaller auto-animate="true"}
 
 ::: columns
 ::: {.column width="40%"}
 ::: python-box
-```` {.yaml filename="dashboard-py.qmd"}
+```` {.yaml filename="dashboard.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -210,7 +278,7 @@ from plotnine.data import mpg
 ## Step 3: Add another card {auto-animate="true"}
 
 ::: python-box
-```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|18-23"}
+```` {.yaml filename="dashboard.qmd" code-line-numbers="|18-23"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -242,7 +310,7 @@ from plotnine.data import mpg
 ::: columns
 ::: {.column width="40%"}
 ::: python-box
-```` {.yaml filename="dashboard-py.qmd"}
+```` {.yaml filename="dashboard.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -275,10 +343,14 @@ from plotnine.data import mpg
 :::
 :::
 
+::: {.notes}
+will appear below by default
+:::
+
 ## Step 4: Add titles to cards {auto-animate="true"}
 
 ::: python-box
-```` {.yaml filename="dashboard-py.qmd" code-line-numbers="|12,20"}
+```` {.yaml filename="dashboard.qmd" code-line-numbers="|12,20"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -309,10 +381,14 @@ from plotnine.data import mpg
 
 ## Step 4: Add titles to cards {.smaller auto-animate="true"}
 
+::: {.notes}
+add titles using the title option in the cell
+:::
+
 ::: columns
 ::: {.column width="40%"}
 ::: python-box
-```` {.yaml filename="dashboard-py.qmd"}
+```` {.yaml filename="dashboard.qmd"}
 ---
 title: "My first Quarto dashboard"
 format: dashboard
@@ -351,12 +427,16 @@ from plotnine.data import mpg
 
 ![](images/first-dashboard-py-3.png){fig-align="center"}
 
+::: {.notes}
+now have a dashboard
+:::
+
 # Your turn
 
 ## Start {.smaller}
 
 ::: python-box
-Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-1.qmd.`
+In your cloned version of `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>), open on `olympicdash-1.qmd.`
 :::
 
 ## Goal
@@ -388,13 +468,15 @@ Your goal is to create the following dashboard.
 ## Step 2
 
 ::: your-turn 
--   Add a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you're building).
+Using [https://quarto.org/docs/dashboards/](https://quarto.org/docs/dashboards/):
+
+-   Add a GitHub icon and link to a GitHub repository.
 -   Add the olympics logo from the `images` folder.
 :::
 
 :::{.column width="80%"}
 ::: python-box
-![](images/olympicdash-py-1.png)
+![](images/olympicdash-py-2.png)
 :::
 :::
 
@@ -404,12 +486,14 @@ Your goal is to create the following dashboard.
 ## Step 3
 
 ::: your-turn
+Using [https://quarto.org/docs/dashboards/](https://quarto.org/docs/dashboards/):
+
 Reorganize the cards into rows and columns as shown below.
 :::
 
 :::{.column width="80%"}
 ::: python-box
-![](images/olympicdash-py-1.png)
+![](images/olympicdash-py-3.png)
 :::
 :::
 
