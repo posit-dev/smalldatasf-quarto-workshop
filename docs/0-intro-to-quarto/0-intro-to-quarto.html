@@ -478,7 +478,7 @@ Isabella Velásquez
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_f703b7ab" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_89456aae" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1019,29 +1019,24 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 </section>
 <section id="anatomy-of-a-quarto-document-7" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
-<p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
-<div class="sourceCode" id="cb13" data-code-line-numbers="|9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="co">---</span></span>
-<span id="cb13-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
-<span id="cb13-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb13-4"><a></a><span class="co">---</span></span>
-<span id="cb13-5"><a></a></span>
-<span id="cb13-6"><a></a>Quarto enables you to weave together content and executable code.</span>
-<span id="cb13-7"><a></a></span>
-<span id="cb13-8"><a></a><span class="in">```{python}</span></span>
-<span id="cb13-9"><a></a><span class="in">#| include: false</span></span>
-<span id="cb13-10"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
-<span id="cb13-11"><a></a><span class="in">from plotnine.data import mpg</span></span>
-<span id="cb13-12"><a></a></span>
-<span id="cb13-13"><a></a><span class="in">(</span></span>
-<span id="cb13-14"><a></a><span class="in">    ggplot(mpg, aes(x = "cty", y = "hwy"))</span></span>
-<span id="cb13-15"><a></a><span class="in">    + geom_point()</span></span>
-<span id="cb13-16"><a></a><span class="in">)</span></span>
-<span id="cb13-17"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Inline code</strong> executes code <em>within Markdown</em></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>my-document.qmd</strong></pre>
+</div>
+<div class="sourceCode" id="cb13" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="in">```{python}</span></span>
+<span id="cb13-2"><a></a><span class="in">radius = 5</span></span>
+<span id="cb13-3"><a></a><span class="in">```</span></span>
+<span id="cb13-4"><a></a></span>
+<span id="cb13-5"><a></a>The radius of the circle is <span class="in">`{python} radius`</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Results in:</p>
+<p>The radius of the circle is 5.</p>
 </section>
 <section id="anatomy-of-a-quarto-document-8" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
-<div class="sourceCode" id="cb14" data-code-line-numbers="9-10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb14" data-code-line-numbers="|9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="co">---</span></span>
 <span id="cb14-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
 <span id="cb14-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb14-4"><a></a><span class="co">---</span></span>
@@ -1050,31 +1045,71 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <span id="cb14-7"><a></a></span>
 <span id="cb14-8"><a></a><span class="in">```{python}</span></span>
 <span id="cb14-9"><a></a><span class="in">#| include: false</span></span>
-<span id="cb14-10"><a></a><span class="in">#| fig.alt: "A scatterplot with cty on the x-axis and hwy on the y-axis."</span></span>
-<span id="cb14-11"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
-<span id="cb14-12"><a></a><span class="in">from plotnine.data import mpg</span></span>
-<span id="cb14-13"><a></a></span>
-<span id="cb14-14"><a></a><span class="in">(</span></span>
-<span id="cb14-15"><a></a><span class="in">    ggplot(mtcars, aes(x = "cty", y = "hwy"))</span></span>
-<span id="cb14-16"><a></a><span class="in">    + geom_point()</span></span>
-<span id="cb14-17"><a></a><span class="in">)</span></span>
-<span id="cb14-18"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-10"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
+<span id="cb14-11"><a></a><span class="in">from plotnine.data import mpg</span></span>
+<span id="cb14-12"><a></a></span>
+<span id="cb14-13"><a></a><span class="in">(</span></span>
+<span id="cb14-14"><a></a><span class="in">    ggplot(mpg, aes(x = "cty", y = "hwy"))</span></span>
+<span id="cb14-15"><a></a><span class="in">    + geom_point()</span></span>
+<span id="cb14-16"><a></a><span class="in">)</span></span>
+<span id="cb14-17"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="anatomy-of-a-quarto-document-9" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
-<p><strong>Inline code</strong> executes code <em>within Markdown</em></p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>my-document.qmd</strong></pre>
-</div>
-<div class="sourceCode" id="cb15" data-filename="my-document.qmd"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="in">```{python}</span></span>
-<span id="cb15-2"><a></a><span class="in">radius = 5</span></span>
-<span id="cb15-3"><a></a><span class="in">```</span></span>
-<span id="cb15-4"><a></a></span>
-<span id="cb15-5"><a></a>The radius of the circle is <span class="in">`{python} radius`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Results in:</p>
-<p>The radius of the circle is 5.</p>
+<p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
+<div class="sourceCode" id="cb15" data-code-line-numbers="9-10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="co">---</span></span>
+<span id="cb15-2"><a></a><span class="an">title:</span><span class="co"> "Olympic Games"</span></span>
+<span id="cb15-3"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb15-4"><a></a><span class="co">---</span></span>
+<span id="cb15-5"><a></a></span>
+<span id="cb15-6"><a></a>Quarto enables you to weave together content and executable code.</span>
+<span id="cb15-7"><a></a></span>
+<span id="cb15-8"><a></a><span class="in">```{python}</span></span>
+<span id="cb15-9"><a></a><span class="in">#| include: false</span></span>
+<span id="cb15-10"><a></a><span class="in">#| fig.alt: "A scatterplot with cty on the x-axis and hwy on the y-axis."</span></span>
+<span id="cb15-11"><a></a><span class="in">from plotnine import ggplot, aes, geom_point</span></span>
+<span id="cb15-12"><a></a><span class="in">from plotnine.data import mpg</span></span>
+<span id="cb15-13"><a></a></span>
+<span id="cb15-14"><a></a><span class="in">(</span></span>
+<span id="cb15-15"><a></a><span class="in">    ggplot(mtcars, aes(x = "cty", y = "hwy"))</span></span>
+<span id="cb15-16"><a></a><span class="in">    + geom_point()</span></span>
+<span id="cb15-17"><a></a><span class="in">)</span></span>
+<span id="cb15-18"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="anatomy-of-a-quarto-document-10" class="slide level2">
+<h2>Anatomy of a Quarto document</h2>
+<p><strong>Code</strong> can include optional chunk options, in YAML style, identified by <code>#|</code> at the beginning of the line</p>
+<table class="caption-top" style="width:89%;">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>eval</code></td>
+<td>Evaluate the code chunk</td>
+</tr>
+<tr class="even">
+<td><code>echo</code></td>
+<td>Include the source code</td>
+</tr>
+<tr class="odd">
+<td><code>warning</code></td>
+<td>Include warnings</td>
+</tr>
+<tr class="even">
+<td><code>include</code></td>
+<td>Include code and results</td>
+</tr>
+</tbody>
+</table>
+<p>Other options: <a href="https://quarto.org/docs/computations/execution-options.html" class="uri">https://quarto.org/docs/computations/execution-options.html</a></p>
 </section>
 <section id="your-turn-2" class="slide level2 smaller">
 <h2>Your turn</h2>
@@ -1096,7 +1131,7 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_396459c9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_ff08e780" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1322,7 +1357,7 @@ This content can be styled with a border
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="countdown" id="timer_7c6fca1c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d1392eaf" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -1540,7 +1575,7 @@ This content can be styled with a border
 <div class="quarto-auto-generated-content">
 <p><img src="../images/slides-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="https://pos.it/small-data-sf-quarto-workshop">pos.it/small-data-sf-quarto-workshop</a></p>
+<p><a href="https://pos.it/smalldatasf-quarto-workshop">pos.it/smalldatasf-quarto-workshop</a></p>
 </div>
 </div>
 </section></section>

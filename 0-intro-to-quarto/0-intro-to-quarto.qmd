@@ -567,6 +567,22 @@ from plotnine.data import mpg
 
 ## Anatomy of a Quarto document
 
+**Inline code** executes code *within Markdown*
+
+````{.markdown filename="my-document.qmd"}
+```{{python}}
+radius = 5
+```
+
+The radius of the circle is `{python} radius`.
+````
+
+Results in:
+
+The radius of the circle is 5.
+
+## Anatomy of a Quarto document
+
 **Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
 
 ````{.markdown code-line-numbers=|9}
@@ -618,19 +634,22 @@ from plotnine.data import mpg
 
 ## Anatomy of a Quarto document
 
-**Inline code** executes code *within Markdown*
+**Code** can include optional chunk options, in YAML style, identified by `#|` at the beginning of the line
 
-````{.markdown filename="my-document.qmd"}
-```{{python}}
-radius = 5
-```
++--------------+------------------------------------------------+
+| Option       | Description                                    |
++==============+================================================+
+| `eval`       | Evaluate the code chunk                        |
++--------------+------------------------------------------------+
+| `echo`       | Include the source code                        |
++--------------+------------------------------------------------+
+| `warning`    | Include warnings                               |
++--------------+------------------------------------------------+
+| `include`    | Include code and results                       |
++--------------+------------------------------------------------+
 
-The radius of the circle is `{python} radius`
-````
+Other options: <https://quarto.org/docs/computations/execution-options.html>
 
-Results in:
-
-The radius of the circle is 5.
 
 ## Your turn {.smaller}
 

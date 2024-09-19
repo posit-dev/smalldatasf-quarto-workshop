@@ -603,7 +603,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nradius = 5\n```\n\nThe radius of the circle is `{python} radius`.\n\nResults in:\nThe radius of the circle is 5."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-project",
@@ -736,7 +736,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#section",
     "title": "Intro to Quarto",
     "section": "",
-    "text": "thank you!\n\n\nany questions?\n\n\n\n\n\npos.it/small-data-sf-quarto-workshop"
+    "text": "thank you!\n\n\nany questions?\n\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#acknowledgements",
@@ -1642,21 +1642,21 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nradius = 5\n```\n\nThe radius of the circle is `{python} radius`\n\nResults in:\nThe radius of the circle is 5."
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nradius = 5\n```\n\nThe radius of the circle is `{python} radius`\n\nResults in:\nThe radius of the circle is 5."
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk\n\n\necho\nInclude the source code\n\n\nwarning\nInclude warnings\n\n\ninclude\nInclude code and results\n\n\n\nOther options: https://quarto.org/docs/computations/execution-options.html"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
