@@ -568,14 +568,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-2",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax"
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n\n\nMarkdown is a lightweight language for creating formatted text\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-3",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-3",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nThe `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins \"palmerpenguins R package\") package contains size measurements for `r nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\n\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
+    "text": "Anatomy of a Quarto document\nText: Markdown\n\n\nThe `olympic.csv` dataset records [**Olympic**](https://en.wikipedia.org/wiki/Olympic_Games) athlete details.\n\n\n\nThe olympic.csv dataset records Olympic athlete details."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-4",
@@ -589,21 +589,21 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-5",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-6",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-6",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode\n\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\nCode chunks begin and end with three backticks (usually)\nCode chunks are identified with a programming language in between {}"
+    "text": "Anatomy of a Quarto document\nCode\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```\n\n\n\nCode chunks begin and end with three backticks (usually)\nCode chunks are identified with a programming language in between {}"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-7",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nradius = 5\n```\n\nThe radius of the circle is `{python} radius`.\n\nResults in:\nThe radius of the circle is 5."
+    "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nmedals = 5\n```\n\nThe number of medals is `{python} medals`.\n\nResults in:\nThe number of medals is 5."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-project",
@@ -882,7 +882,7 @@
     "href": "0-intro-to-quarto/index.html#exercises",
     "title": "Intro to Quarto",
     "section": "Exercises",
-    "text": "Exercises\n\nUse the template pos.it/smalldatasf-quarto-exercises (&lt;hhttps://pos.it/smalldatasf-quarto-exercises&gt;) and work on olympicdash-0.ipynb.",
+    "text": "Exercises\nExercise 1\n\nFollow the setup instructions here: https://posit-dev.github.io/smalldatasf-quarto-workshop/setup.html\nUse the template located at https://pos.it/smalldatasf-quarto-exercises\nConvert olympicdash-0.ipynb to .qmd using quarto convert.\nPreview the .qmd file.\n\nExercise 2\n\nIn the YAML, add an author field and add your name.\nAdd some Markdown text to the document.\nFor one of the tables, add the chunk option echo: false.\nAdd this to the top of the plotnine chart to set the order of medal variable.\n\nolympics['medal'] = pd.Categorical(\n    olympics['medal'], \n    categories=[\"Gold\", \"Silver\", \"Bronze\"], \n    ordered=True\n)\n\nSave in between each step and see how the preview changes.\n\nExercise 3\n\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\nEdit the Markdown text you wrote in the previous exercise so that one of the words is blue.\nAdd a code chunk cell with the option include: false. Use the dataset to find the most gold medals by team.\nUse inline code to write a sentence such as: “The most gold medals won by a single team are [count].”- Add a Div of your choice.",
     "crumbs": [
       "Modules",
       "Intro to Quarto"
@@ -1642,14 +1642,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nQuarto enables you to weave together content and executable code.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with cty on the x-axis and hwy on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n\n(\n    ggplot(mtcars, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with country on the x-axis and medals on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",

@@ -11,4 +11,34 @@ title: "Intro to Quarto"
 ```
 ## Exercises
 
--    Use the template `pos.it/smalldatasf-quarto-exercises` (<hhttps://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-0.ipynb.`
+**Exercise 1**
+
+-    Follow the setup instructions here: <https://posit-dev.github.io/smalldatasf-quarto-workshop/setup.html>
+-    Use the template located at <https://pos.it/smalldatasf-quarto-exercises>
+-    Convert `olympicdash-0.ipynb` to `.qmd` using `quarto convert`.
+-    Preview the `.qmd` file.
+
+**Exercise 2**
+
+-    In the YAML, add an `author` field and add your name.
+-    Add some Markdown text to the document.
+-    For one of the tables, add the chunk option `echo: false`.
+-    Add this to the top of the plotnine chart to set the order of `medal` variable.
+
+```python
+olympics['medal'] = pd.Categorical(
+    olympics['medal'], 
+    categories=["Gold", "Silver", "Bronze"], 
+    ordered=True
+)
+```
+
+-    Save in between each step and see how the preview changes.
+
+**Exercise 3**
+
+-    Change the html theme to `sketchy`. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)
+-    Edit the Markdown text you wrote in the previous exercise so that one of the words is blue.
+-    Add a code chunk cell with the option `include: false`. Use the dataset to find the most gold medals by team.
+-    Use inline code to write a sentence such as: “The most gold medals won by a single team are [count].”-    Add a Div of your choice.
+

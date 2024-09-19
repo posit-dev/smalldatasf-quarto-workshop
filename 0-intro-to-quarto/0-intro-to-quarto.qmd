@@ -465,7 +465,7 @@ title: "Olympic Games"
 format: html
 ---
 
-Quarto enables you to weave together content and executable code.
+This dataset records Olympic athlete details.
 ````
 
 . . .
@@ -481,13 +481,13 @@ Quarto enables you to weave together content and executable code.
 <div class="sourceCode">
 <pre class="sourceCode markdown">
 <code class="sourceCode markdown">
-The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for &#96;r nrow(penguins)&#96; penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+The `olympic.csv` dataset records [**Olympic**](https://en.wikipedia.org/wiki/Olympic_Games) athlete details.
 </code>
 </pre>
 </div>
 ```
 
-The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+The `olympic.csv` dataset records [**Olympic**](https://en.wikipedia.org/wiki/Olympic_Games) athlete details.
 
 ## Anatomy of a Quarto document
 
@@ -515,15 +515,14 @@ title: "Olympic Games"
 format: html
 ---
 
-Quarto enables you to weave together content and executable code.
+This dataset records Olympic athlete details.
 
 ```{{python}}
-from plotnine import ggplot, aes, geom_point
-from plotnine.data import mpg
+from plotnine import ggplot, aes, geom_bar
 
 (
-    ggplot(mpg, aes(x = "cty", y = "hwy"))
-    + geom_point()
+    ggplot(mpg, aes(x = "country", y = "medals"))
+    + geom_bar()
 )
 ```
 
@@ -536,21 +535,20 @@ from plotnine.data import mpg
 :::: columns
 ::: {.column}
 
-````{.markdown code-line-numbers=8-16}
+````{.markdown filename="my-document.qmd" code-line-numbers=8-16}
 ---
 title: "Olympic Games"
 format: html
 ---
 
-Quarto enables you to weave together content and executable code.
+This dataset records Olympic athlete details.
 
 ```{{python}}
-from plotnine import ggplot, aes, geom_point
-from plotnine.data import mpg
+from plotnine import ggplot, aes, geom_bar
 
 (
-    ggplot(mpg, aes(x = "cty", y = "hwy"))
-    + geom_point()
+    ggplot(mpg, aes(x = "country", y = "medals"))
+    + geom_bar()
 )
 ```
 
@@ -571,15 +569,15 @@ from plotnine.data import mpg
 
 ````{.markdown filename="my-document.qmd"}
 ```{{python}}
-radius = 5
+medals = 5
 ```
 
-The radius of the circle is `{python} radius`.
+The number of medals is `{python} medals`.
 ````
 
 Results in:
 
-The radius of the circle is 5.
+The number of medals is 5.
 
 ## Anatomy of a Quarto document
 
@@ -591,16 +589,15 @@ title: "Olympic Games"
 format: html
 ---
 
-Quarto enables you to weave together content and executable code.
+This dataset records Olympic athlete details.
 
 ```{{python}}
 #| include: false
-from plotnine import ggplot, aes, geom_point
-from plotnine.data import mpg
+from plotnine import ggplot, aes, geom_bar
 
 (
-    ggplot(mpg, aes(x = "cty", y = "hwy"))
-    + geom_point()
+    ggplot(mpg, aes(x = "country", y = "medals"))
+    + geom_bar()
 )
 ```
 
@@ -616,17 +613,16 @@ title: "Olympic Games"
 format: html
 ---
 
-Quarto enables you to weave together content and executable code.
+This dataset records Olympic athlete details.
 
 ```{{python}}
 #| include: false
-#| fig.alt: "A scatterplot with cty on the x-axis and hwy on the y-axis."
-from plotnine import ggplot, aes, geom_point
-from plotnine.data import mpg
+#| fig.alt: "A scatterplot with country on the x-axis and medals on the y-axis."
+from plotnine import ggplot, aes, geom_bar
 
 (
-    ggplot(mtcars, aes(x = "cty", y = "hwy"))
-    + geom_point()
+    ggplot(mpg, aes(x = "country", y = "medals"))
+    + geom_bar()
 )
 ```
 
