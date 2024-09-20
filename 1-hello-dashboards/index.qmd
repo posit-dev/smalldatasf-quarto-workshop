@@ -11,4 +11,4 @@ title: "Hello, Dashboards!"
 ```
 ## Exercises
 
--   Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-1.qmd.`
+-   In your cloned version of `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>), work on `olympicdash-1.qmd.`
