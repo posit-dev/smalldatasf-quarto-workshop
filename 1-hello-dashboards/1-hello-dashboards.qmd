@@ -9,7 +9,7 @@ author:
     affiliations:
       - name: Posit, PBC
 date: "2024-09-23"
-footer: "[pos.it/small-data-sf-quarto-workshop](https://pos.it/small-data-sf-quarto-workshop)"
+footer: "[pos.it/smalldatasf-quarto-workshop](https://pos.it/smalldatasf-quarto-workshop)"
 logo: "../images/slides-logo.png"
 format:
   revealjs:
