@@ -100,7 +100,7 @@ Using [ShinyLive](https://posit-dev.github.io/r-shinylive/)
 ## Start
 
 ::: python-box
-Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-4.qmd.`
+Open `olympicdash-4.qmd.`
 :::
 
 ## Goal
