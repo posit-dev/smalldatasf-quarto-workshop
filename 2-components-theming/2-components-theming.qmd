@@ -42,14 +42,6 @@ The content of cards typically maps to *cells* in your notebook or source docume
 
 ![](images/cards.png)
 
-## A note on computing language
-
--   The examples in this module will primarily feature Python code in code cells
-
--   All code in code cells can be replaced with R, Julia, Observable, etc. and the layout would look exactly the same
-
--   When/if different behavior in layout is expected, this will be explicitly called out and examples in other computing languages will also be provided
-
 # Navigation bar and pages
 
 ## Pages {auto-animate="true"}
@@ -89,30 +81,6 @@ The content of cards typically maps to *cells* in your notebook or source docume
 
 ::: {.column width="60%"}
 ![](images/pages-bar.png)
-:::
-:::
-
-## Logo {auto-animate="true"}
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="|3-5"}
-{{< include _logo.qmd >}}
-````
-:::
-
-## Logo {.smaller auto-animate="true"}
-
-::: columns
-::: {.column width="40%"}
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="3-5"}
-{{< include _logo.qmd >}}
-````
-:::
-:::
-
-::: {.column width="60%"}
-![](images/logo.png)
 :::
 :::
 
@@ -195,116 +163,6 @@ Special aliases are recognized for certain navigation buttons: `linkedin`, `face
 
 ::: {.column width="60%"}
 ![](images/sidebars-global-bar.png)
-:::
-:::
-
-## Rows {auto-animate="true"}
-
-By default, cards are laid out in rows:
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="|13,23"}
-{{< include _rows.qmd >}}
-````
-:::
-
-## Rows {.smaller auto-animate="true"}
-
-::: columns
-::: {.column width="40%"}
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="13,23"}
-{{< include _rows.qmd >}}
-````
-:::
-:::
-
-::: {.column width="60%"}
-![](images/rows.png)
-:::
-:::
-
-## Rows {auto-animate="true"}
-
-Default value of `orientation` is `rows`:
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="4-5"}
-{{< include _rows-orientation.qmd >}}
-````
-:::
-
-## Columns {auto-animate="true"}
-
-Setting `orientation` to `columns` makes each `##` indicate a column instead of a row:
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="4-5"}
-{{< include _columns.qmd >}}
-````
-:::
-
-## Columns {.smaller auto-animate="true"}
-
-::: columns
-::: {.column width="40%"}
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="4-5,14,24"}
-{{< include _columns.qmd >}}
-````
-:::
-:::
-
-::: {.column width="60%"}
-![](images/columns.png)
-:::
-:::
-
-## Rows, then columns {auto-animate="true"}
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="|13-23|25-45"}
-{{< include _rows-then-columns.qmd >}}
-````
-:::
-
-## Rows, then columns {.smaller auto-animate="true"}
-
-::: columns
-::: {.column width="40%"}
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="13,15,19,25,27,37"}
-{{< include _rows-then-columns.qmd >}}
-````
-:::
-:::
-
-::: {.column width="60%"}
-![](images/rows-then-columns.png)
-:::
-:::
-
-## Columns, then rows {auto-animate="true"}
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="|5|13-23|26-46"}
-{{< include _columns-then-rows.qmd >}}
-````
-:::
-
-## Columns, then rows {.smaller auto-animate="true"}
-
-::: columns
-::: {.column width="40%"}
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="5"}
-{{< include _columns-then-rows.qmd >}}
-````
-:::
-:::
-
-::: {.column width="60%"}
-![](images/columns-then-rows.png)
 :::
 :::
 
@@ -551,8 +409,8 @@ Your goal is to create a dashboard that looks like the following:
 -   In the first row of this second column, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the `award-fill` icon.
 :::
 
-::: callout-tip
-Use the code (commented with `TODO for Step 2`) at the bottom of the document to help you create the value boxes. Un-comment the code and move the code chunk to the appropriate location. Then, use the resulting variables to create the value boxes.   
+::: {.callout-tip appearance="simple"}
+Use the code commented with `TODO for Step 2` to help you create the value boxes.
 :::
 
 ![](images/olympicdash-2-step-2.png)
@@ -563,12 +421,12 @@ Use the code (commented with `TODO for Step 2`) at the bottom of the document to
 
 ::: your-turn
 
--   In the second row of the second column, create tables (using the **great_tables** library) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.
+-   In the second row of the second column, create tables (using the **great_tables** library) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values. Use [`data_color()`](https://posit-dev.github.io/great-tables/get-started/colorizing-with-data.html).
 -   Place these tables in tabsets with descriptive text about table content in the same card/tab.
 :::
 
-::: callout-tip
-Use the code (commented with `TODO for Step 3`) at the bottom of the document to help you create the tables. Un-comment the code and move the code chunk to the appropriate location. Then, use `olympics_sorted_descending_top30` and `olympics_sorted_ascending_bottom30` to create the tables.   
+::: {.callout-tip appearance="simple"}
+Un-comment the code under `TODO for Step 3` and move it to the appropriate location. Use `olympics_sorted_descending_top30` and `olympics_sorted_ascending_bottom30` to create the tables.   
 :::
 
 ![](images/olympicdash-2-step-3.png)

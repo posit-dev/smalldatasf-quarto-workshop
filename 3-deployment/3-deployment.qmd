@@ -62,10 +62,8 @@ Dashboards are typically just static HTML pages so can be deployed to any web se
 ## Deployment options
 
 ::: columns
-::: {.column width="60%"}
-### Server
 
-::: {.column width="40%"}
+::: {.column}
 #### Cloud
 
 -   [Posit Connect Cloud](https://connect.posit.cloud/)
@@ -75,25 +73,23 @@ Dashboards are typically just static HTML pages so can be deployed to any web se
 -   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
 :::
 
-::: {.column width="50%"}
+::: {.column}
 #### On-Prem
 
 -   [Shiny Server](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shiny-server-open-source) (open source)
 -   [Posit Connect](https://shiny.posit.co/py/docs/deploy.html#deploy-to-posit-connect-commercial) (commercial)
 -   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
 :::
+
 :::
 
-::: {.column .fragment width="40%"}
-### Serverless
+## Posit Connect Cloud
 
-Using [Pyodide](https://pyodide.org/)
+[https://connect.posit.cloud/](https://connect.posit.cloud/)
 
-\[[Example](https://wch.github.io/retirement-simulation-dashboard/)\]
+Easily publish and share data applications and documents in a cloud environment within minutes.
 
-Using [ShinyLive](https://posit-dev.github.io/r-shinylive/)
-:::
-:::
+![](images/connect-cloud.png)
 
 # Your turn
 

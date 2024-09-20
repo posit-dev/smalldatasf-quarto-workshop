@@ -46,7 +46,7 @@
     "href": "1-hello-dashboards/index.html#exercises",
     "title": "Hello, Dashboards!",
     "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-1.qmd.",
+    "text": "Exercises\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), work on olympicdash-1.qmd.",
     "crumbs": [
       "Modules",
       "Hello, Dashboards!"
@@ -79,7 +79,7 @@
     "href": "2-components-theming/index.html#exercises",
     "title": "Components and themes",
     "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-2.qmd.",
+    "text": "Exercises\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), work on olympicdash-2.qmd.",
     "crumbs": [
       "Modules",
       "Components and themes"
@@ -97,7 +97,14 @@
     "href": "3-deployment/3-deployment.html#deployment-options",
     "title": "Deploy your dashboard",
     "section": "Deployment options",
-    "text": "Deployment options\n\n\nServer\n\nCloud\n\nPosit Connect Cloud\nQuarto Pub\nshinyapps.io\nHugging Face\nRoll your own\n\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\n\nServerless\nUsing Pyodide\n[Example]\nUsing ShinyLive"
+    "text": "Deployment options\n\n\nCloud\n\nPosit Connect Cloud\nQuarto Pub\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own"
+  },
+  {
+    "objectID": "3-deployment/3-deployment.html#posit-connect-cloud",
+    "href": "3-deployment/3-deployment.html#posit-connect-cloud",
+    "title": "Deploy your dashboard",
+    "section": "Posit Connect Cloud",
+    "text": "Posit Connect Cloud\nhttps://connect.posit.cloud/\nEasily publish and share data applications and documents in a cloud environment within minutes."
   },
   {
     "objectID": "3-deployment/3-deployment.html#start",
@@ -132,7 +139,7 @@
     "href": "3-deployment/3-deployment.html#thank-you",
     "title": "Deploy your dashboard",
     "section": "Thank you!",
-    "text": "Thank you!\n\n\n\n\npos.it/small-data-sf-quarto-workshop"
+    "text": "Thank you!\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#about-us",
@@ -586,7 +593,7 @@
     "href": "3-deployment/index.html#exercises",
     "title": "Deploy your dashboard",
     "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-4.qmd.",
+    "text": "Exercises\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), work on olympicdash-4.qmd.",
     "crumbs": [
       "Modules",
       "Deploy your dashboard"
@@ -664,13 +671,6 @@
     "text": "Cards\nCards are containers for code cell outputs (e.g., plots, tables, value boxes) and free form markdown text. The content of cards typically maps to cells in your notebook or source document."
   },
   {
-    "objectID": "2-components-theming/2-components-theming.html#a-note-on-computing-language",
-    "href": "2-components-theming/2-components-theming.html#a-note-on-computing-language",
-    "title": "Dashboard components and themes",
-    "section": "A note on computing language",
-    "text": "A note on computing language\n\nThe examples in this module will primarily feature Python code in code cells\nAll code in code cells can be replaced with R, Julia, Observable, etc. and the layout would look exactly the same\nWhen/if different behavior in layout is expected, this will be explicitly called out and examples in other computing languages will also be provided"
-  },
-  {
     "objectID": "2-components-theming/2-components-theming.html#pages",
     "href": "2-components-theming/2-components-theming.html#pages",
     "title": "Dashboard components and themes",
@@ -690,20 +690,6 @@
     "title": "Dashboard components and themes",
     "section": "Pages",
     "text": "Pages\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Pages\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#logo",
-    "href": "2-components-theming/2-components-theming.html#logo",
-    "title": "Dashboard components and themes",
-    "section": "Logo",
-    "text": "Logo\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Logo\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#logo-1",
-    "href": "2-components-theming/2-components-theming.html#logo-1",
-    "title": "Dashboard components and themes",
-    "section": "Logo",
-    "text": "Logo\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Logo\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#navigation-buttons",
@@ -753,69 +739,6 @@
     "title": "Dashboard components and themes",
     "section": "Sidebars",
     "text": "Sidebars\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Sidebars\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# {.sidebar}\n\nInformation and/or interactivity tools that you want on every page go here.\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows",
-    "href": "2-components-theming/2-components-theming.html#rows",
-    "title": "Dashboard components and themes",
-    "section": "Rows",
-    "text": "Rows\nBy default, cards are laid out in rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-1",
-    "href": "2-components-theming/2-components-theming.html#rows-1",
-    "title": "Dashboard components and themes",
-    "section": "Rows",
-    "text": "Rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-2",
-    "href": "2-components-theming/2-components-theming.html#rows-2",
-    "title": "Dashboard components and themes",
-    "section": "Rows",
-    "text": "Rows\nDefault value of orientation is rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    orientation: rows\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns",
-    "href": "2-components-theming/2-components-theming.html#columns",
-    "title": "Dashboard components and themes",
-    "section": "Columns",
-    "text": "Columns\nSetting orientation to columns makes each ## indicate a column instead of a row:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns-1",
-    "href": "2-components-theming/2-components-theming.html#columns-1",
-    "title": "Dashboard components and themes",
-    "section": "Columns",
-    "text": "Columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-then-columns",
-    "href": "2-components-theming/2-components-theming.html#rows-then-columns",
-    "title": "Dashboard components and themes",
-    "section": "Rows, then columns",
-    "text": "Rows, then columns\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-then-columns-1",
-    "href": "2-components-theming/2-components-theming.html#rows-then-columns-1",
-    "title": "Dashboard components and themes",
-    "section": "Rows, then columns",
-    "text": "Rows, then columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns-then-rows",
-    "href": "2-components-theming/2-components-theming.html#columns-then-rows",
-    "title": "Dashboard components and themes",
-    "section": "Columns, then rows",
-    "text": "Columns, then rows\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns-then-rows-1",
-    "href": "2-components-theming/2-components-theming.html#columns-then-rows-1",
-    "title": "Dashboard components and themes",
-    "section": "Columns, then rows",
-    "text": "Columns, then rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#heights-and-widths-of-rows-and-columns",
@@ -920,14 +843,14 @@
     "href": "2-components-theming/2-components-theming.html#step-2",
     "title": "Dashboard components and themes",
     "section": "Step 2",
-    "text": "Step 2\n\n\nDivide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.\nIn the first row of this second column, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the award-fill icon.\n\n\n\n\n\n\n\n\nTip\n\n\nUse the code (commented with TODO for Step 2) at the bottom of the document to help you create the value boxes. Un-comment the code and move the code chunk to the appropriate location. Then, use the resulting variables to create the value boxes.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+    "text": "Step 2\n\n\nDivide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.\nIn the first row of this second column, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the award-fill icon.\n\n\n\n\n\n\n\n\nUse the code commented with TODO for Step 2 to help you create the value boxes.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#step-3",
     "href": "2-components-theming/2-components-theming.html#step-3",
     "title": "Dashboard components and themes",
     "section": "Step 3",
-    "text": "Step 3\n\n\nIn the second row of the second column, create tables (using the great_tables library) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.\nPlace these tables in tabsets with descriptive text about table content in the same card/tab.\n\n\n\n\n\n\n\n\nTip\n\n\nUse the code (commented with TODO for Step 3) at the bottom of the document to help you create the tables. Un-comment the code and move the code chunk to the appropriate location. Then, use olympics_sorted_descending_top30 and olympics_sorted_ascending_bottom30 to create the tables.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+    "text": "Step 3\n\n\nIn the second row of the second column, create tables (using the great_tables library) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values. Use data_color().\nPlace these tables in tabsets with descriptive text about table content in the same card/tab.\n\n\n\n\n\n\n\n\nUn-comment the code under TODO for Step 3 and move it to the appropriate location. Use olympics_sorted_descending_top30 and olympics_sorted_ascending_bottom30 to create the tables.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#interactive-plotting",
@@ -983,7 +906,7 @@
     "href": "2-components-theming/2-components-theming.html#theming-quarto",
     "title": "Dashboard components and themes",
     "section": "Theming Quarto",
-    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!\n\n\n\n\n\npos.it/small-data-sf-quarto-workshop"
+    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!\n\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-many-outputs",
@@ -1147,11 +1070,88 @@
     "text": "Step 4: Add titles to cards\n\nadd titles using the title option in the cell\n\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo",
     "title": "Hello, dashboards!",
-    "section": "Steps 1 - 4",
-    "text": "Steps 1 - 4\n\n\nnow have a dashboard"
+    "section": "Step 5: Add a logo",
+    "text": "Step 5: Add a logo\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 5: Add a logo",
+    "text": "Step 5: Add a logo\n\nadd a logo yaml header\n\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---5",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#steps-1---5",
+    "title": "Hello, dashboards!",
+    "section": "Steps 1 - 5",
+    "text": "Steps 1 - 5\n\n\nnow have a dashboard"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows",
+    "title": "Hello, dashboards!",
+    "section": "Rows",
+    "text": "Rows\nBy default, cards are laid out in rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-1",
+    "title": "Hello, dashboards!",
+    "section": "Rows",
+    "text": "Rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-2",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-2",
+    "title": "Hello, dashboards!",
+    "section": "Rows",
+    "text": "Rows\nDefault value of orientation is rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    orientation: rows\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns",
+    "title": "Hello, dashboards!",
+    "section": "Columns",
+    "text": "Columns\nSetting orientation to columns makes each ## indicate a column instead of a row:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns-1",
+    "title": "Hello, dashboards!",
+    "section": "Columns",
+    "text": "Columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns",
+    "title": "Hello, dashboards!",
+    "section": "Rows, then columns",
+    "text": "Rows, then columns\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns-1",
+    "title": "Hello, dashboards!",
+    "section": "Rows, then columns",
+    "text": "Rows, then columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows",
+    "title": "Hello, dashboards!",
+    "section": "Columns, then rows",
+    "text": "Columns, then rows\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows-1",
+    "title": "Hello, dashboards!",
+    "section": "Columns, then rows",
+    "text": "Columns, then rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#start",
@@ -1172,20 +1172,13 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
     "title": "Hello, dashboards!",
     "section": "Step 1",
-    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\nAdd the olympics logo from the images folder\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "title": "Hello, dashboards!",
     "section": "Step 2",
-    "text": "Step 2\n\nUsing https://quarto.org/docs/dashboards/:\n\nAdd a GitHub icon and link to a GitHub repository.\nAdd the olympics logo from the images folder.\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3",
-    "title": "Hello, dashboards!",
-    "section": "Step 3",
-    "text": "Step 3\n\nUsing https://quarto.org/docs/dashboards/:\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/small-data-sf-quarto-workshop"
+    "text": "Step 2\n\nUsing https://quarto.org/docs/dashboards/:\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   }
 ]
