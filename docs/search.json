@@ -46,368 +46,100 @@
     "href": "1-hello-dashboards/index.html#exercises",
     "title": "Hello, Dashboards!",
     "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-1.qmd.",
+    "text": "Exercises\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), work on olympicdash-1.qmd.",
     "crumbs": [
       "Modules",
       "Hello, Dashboards!"
     ]
   },
   {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#navigation-bar-and-pages",
-    "href": "2-dashboard-components/2-dashboard-components.html#navigation-bar-and-pages",
-    "title": "Dashboard components",
-    "section": "Navigation bar and pages",
-    "text": "Navigation bar and pages\nIcon, title, and author along with links to sub-pages if more than one page is defined."
+    "objectID": "2-components-theming/index.html",
+    "href": "2-components-theming/index.html",
+    "title": "Components and themes",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Modules",
+      "Components and themes"
+    ]
   },
   {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#sidebars-rows-columns-and-tabsets",
-    "href": "2-dashboard-components/2-dashboard-components.html#sidebars-rows-columns-and-tabsets",
-    "title": "Dashboard components",
-    "section": "Sidebars, rows, columns, and tabsets",
-    "text": "Sidebars, rows, columns, and tabsets\nRows and columns using markdown heading, with optional attributes to control height, width, etc. Sidebars, mostly used for for interactive inputs. Tabsets to further divide content."
+    "objectID": "2-components-theming/index.html#slides",
+    "href": "2-components-theming/index.html#slides",
+    "title": "Components and themes",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Modules",
+      "Components and themes"
+    ]
   },
   {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#cards",
-    "href": "2-dashboard-components/2-dashboard-components.html#cards",
-    "title": "Dashboard components",
-    "section": "Cards",
-    "text": "Cards\nCards are containers for code cell outputs (e.g., plots, tables, value boxes) and free form markdown text. The content of cards typically maps to cells in your notebook or source document."
+    "objectID": "2-components-theming/index.html#exercises",
+    "href": "2-components-theming/index.html#exercises",
+    "title": "Components and themes",
+    "section": "Exercises",
+    "text": "Exercises\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), work on olympicdash-2.qmd.",
+    "crumbs": [
+      "Modules",
+      "Components and themes"
+    ]
   },
   {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#a-note-on-computing-language",
-    "href": "2-dashboard-components/2-dashboard-components.html#a-note-on-computing-language",
-    "title": "Dashboard components",
-    "section": "A note on computing language",
-    "text": "A note on computing language\n\nThe examples in this module will primarily feature Python code in code cells\nAll code in code cells can be replaced with R, Julia, Observable, etc. and the layout would look exactly the same\nWhen/if different behavior in layout is expected, this will be explicitly called out and examples in other computing languages will also be provided"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#pages",
-    "href": "2-dashboard-components/2-dashboard-components.html#pages",
-    "title": "Dashboard components",
-    "section": "Pages",
-    "text": "Pages\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Pages\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#pages-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#pages-1",
-    "title": "Dashboard components",
-    "section": "Pages",
-    "text": "Pages\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Pages\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#pages-2",
-    "href": "2-dashboard-components/2-dashboard-components.html#pages-2",
-    "title": "Dashboard components",
-    "section": "Pages",
-    "text": "Pages\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Pages\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#logo",
-    "href": "2-dashboard-components/2-dashboard-components.html#logo",
-    "title": "Dashboard components",
-    "section": "Logo",
-    "text": "Logo\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Logo\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#logo-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#logo-1",
-    "title": "Dashboard components",
-    "section": "Logo",
-    "text": "Logo\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Logo\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#navigation-buttons",
-    "href": "2-dashboard-components/2-dashboard-components.html#navigation-buttons",
-    "title": "Dashboard components",
-    "section": "Navigation buttons",
-    "text": "Navigation buttons\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Navigation buttons\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#navigation-buttons-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#navigation-buttons-1",
-    "title": "Dashboard components",
-    "section": "Navigation buttons",
-    "text": "Navigation buttons\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Navigation buttons\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#navigation-buttons-alternative",
-    "href": "2-dashboard-components/2-dashboard-components.html#navigation-buttons-alternative",
-    "title": "Dashboard components",
-    "section": "Navigation buttons – alternative",
-    "text": "Navigation buttons – alternative\nSpecial aliases are recognized for certain navigation buttons: linkedin, facebook, reddit, twitter, and github.\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Navigation buttons - alternative\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons: [linkedin]\n    linkedin: https://www.linkedin.com/company/posit-software\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#sidebars",
-    "href": "2-dashboard-components/2-dashboard-components.html#sidebars",
-    "title": "Dashboard components",
-    "section": "Sidebars",
-    "text": "Sidebars\n\nFor information about the dashboard, data, etc. and/or for user inputs in interactive dashboards\nCan be at the global or page level"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#sidebars-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#sidebars-1",
-    "title": "Dashboard components",
-    "section": "Sidebars",
-    "text": "Sidebars\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Sidebars\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# {.sidebar}\n\nInformation and/or interactivity tools that you want on every page go here.\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#sidebars-2",
-    "href": "2-dashboard-components/2-dashboard-components.html#sidebars-2",
-    "title": "Dashboard components",
-    "section": "Sidebars",
-    "text": "Sidebars\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Sidebars\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# {.sidebar}\n\nInformation and/or interactivity tools that you want on every page go here.\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#sidebars-3",
-    "href": "2-dashboard-components/2-dashboard-components.html#sidebars-3",
-    "title": "Dashboard components",
-    "section": "Sidebars",
-    "text": "Sidebars\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Sidebars\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# {.sidebar}\n\nInformation and/or interactivity tools that you want on every page go here.\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#rows",
-    "href": "2-dashboard-components/2-dashboard-components.html#rows",
-    "title": "Dashboard components",
-    "section": "Rows",
-    "text": "Rows\nBy default, cards are laid out in rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#rows-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#rows-1",
-    "title": "Dashboard components",
-    "section": "Rows",
-    "text": "Rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#rows-2",
-    "href": "2-dashboard-components/2-dashboard-components.html#rows-2",
-    "title": "Dashboard components",
-    "section": "Rows",
-    "text": "Rows\nDefault value of orientation is rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    orientation: rows\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#columns",
-    "href": "2-dashboard-components/2-dashboard-components.html#columns",
-    "title": "Dashboard components",
-    "section": "Columns",
-    "text": "Columns\nSetting orientation to columns makes each ## indicate a column instead of a row:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#columns-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#columns-1",
-    "title": "Dashboard components",
-    "section": "Columns",
-    "text": "Columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#rows-then-columns",
-    "href": "2-dashboard-components/2-dashboard-components.html#rows-then-columns",
-    "title": "Dashboard components",
-    "section": "Rows, then columns",
-    "text": "Rows, then columns\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#rows-then-columns-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#rows-then-columns-1",
-    "title": "Dashboard components",
-    "section": "Rows, then columns",
-    "text": "Rows, then columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#columns-then-rows",
-    "href": "2-dashboard-components/2-dashboard-components.html#columns-then-rows",
-    "title": "Dashboard components",
-    "section": "Columns, then rows",
-    "text": "Columns, then rows\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#columns-then-rows-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#columns-then-rows-1",
-    "title": "Dashboard components",
-    "section": "Columns, then rows",
-    "text": "Columns, then rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#heights-and-widths-of-rows-and-columns",
-    "href": "2-dashboard-components/2-dashboard-components.html#heights-and-widths-of-rows-and-columns",
-    "title": "Dashboard components",
-    "section": "Heights and widths of rows and columns",
-    "text": "Heights and widths of rows and columns\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview {height=\"30%\"}\n\n###  {width=\"20%\"}\n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n###  {width=\"80%\"}\n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\" width=\"300\"}\n\n## Plots {height=\"70%\"}\n\n### Scatter {width=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar {width=\"25%\"}\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#heights-and-widths-of-rows-and-columns-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#heights-and-widths-of-rows-and-columns-1",
-    "title": "Dashboard components",
-    "section": "Heights and widths of rows and columns",
-    "text": "Heights and widths of rows and columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview {height=\"30%\"}\n\n###  {width=\"20%\"}\n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n###  {width=\"80%\"}\n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\" width=\"300\"}\n\n## Plots {height=\"70%\"}\n\n### Scatter {width=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar {width=\"25%\"}\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#tabsets",
-    "href": "2-dashboard-components/2-dashboard-components.html#tabsets",
-    "title": "Dashboard components",
-    "section": "Tabsets",
-    "text": "Tabsets\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Tabsets\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview {.tabset}\n\n### Objective\n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### Car\n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\" width=\"299\"}\n\n## Plots {.tabset}\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#tabsets-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#tabsets-1",
-    "title": "Dashboard components",
-    "section": "Tabsets",
-    "text": "Tabsets\nEach card within a row/column or each row/column within another becomes a tab:\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Tabsets\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview {.tabset}\n\n### Objective\n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### Car\n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\" width=\"299\"}\n\n## Plots {.tabset}\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#cards-2",
-    "href": "2-dashboard-components/2-dashboard-components.html#cards-2",
-    "title": "Dashboard components",
-    "section": "Cards",
-    "text": "Cards\n\n\nFundamental unit of display within dashboards\nCreated automatically for cells and markdown content that are within rows and columns\nCan be created manually with a card div:\n::: {.card}\nThis text will be displayed within a card\n:::\nCards provide an expand button which appears at bottom right on hover"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#card-titles",
-    "href": "2-dashboard-components/2-dashboard-components.html#card-titles",
-    "title": "Dashboard components",
-    "section": "Card titles",
-    "text": "Card titles\nCard titles can be provided as a cell option:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Card titles\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#card-titles-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#card-titles-1",
-    "title": "Dashboard components",
-    "section": "Card titles",
-    "text": "Card titles\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Card titles\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#value-boxes",
-    "href": "2-dashboard-components/2-dashboard-components.html#value-boxes",
-    "title": "Dashboard components",
-    "section": "Value boxes",
-    "text": "Value boxes\n\n\nValue boxes are a great way to prominently display simple values within a dashboard\nYou can create value boxes in executable cells or plain markdown in divs\nValue boxes use Bootstrap icons (https://icons.getbootstrap.com) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we’ll get to themes later!)\n\n\n\nColor alias\nDefault theme color(s)\n\n\n\n\nprimary\nBlue\n\n\nsecondary\nGray\n\n\nsuccess\nGreen\n\n\ninfo\nBright Blue\n\n\nwarning\nYellow/Orange\n\n\ndanger\nRed\n\n\nlight\nLight Gray\n\n\ndark\nBlack"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#value-boxes-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#value-boxes-1",
-    "title": "Dashboard components",
-    "section": "Value boxes",
-    "text": "Value boxes\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Valueboxes\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{python} str(rounded_mean_city_mileage)` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#value-boxes-2",
-    "href": "2-dashboard-components/2-dashboard-components.html#value-boxes-2",
-    "title": "Dashboard components",
-    "section": "Value boxes",
-    "text": "Value boxes\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Valueboxes\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{python} str(rounded_mean_city_mileage)` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#markdown-text",
-    "href": "2-dashboard-components/2-dashboard-components.html#markdown-text",
-    "title": "Dashboard components",
-    "section": "Markdown text",
-    "text": "Markdown text\n\n\nYou can include markdown text anywhere within a dashboard\nMarkdown text is automatically placed in cards, but you can also explicitly put them in cards with fenced divs, and add titles to cards\n::: {.card title=\"Title goes here\"}\nText goes here.\n:::\nYou can place markdown text and other cell output in a single card as well\n::: {.card title=\"Title goes here\"}\nText goes here.\n\n```{r}\n# code generating output goes here\n```\n:::"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#start",
-    "href": "2-dashboard-components/2-dashboard-components.html#start",
-    "title": "Dashboard components",
-    "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-2.qmd."
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#goal",
-    "href": "2-dashboard-components/2-dashboard-components.html#goal",
-    "title": "Dashboard components",
-    "section": "Goal",
-    "text": "Goal\nYour goal is to create a dashboard that looks like the following:"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#step-1",
-    "href": "2-dashboard-components/2-dashboard-components.html#step-1",
-    "title": "Dashboard components",
-    "section": "Step 1",
-    "text": "Step 1\n\n\nAdd two pages - one for Summer Olympics and one for Winter Olympics.\nDuplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#step-2",
-    "href": "2-dashboard-components/2-dashboard-components.html#step-2",
-    "title": "Dashboard components",
-    "section": "Step 2",
-    "text": "Step 2\n\nIn the Summer Olympics page:\n\nMake the columns 65% (first) and 35% (second) of width of the dashboard.\nDivide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.\nIn the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#step-3",
-    "href": "2-dashboard-components/2-dashboard-components.html#step-3",
-    "title": "Dashboard components",
-    "section": "Step 3",
-    "text": "Step 3\n\nIn the Summer Olympics page:\n\nDivide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.\nIn the second row of the second column, create tables (using great_tables for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.\nPlace these tables in tabsets with descriptive text about table content in the same card/tab.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#step-4",
-    "href": "2-dashboard-components/2-dashboard-components.html#step-4",
-    "title": "Dashboard components",
-    "section": "Step 4",
-    "text": "Step 4\n\nIn the first row of the second column of the Summer Olympics page, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the award-fill icon.\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "2-dashboard-components/2-dashboard-components.html#step-5",
-    "href": "2-dashboard-components/2-dashboard-components.html#step-5",
-    "title": "Dashboard components",
-    "section": "Step 5",
-    "text": "Step 5\n\nDuplicate dashboard content for the Winter Olympics page, share your results with your neighbor, and discuss approaches for not repeating yourself in your code.\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/quarto-dashboards-24"
-  },
-  {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#dashboard-deployment",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#dashboard-deployment",
+    "objectID": "3-deployment/3-deployment.html#dashboard-deployment",
+    "href": "3-deployment/3-deployment.html#dashboard-deployment",
     "title": "Deploy your dashboard",
     "section": "Dashboard deployment",
-    "text": "Dashboard deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
+    "text": "Dashboard deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#deployment-options",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#deployment-options",
+    "objectID": "3-deployment/3-deployment.html#deployment-options",
+    "href": "3-deployment/3-deployment.html#deployment-options",
     "title": "Deploy your dashboard",
     "section": "Deployment options",
-    "text": "Deployment options\n\n\nServer\n\nCloud\n\nPosit Connect Cloud\nQuarto Pub\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]\nUsing ShinyLive"
+    "text": "Deployment options\n\n\nCloud\n\nPosit Connect Cloud\nQuarto Pub\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own"
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#start",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#start",
+    "objectID": "3-deployment/3-deployment.html#posit-connect-cloud",
+    "href": "3-deployment/3-deployment.html#posit-connect-cloud",
+    "title": "Deploy your dashboard",
+    "section": "Posit Connect Cloud",
+    "text": "Posit Connect Cloud\nhttps://connect.posit.cloud/\nEasily publish and share data applications and documents in a cloud environment within minutes."
+  },
+  {
+    "objectID": "3-deployment/3-deployment.html#start",
+    "href": "3-deployment/3-deployment.html#start",
     "title": "Deploy your dashboard",
     "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-4.qmd."
+    "text": "Start\n\nOpen olympicdash-4.qmd."
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#goal",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#goal",
+    "objectID": "3-deployment/3-deployment.html#goal",
+    "href": "3-deployment/3-deployment.html#goal",
     "title": "Deploy your dashboard",
     "section": "Goal",
-    "text": "Goal\n\nDeploy your latest dashboard to Posit Connect Cloud.\n\n\nSign up for free at https://connect.posit.cloud/ (requires GitHub account)\nClick Publish and select Quarto\nSelect your dashboard repository\nClick Publish\n\n\n  \n    −\n    +\n \n 10:00"
+    "text": "Goal\n\nDeploy your latest dashboard to Posit Connect Cloud.\n\n\nSign up for free at https://connect.posit.cloud/ (requires GitHub account)\nClick Publish and select Quarto\nSelect your dashboard repository\nClick Publish\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#time-for-qa",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#time-for-qa",
+    "objectID": "3-deployment/3-deployment.html#time-for-qa",
+    "href": "3-deployment/3-deployment.html#time-for-qa",
     "title": "Deploy your dashboard",
     "section": "Time for Q&A!",
     "text": "Time for Q&A!"
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#qa-after-workshop",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#qa-after-workshop",
-    "title": "Deploy your dashboard",
-    "section": "Q&A after workshop",
-    "text": "Q&A after workshop\nhttps://github.com/quarto-dev/quarto-cli/discussions"
-  },
-  {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#learning-more",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#learning-more",
+    "objectID": "3-deployment/3-deployment.html#learning-more",
+    "href": "3-deployment/3-deployment.html#learning-more",
     "title": "Deploy your dashboard",
     "section": "Learning More",
     "text": "Learning More\n\n\n\nAbout Quarto\nhttps://quarto.org/\n\n\nQuarto Dashboards\nhttps://quarto.org/docs/dashboards/\n\n\nShiny for R\nhttps://shiny.posit.co/r/\n\n\nShiny for Python\nhttps://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/"
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#thank-you",
-    "href": "4-parameters-interactivity-deployment/4-parameters-interactivity-deployment.html#thank-you",
+    "objectID": "3-deployment/3-deployment.html#thank-you",
+    "href": "3-deployment/3-deployment.html#thank-you",
     "title": "Deploy your dashboard",
     "section": "Thank you!",
-    "text": "Thank you!\n\n\n\n\npos.it/quarto-dashboards-24"
+    "text": "Thank you!\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#about-us",
@@ -452,11 +184,11 @@
     "text": "Getting help\n\nDuring my turn and your turn segments – raise your hand\nDuring our turn segments – also feel free to raise your hand for questions but if your question seems specific to your setup, we might come around and help during the next your turn break"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#setup",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#setup",
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto",
     "title": "Intro to Quarto",
-    "section": "Setup",
-    "text": "Setup\n\n1. Software: Download and install Python and the latest version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter"
+    "section": "A tour of Quarto",
+    "text": "A tour of Quarto\n\nSit back and enjoy!\n\n\n\nUnderstanding the relationship between Quarto and the Jupyter engine\nUsing Quarto in VS Code\nCreating Quarto documents (metadata, markdown text, and code)\nWorking with Quarto projects"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto",
@@ -473,11 +205,25 @@
     "text": "With Quarto …\nyou can weave together narrative and code to produce elegantly formatted output such as documents, web pages, blog posts, books, dashboards, and more, with…\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnatively multi-lingual, supporting for multiple languages like Python, Julia, Observable, and more via the Jupyter engine for executable code chunks"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto",
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
     "title": "Intro to Quarto",
-    "section": "A tour of Quarto",
-    "text": "A tour of Quarto\n\nSit back and enjoy!\n\n\n\nUnderstanding the relationship between Quarto and the Jupyter engine\nUsing Quarto in VS Code\nCreating Quarto documents (metadata, markdown text, and code)\nWorking with Quarto projects"
+    "section": "A pause",
+    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\nQuarto on Wikipedia\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#one-install-batteries-included",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#one-install-batteries-included",
+    "title": "Intro to Quarto",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nDashboards\n…\n\n\n\n\nAny language, exact same approach and syntax"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#many-quarto-formats",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#many-quarto-formats",
+    "title": "Intro to Quarto",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nDashboards"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#revisit-what-is-quarto",
@@ -501,11 +247,11 @@
     "text": "Under the hood\nwith a wider lens…\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#aside-lua-filters",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#aside-lua-filters",
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
     "title": "Intro to Quarto",
-    "section": "Aside: Lua filters",
-    "text": "Aside: Lua filters\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html:\n\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!\n\n\n\n\nWe won’t go into the details of writing Lua filters in this workshop, and you don’t need to worry about learning about Lua filters unless you’re working on extending Quarto."
+    "section": "Converting notebooks",
+    "text": "Converting notebooks\nYou can convert between .ipynb and .qmd representations of a notebook using the quarto convert command.\nFor example:\n\n\nTerminal\n\nquarto convert my-document.ipynb # converts to qmd\nquarto convert my-document.qmd   # converts to ipynb"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#from-the-comfort-of-your-own-homeworkspace",
@@ -515,25 +261,46 @@
     "text": "From the comfort of your own homeworkspace"
   },
   {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
+    "title": "Intro to Quarto",
+    "section": "Quarto VS Code extension",
+    "text": "Quarto VS Code extension\n\n\nIntegrated render and preview for Quarto documents.\nSyntax highlighting for markdown and embedded languages\nCompletion and diagnostics for YAML options\nCompletion for embedded languages (e.g. Python, R, Julia, etc.)\nCommands and key-bindings for running cells and selected lines"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
+    "title": "Intro to Quarto",
+    "section": "Previewing and rendering",
+    "text": "Previewing and rendering"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-1",
+    "title": "Intro to Quarto",
+    "section": "Previewing and rendering",
+    "text": "Previewing and rendering"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-2",
+    "title": "Intro to Quarto",
+    "section": "Previewing and rendering",
+    "text": "Previewing and rendering"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing",
+    "title": "Intro to Quarto",
+    "section": "Previewing",
+    "text": "Previewing\nin VS Code\n\nOption 1: In the Terminal via quarto preview\n\n\n\nTerminal\n\nquarto preview my-document.qmd\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
+  },
+  {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#rendering",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#rendering",
     "title": "Intro to Quarto",
     "section": "Rendering",
     "text": "Rendering\nin VS Code\n\nOption 1: In the Terminal via quarto render\n\n\n\nTerminal\n\nquarto render\n\n\n\nOption 2: Use the Command Palette: Quarto: Render Project"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#one-install-batteries-included",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#one-install-batteries-included",
-    "title": "Intro to Quarto",
-    "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nDashboards\n…\n\n\n\n\nAny language, exact same approach and syntax"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#many-quarto-formats",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#many-quarto-formats",
-    "title": "Intro to Quarto",
-    "section": "Many Quarto formats",
-    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nDashboards"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn",
@@ -543,11 +310,11 @@
     "text": "Your turn\n\n1. Software: Download and install Python and the latest version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
     "title": "Intro to Quarto",
-    "section": "A pause",
-    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\nQuarto on Wikipedia\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+    "section": "Your turn",
+    "text": "Your turn\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\nSee full instructions under Setup: pos.it/smalldatasf-quarto-workshop\nThen: In VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert.\nPreview the .qmd file."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document",
@@ -606,6 +373,118 @@
     "text": "Anatomy of a Quarto document\nInline code executes code within Markdown\n\n\nmy-document.qmd\n\n```{python}\nmedals = 5\n```\n\nThe number of medals is `{python} medals`.\n\nResults in:\nThe number of medals is 5."
   },
   {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
+    "title": "Intro to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
+    "title": "Intro to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with country on the x-axis and medals on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
+    "title": "Intro to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk\n\n\necho\nInclude the source code\n\n\nwarning\nInclude warnings\n\n\ninclude\nInclude code and results\n\n\n\nOther options: https://quarto.org/docs/computations/execution-options.html"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-2",
+    "title": "Intro to Quarto",
+    "section": "Your turn",
+    "text": "Your turn\nIn VS Code, open the olympicdash-0.qmd file.\n\n\nIn the YAML, add an author field and add your name.\nAdd some Markdown text to the document.\nFor one of the tables, add the chunk option echo: false.\nAdd this to the top of the plotnine chart to set the order of medal variable.\n\nolympics['medal'] = pd.Categorical(\n    olympics['medal'], \n    categories=[\"Gold\", \"Silver\", \"Bronze\"], \n    ordered=True\n)\n\nSave in between each step and see how the preview changes.\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#images-and-links",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#images-and-links",
+    "title": "Intro to Quarto",
+    "section": "Images and links",
+    "text": "Images and links\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![](penguin.jpg)"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#tables",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#tables",
+    "title": "Intro to Quarto",
+    "section": "Tables",
+    "text": "Tables\nTables\n```{markdown}\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|    12 | 12   | 12      |   12   |\n|   123 | 123  | 123     |  123   |\n|     1 | 1    | 1       |   1    |\n```\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-and-spans",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-and-spans",
+    "title": "Intro to Quarto",
+    "section": "Divs and Spans",
+    "text": "Divs and Spans\nYou can add classes, attributes, and other identifiers to content using Divs and Spans.\nDivs\n::: {.border}\nThis content can be styled with a border\n:::\nSpans\n[This is *some text*]{.class key=\"val\"}"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs",
+    "title": "Intro to Quarto",
+    "section": "Divs",
+    "text": "Divs\nCallout blocks\n\n\nmy-document.qmd\n\n:::{.callout-tip}\n\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nTip\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
+    "title": "Intro to Quarto",
+    "section": "Divs",
+    "text": "Divs\nMultiple columns\n\n\nmy-document.qmd\n\n::: {layout-ncol=2}\n\n![](penguin.jpg)\n\nPhoto by &lt;a href=\"https://unsplash.com/@corneliusventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Cornelius Ventures&lt;/a&gt; on &lt;a href=\"https://unsplash.com/s/photos/penguin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Unsplash&lt;/a&gt;\n:::\n\n\n\n\n\n\n\n\n\n\n\nPhoto by Cornelius Ventures on Unsplash"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
+    "title": "Intro to Quarto",
+    "section": "Divs",
+    "text": "Divs\nTabsets\n\n\nmy-document.qmd\n\n::: {.panel-tabset group=\"language\"}\n## R\n\n`library(dplyr)`\n\n## Python\n\n`import pandas as pd`\n:::\n\n\nRPython\n\n\nlibrary(dplyr)\n\n\nimport pandas as pd"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#spans",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#spans",
+    "title": "Intro to Quarto",
+    "section": "Spans",
+    "text": "Spans\n\n\nmy-document.qmd\n\nThis is text that is [red]{style=\"color:red;\"}.\n\n\nThis is text that is red.\n\n\nmy-document.qmd\n\n![](penguin.jpg){fig-alt=\"A photo of a penguin jumping\"}"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#theming",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#theming",
+    "title": "Intro to Quarto",
+    "section": "Theming",
+    "text": "Theming\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\ntheme: sketchy\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-3",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-3",
+    "title": "Intro to Quarto",
+    "section": "Your turn",
+    "text": "Your turn\n\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\nEdit the Markdown text you wrote in the previous exercise so that one of the words is blue.\nAdd a code chunk cell with the option include: false. Use the dataset to find the most gold medals by team.\nUse inline code to write a sentence such as: “The most gold medals won by a single team are [count].”\nAdd a Div of your choice.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-1",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-2",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-2",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: pdf\n---"
+  },
+  {
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-3",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-3",
+    "title": "Intro to Quarto",
+    "section": "Changing formats",
+    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\ntheme: sketchy\n---"
+  },
+  {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-project",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-project",
     "title": "Intro to Quarto",
@@ -634,102 +513,11 @@
     "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbook: Books\nmanuscript: Manuscripts (Quarto 1.4+)\ndashboard: Dashboards (Quarto 1.4+)"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-websites",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-websites",
+    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto-1",
+    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto-1",
     "title": "Intro to Quarto",
-    "section": "Quarto websites",
-    "text": "Quarto websites\n\n\nWebsites are essentially format: html + a Quarto Project file\nBut a website is different than format: html in that it has multiple pages\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource\n\nIn books, you can cross-reference between pages (chapters), but (currently), you can’t cross-reference between pages in websites"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#whole-game",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#whole-game",
-    "title": "Intro to Quarto",
-    "section": "Whole game",
-    "text": "Whole game\n\nLet’s build a website that features the Jupyter notebook we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to GitHub Pages with quarto publish"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
-    "title": "Intro to Quarto",
-    "section": "Your turn",
-    "text": "Your turn\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\nSee full instructions under Setup: pos.it/smalldatasf-quarto-workshop\nThen: In VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert.\nPreview the .qmd file."
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#listings-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#listings-1",
-    "title": "Intro to Quarto",
-    "section": "Listings",
-    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#blogs",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#blogs",
-    "title": "Intro to Quarto",
-    "section": "Blogs",
-    "text": "Blogs\n\nLet’s now add a blog component to our website:\n\nMove your two notebook files into a new a folder called posts.\nCollect these notebooks in a new blog page using the listings feature.\n\nDon’t forget to make corresponding changes in your _quarto.yml file."
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#customizing-your-blog",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#customizing-your-blog",
-    "title": "Intro to Quarto",
-    "section": "Customizing your blog",
-    "text": "Customizing your blog\n\nExperiment with the style of listings and choose one you like.\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#when-should-code-be-re-run",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#when-should-code-be-re-run",
-    "title": "Intro to Quarto",
-    "section": "When should code be re-run?",
-    "text": "When should code be re-run?\n\n\nYou might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website.\nBut, chances are, that’s not what you want.\n\nJust playing around styling – you probably don’t want to run the code again\nChanged some code in a document – you probably want to re-run the code in that document, but not necessarily others\nMade a big change affecting computations on many or all pages – you probably want to re-run all code\n\nfreeze and cache options give you fine control over these decisions"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#freeze",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#freeze",
-    "title": "Intro to Quarto",
-    "section": "Freeze",
-    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory.\nFor blogs, set feeze in _metadata.yml at the root of the posts directory.\nYou can have it only within specific subdirectories for more complex sites."
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#freeze-and-jupyter-notebooks",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#freeze-and-jupyter-notebooks",
-    "title": "Intro to Quarto",
-    "section": "Freeze and Jupyter notebooks",
-    "text": "Freeze and Jupyter notebooks\n\nWhen rendering an .ipynb, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook\nTo execute the cells, pass the --execute flag to render:\n\n\n\nTerminal\n\nquarto render notebook.ipynb --execute\n\n\nOr specify this behavior within the notebook’s YAML front matter:\n\n---\nexecute:\n  enabled: true\n---"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#cache",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#cache",
-    "title": "Intro to Quarto",
-    "section": "Cache",
-    "text": "Cache\n\nCache stores the results of computations for a specific file\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined)\ncache can also be set at the chunk level, particularly useful for computationally expensive chunks"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#freeze-vs.-cache",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#freeze-vs.-cache",
-    "title": "Intro to Quarto",
-    "section": "Freeze vs. cache",
-    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{r}\n#| cache: true\n\n1 + 1\n```\n\n[1] 2"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#freezing",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#freezing",
-    "title": "Intro to Quarto",
-    "section": "Freezing",
-    "text": "Freezing\n\nAdd a _metadata.yml file to the posts directory of your website and update the YAML front matter of your blog posts to execute the cells when quarto rendering."
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#learn-more",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#learn-more",
-    "title": "Intro to Quarto",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/websites"
-  },
-  {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#links-for-reviewing-tutorial-materials",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#links-for-reviewing-tutorial-materials",
-    "title": "Intro to Quarto",
-    "section": "Links for reviewing tutorial materials",
-    "text": "Links for reviewing tutorial materials\n\nSlides: https://bit.ly/quarto-pydata\n\nIf you’re interested, source code for slides: https://github.com/mine-cetinkaya-rundel/quarto-pydata-slides\n\nStarter repo: https://github.com/mine-cetinkaya-rundel/quarto-pydata-website\nComplete repo: https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed\n\nPublished website: https://mine-cetinkaya-rundel.github.io/quarto-pydata-website-completed"
+    "section": "A tour of Quarto",
+    "text": "A tour of Quarto\n\n\nUnderstanding the relationship between Quarto and the Jupyter engine\nUsing Quarto in VS Code\nCreating Quarto documents (metadata, markdown text, and code)\nWorking with Quarto projects"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#section",
@@ -739,121 +527,11 @@
     "text": "thank you!\n\n\nany questions?\n\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#acknowledgements",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#acknowledgements",
-    "title": "Intro to Quarto",
-    "section": "Acknowledgements",
-    "text": "Acknowledgements\n\nArtwork by Allison Horst: https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote\nCode examples from palmerpenguins: https://github.com/mcnakhaee/palmerpenguins\n\n\n\n\n\npos.it/small-data-sf-quarto-workshop"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#bootswatch-themes",
-    "href": "3-theming-styling/3-theming-styling.html#bootswatch-themes",
-    "title": "Theming and styling",
-    "section": "Bootswatch themes",
-    "text": "Bootswatch themes\nQuarto dashboards can be styled with one of the 25 themes from the Bootswatch project:\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#bootswatch-themes-1",
-    "href": "3-theming-styling/3-theming-styling.html#bootswatch-themes-1",
-    "title": "Theming and styling",
-    "section": "Bootswatch themes",
-    "text": "Bootswatch themes\n\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#bootswatch-themes-2",
-    "href": "3-theming-styling/3-theming-styling.html#bootswatch-themes-2",
-    "title": "Theming and styling",
-    "section": "Bootswatch themes",
-    "text": "Bootswatch themes\n\nhttps://bootswatch.com"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#custom-themes",
-    "href": "3-theming-styling/3-theming-styling.html#custom-themes",
-    "title": "Theming and styling",
-    "section": "Custom themes",
-    "text": "Custom themes\n\n\nYou can create an entirely custom theme and apply it to your dashboard:\nformat:\n  theme: style.scss\nOr you can customize an existing Bootswatch theme:\nformat:\n  theme:\n    - cosmo\n    - custom.scss"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#a-unified-look",
-    "href": "3-theming-styling/3-theming-styling.html#a-unified-look",
-    "title": "Theming and styling",
-    "section": "A unified look",
-    "text": "A unified look\n\n\nAchieving a unified look for your dashboard requires customizing your dashboard along with your plots and tables\nChoose colors thare complementary and visually appealing (at least to you) bu also following accessbility best practices\nStick to pre-defined, accessible color scales where possible"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#start",
-    "href": "3-theming-styling/3-theming-styling.html#start",
-    "title": "Theming and styling",
-    "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-conf-2024/olympicdash (https://github.com/posit-conf-2024/olympicdash) and work on olympicdash-py-3.qmd."
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#goal",
-    "href": "3-theming-styling/3-theming-styling.html#goal",
-    "title": "Theming and styling",
-    "section": "Goal",
-    "text": "Goal\nYour goal is to create a dashboard that looks like the following:"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#step-1",
-    "href": "3-theming-styling/3-theming-styling.html#step-1",
-    "title": "Theming and styling",
-    "section": "Step 1",
-    "text": "Step 1\n\n\nUpdate the theme to the appropriate Bootswatch theme.\nRender the dashboard and identify what other aspects of the dashboard theme and cell outputs should be modified.\n\n\n\n\n\n\n\n\nTip\n\n\nWork with your neighbor if you’re having difficulty finding which theme to use.\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#step-2",
-    "href": "3-theming-styling/3-theming-styling.html#step-2",
-    "title": "Theming and styling",
-    "section": "Step 2",
-    "text": "Step 2\n\nPolish your plots to get them as close to the final goal as you can.\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "3-theming-styling/3-theming-styling.html#theming-quarto",
-    "href": "3-theming-styling/3-theming-styling.html#theming-quarto",
-    "title": "Theming and styling",
-    "section": "Theming Quarto",
-    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!\n\n\n\n\n\n\npos.it/quarto-dashboards-24"
-  },
-  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "From Notebooks to Dashboards with Quarto",
     "section": "",
     "text": "Attribution 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public: \nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\nIf You Share Adapted Material You produce, the Adapter’s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
-  },
-  {
-    "objectID": "3-theming-styling/index.html",
-    "href": "3-theming-styling/index.html",
-    "title": "Theming and styling",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Theming and styling"
-    ]
-  },
-  {
-    "objectID": "3-theming-styling/index.html#slides",
-    "href": "3-theming-styling/index.html#slides",
-    "title": "Theming and styling",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Theming and styling"
-    ]
-  },
-  {
-    "objectID": "3-theming-styling/index.html#exercises",
-    "href": "3-theming-styling/index.html#exercises",
-    "title": "Theming and styling",
-    "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-3.qmd.",
-    "crumbs": [
-      "Modules",
-      "Theming and styling"
-    ]
   },
   {
     "objectID": "0-intro-to-quarto/index.html",
@@ -889,8 +567,8 @@
     ]
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/index.html",
-    "href": "4-parameters-interactivity-deployment/index.html",
+    "objectID": "3-deployment/index.html",
+    "href": "3-deployment/index.html",
     "title": "Deploy your dashboard",
     "section": "",
     "text": "View slides in full screen",
@@ -900,8 +578,8 @@
     ]
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/index.html#slides",
-    "href": "4-parameters-interactivity-deployment/index.html#slides",
+    "objectID": "3-deployment/index.html#slides",
+    "href": "3-deployment/index.html#slides",
     "title": "Deploy your dashboard",
     "section": "",
     "text": "View slides in full screen",
@@ -911,47 +589,14 @@
     ]
   },
   {
-    "objectID": "4-parameters-interactivity-deployment/index.html#exercises",
-    "href": "4-parameters-interactivity-deployment/index.html#exercises",
+    "objectID": "3-deployment/index.html#exercises",
+    "href": "3-deployment/index.html#exercises",
     "title": "Deploy your dashboard",
     "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-4.qmd.",
+    "text": "Exercises\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), work on olympicdash-4.qmd.",
     "crumbs": [
       "Modules",
       "Deploy your dashboard"
-    ]
-  },
-  {
-    "objectID": "2-dashboard-components/index.html",
-    "href": "2-dashboard-components/index.html",
-    "title": "Dashboard components",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Dashboard components"
-    ]
-  },
-  {
-    "objectID": "2-dashboard-components/index.html#slides",
-    "href": "2-dashboard-components/index.html#slides",
-    "title": "Dashboard components",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Dashboard components"
-    ]
-  },
-  {
-    "objectID": "2-dashboard-components/index.html#exercises",
-    "href": "2-dashboard-components/index.html#exercises",
-    "title": "Dashboard components",
-    "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/small-data-sf-olympicdash (https://github.com/posit-dev/small-data-sf-olympicdash) and work on olympicdash-py-2.qmd.",
-    "crumbs": [
-      "Modules",
-      "Dashboard components"
     ]
   },
   {
@@ -1005,275 +650,6 @@
     ]
   },
   {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-many-outputs",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#quarto-many-outputs",
-    "title": "Hello, dashboards!",
-    "section": "Quarto ➝ many outputs",
-    "text": "Quarto ➝ many outputs\nWith Quarto you can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, and more…"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-dashboards",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#quarto-dashboards",
-    "title": "Hello, dashboards!",
-    "section": "Quarto ➝ dashboards",
-    "text": "Quarto ➝ dashboards\nSince Quarto 1.4!"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-version",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#quarto-version",
-    "title": "Hello, dashboards!",
-    "section": "Quarto version",
-    "text": "Quarto version\n\n\n\n\n\n\nTip\n\n\nRun the following in your Terminal to find your Quarto version:\n\n\nTerminal\n\nquarto --version"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard---python",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard---python",
-    "title": "Hello, dashboards!",
-    "section": "🍰 Olympic Games dashboard - Python",
-    "text": "🍰 Olympic Games dashboard - Python\n\n\n🔗 mine.quarto.pub/olympic-games-py"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
-    "title": "Hello, dashboards!",
-    "section": "Notebook ➝ Dashboard",
-    "text": "Notebook ➝ Dashboard\n\n\n\nolympicdash-py.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\n---\n\n# notebook content goes here..."
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#cards",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#cards",
-    "title": "Hello, dashboards!",
-    "section": "Cards",
-    "text": "Cards\nDashboards are composed of cards."
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-and-columns",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-and-columns",
-    "title": "Hello, dashboards!",
-    "section": "Rows and columns",
-    "text": "Rows and columns\nCards are arranged into rows and columns."
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#layouts",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#layouts",
-    "title": "Hello, dashboards!",
-    "section": "Layouts",
-    "text": "Layouts\nPages, tabsets, and sidebars allow for more advanced layouts."
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-by-step",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-by-step",
-    "title": "Hello, dashboards!",
-    "section": "Step-by-step",
-    "text": "Step-by-step\nLet’s make a dashboard, step-by-step"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard",
-    "title": "Hello, dashboards!",
-    "section": "Step 1: format: dashboard",
-    "text": "Step 1: format: dashboard\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
-    "title": "Hello, dashboards!",
-    "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
-    "title": "Hello, dashboards!",
-    "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
-    "title": "Hello, dashboards!",
-    "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
-    "title": "Hello, dashboards!",
-    "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
-    "title": "Hello, dashboards!",
-    "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
-    "title": "Hello, dashboards!",
-    "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
-    "title": "Hello, dashboards!",
-    "section": "Steps 1 - 4",
-    "text": "Steps 1 - 4"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#start",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#start",
-    "title": "Hello, dashboards!",
-    "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-1.qmd."
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#goal",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#goal",
-    "title": "Hello, dashboards!",
-    "section": "Goal",
-    "text": "Goal\nYour goal is to create the following dashboard."
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-1",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
-    "title": "Hello, dashboards!",
-    "section": "Step 1",
-    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
-    "title": "Hello, dashboards!",
-    "section": "Step 2",
-    "text": "Step 2\n\n\nAdd a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you’re building).\nAdd the olympics logo from the images folder.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3",
-    "title": "Hello, dashboards!",
-    "section": "Step 3",
-    "text": "Step 3\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/small-data-sf-quarto-workshop"
-  },
-  {
-    "objectID": "2-components-theming/index.html",
-    "href": "2-components-theming/index.html",
-    "title": "Components and themes",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Components and themes"
-    ]
-  },
-  {
-    "objectID": "2-components-theming/index.html#slides",
-    "href": "2-components-theming/index.html#slides",
-    "title": "Components and themes",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Components and themes"
-    ]
-  },
-  {
-    "objectID": "2-components-theming/index.html#exercises",
-    "href": "2-components-theming/index.html#exercises",
-    "title": "Components and themes",
-    "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-2.qmd.",
-    "crumbs": [
-      "Modules",
-      "Components and themes"
-    ]
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#dashboard-deployment",
-    "href": "3-deployment/3-deployment.html#dashboard-deployment",
-    "title": "Deploy your dashboard",
-    "section": "Dashboard deployment",
-    "text": "Dashboard deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#deployment-options",
-    "href": "3-deployment/3-deployment.html#deployment-options",
-    "title": "Deploy your dashboard",
-    "section": "Deployment options",
-    "text": "Deployment options\n\n\nServer\n\nCloud\n\nPosit Connect Cloud\nQuarto Pub\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]\nUsing ShinyLive"
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#start",
-    "href": "3-deployment/3-deployment.html#start",
-    "title": "Deploy your dashboard",
-    "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-4.qmd."
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#goal",
-    "href": "3-deployment/3-deployment.html#goal",
-    "title": "Deploy your dashboard",
-    "section": "Goal",
-    "text": "Goal\n\nDeploy your latest dashboard to Posit Connect Cloud.\n\n\nSign up for free at https://connect.posit.cloud/ (requires GitHub account)\nClick Publish and select Quarto\nSelect your dashboard repository\nClick Publish\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#time-for-qa",
-    "href": "3-deployment/3-deployment.html#time-for-qa",
-    "title": "Deploy your dashboard",
-    "section": "Time for Q&A!",
-    "text": "Time for Q&A!"
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#learning-more",
-    "href": "3-deployment/3-deployment.html#learning-more",
-    "title": "Deploy your dashboard",
-    "section": "Learning More",
-    "text": "Learning More\n\n\n\nAbout Quarto\nhttps://quarto.org/\n\n\nQuarto Dashboards\nhttps://quarto.org/docs/dashboards/\n\n\nShiny for R\nhttps://shiny.posit.co/r/\n\n\nShiny for Python\nhttps://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/"
-  },
-  {
-    "objectID": "3-deployment/3-deployment.html#thank-you",
-    "href": "3-deployment/3-deployment.html#thank-you",
-    "title": "Deploy your dashboard",
-    "section": "Thank you!",
-    "text": "Thank you!\n\n\n\n\npos.it/quarto-dashboards-24"
-  },
-  {
-    "objectID": "3-deployment/index.html",
-    "href": "3-deployment/index.html",
-    "title": "Deploy your dashboard",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Deploy your dashboard"
-    ]
-  },
-  {
-    "objectID": "3-deployment/index.html#slides",
-    "href": "3-deployment/index.html#slides",
-    "title": "Deploy your dashboard",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Modules",
-      "Deploy your dashboard"
-    ]
-  },
-  {
-    "objectID": "3-deployment/index.html#exercises",
-    "href": "3-deployment/index.html#exercises",
-    "title": "Deploy your dashboard",
-    "section": "Exercises",
-    "text": "Exercises\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-4.qmd.",
-    "crumbs": [
-      "Modules",
-      "Deploy your dashboard"
-    ]
-  },
-  {
     "objectID": "2-components-theming/2-components-theming.html#navigation-bar-and-pages",
     "href": "2-components-theming/2-components-theming.html#navigation-bar-and-pages",
     "title": "Dashboard components and themes",
@@ -1295,13 +671,6 @@
     "text": "Cards\nCards are containers for code cell outputs (e.g., plots, tables, value boxes) and free form markdown text. The content of cards typically maps to cells in your notebook or source document."
   },
   {
-    "objectID": "2-components-theming/2-components-theming.html#a-note-on-computing-language",
-    "href": "2-components-theming/2-components-theming.html#a-note-on-computing-language",
-    "title": "Dashboard components and themes",
-    "section": "A note on computing language",
-    "text": "A note on computing language\n\nThe examples in this module will primarily feature Python code in code cells\nAll code in code cells can be replaced with R, Julia, Observable, etc. and the layout would look exactly the same\nWhen/if different behavior in layout is expected, this will be explicitly called out and examples in other computing languages will also be provided"
-  },
-  {
     "objectID": "2-components-theming/2-components-theming.html#pages",
     "href": "2-components-theming/2-components-theming.html#pages",
     "title": "Dashboard components and themes",
@@ -1321,20 +690,6 @@
     "title": "Dashboard components and themes",
     "section": "Pages",
     "text": "Pages\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Pages\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#logo",
-    "href": "2-components-theming/2-components-theming.html#logo",
-    "title": "Dashboard components and themes",
-    "section": "Logo",
-    "text": "Logo\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Logo\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#logo-1",
-    "href": "2-components-theming/2-components-theming.html#logo-1",
-    "title": "Dashboard components and themes",
-    "section": "Logo",
-    "text": "Logo\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Logo\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#navigation-buttons",
@@ -1384,69 +739,6 @@
     "title": "Dashboard components and themes",
     "section": "Sidebars",
     "text": "Sidebars\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Sidebars\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/quarto-dev/quarto-cli\n        aria-label: GitHub\n      - icon: linkedin\n        href: https://www.linkedin.com/company/posit-software/\n        aria-label: LinkedIn\n      - icon: youtube\n        href: https://youtube.com/\n        aria-label: YouTube\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n# {.sidebar}\n\nInformation and/or interactivity tools that you want on every page go here.\n\n# Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n# Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows",
-    "href": "2-components-theming/2-components-theming.html#rows",
-    "title": "Dashboard components and themes",
-    "section": "Rows",
-    "text": "Rows\nBy default, cards are laid out in rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-1",
-    "href": "2-components-theming/2-components-theming.html#rows-1",
-    "title": "Dashboard components and themes",
-    "section": "Rows",
-    "text": "Rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-2",
-    "href": "2-components-theming/2-components-theming.html#rows-2",
-    "title": "Dashboard components and themes",
-    "section": "Rows",
-    "text": "Rows\nDefault value of orientation is rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    orientation: rows\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns",
-    "href": "2-components-theming/2-components-theming.html#columns",
-    "title": "Dashboard components and themes",
-    "section": "Columns",
-    "text": "Columns\nSetting orientation to columns makes each ## indicate a column instead of a row:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns-1",
-    "href": "2-components-theming/2-components-theming.html#columns-1",
-    "title": "Dashboard components and themes",
-    "section": "Columns",
-    "text": "Columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-then-columns",
-    "href": "2-components-theming/2-components-theming.html#rows-then-columns",
-    "title": "Dashboard components and themes",
-    "section": "Rows, then columns",
-    "text": "Rows, then columns\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#rows-then-columns-1",
-    "href": "2-components-theming/2-components-theming.html#rows-then-columns-1",
-    "title": "Dashboard components and themes",
-    "section": "Rows, then columns",
-    "text": "Rows, then columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns-then-rows",
-    "href": "2-components-theming/2-components-theming.html#columns-then-rows",
-    "title": "Dashboard components and themes",
-    "section": "Columns, then rows",
-    "text": "Columns, then rows\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#columns-then-rows-1",
-    "href": "2-components-theming/2-components-theming.html#columns-then-rows-1",
-    "title": "Dashboard components and themes",
-    "section": "Columns, then rows",
-    "text": "Columns, then rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#heights-and-widths-of-rows-and-columns",
@@ -1530,7 +822,7 @@
     "href": "2-components-theming/2-components-theming.html#start",
     "title": "Dashboard components and themes",
     "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-2.qmd."
+    "text": "Start\n\nWork on olympicdash-2.qmd."
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#goal",
@@ -1544,49 +836,42 @@
     "href": "2-components-theming/2-components-theming.html#step-1",
     "title": "Dashboard components and themes",
     "section": "Step 1",
-    "text": "Step 1\n\n\nAdd two pages - one for Summer Olympics and one for Winter Olympics.\nDuplicate existing dashboard content for the two types of olympic games with subsets of data from the corresponding season.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 1\n\n\nMake the columns 65% (first) and 35% (second) of width of the dashboard.\nDivide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.\nIn the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#step-2",
     "href": "2-components-theming/2-components-theming.html#step-2",
     "title": "Dashboard components and themes",
     "section": "Step 2",
-    "text": "Step 2\n\nIn the Summer Olympics page:\n\nMake the columns 65% (first) and 35% (second) of width of the dashboard.\nDivide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.\nIn the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 2\n\n\nDivide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.\nIn the first row of this second column, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the award-fill icon.\n\n\n\n\n\n\n\n\nUse the code commented with TODO for Step 2 to help you create the value boxes.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#step-3",
     "href": "2-components-theming/2-components-theming.html#step-3",
     "title": "Dashboard components and themes",
     "section": "Step 3",
-    "text": "Step 3\n\nIn the Summer Olympics page:\n\nDivide the second column into rows of 25% (first) and 75% (second) of height of the dashboard.\nIn the second row of the second column, create tables (using great_tables for Python) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values.\nPlace these tables in tabsets with descriptive text about table content in the same card/tab.\n\n\n\n\n  \n    −\n    +\n \n 10:00"
+    "text": "Step 3\n\n\nIn the second row of the second column, create tables (using the great_tables library) of top 30 and bottom 30 total medals by team, sorted in descending order for the top 30 and ascending order for the bottom 30 total medals, and add color to the table based on data values. Use data_color().\nPlace these tables in tabsets with descriptive text about table content in the same card/tab.\n\n\n\n\n\n\n\n\nUn-comment the code under TODO for Step 3 and move it to the appropriate location. Use olympics_sorted_descending_top30 and olympics_sorted_ascending_bottom30 to create the tables.\n\n\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "2-components-theming/2-components-theming.html#step-4",
-    "href": "2-components-theming/2-components-theming.html#step-4",
+    "objectID": "2-components-theming/2-components-theming.html#interactive-plotting",
+    "href": "2-components-theming/2-components-theming.html#interactive-plotting",
     "title": "Dashboard components and themes",
-    "section": "Step 4",
-    "text": "Step 4\n\nIn the first row of the second column of the Summer Olympics page, add value boxes for highest numbers of gold, silver, and bronze medals with appropriate color for each medal and using the award-fill icon.\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#step-5",
-    "href": "2-components-theming/2-components-theming.html#step-5",
-    "title": "Dashboard components and themes",
-    "section": "Step 5",
-    "text": "Step 5\n\nDuplicate dashboard content for the Winter Olympics page, share your results with your neighbor, and discuss approaches for not repeating yourself in your code.\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "section": "Interactive plotting",
+    "text": "Interactive plotting\n\nWe’ve been creating static plots with plotnine\nBut you can also add interactive plots to your dashboard, e.g., with plotly\n\n\n🔗 https://saraaltman.quarto.pub/olympicdash-plotly/"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#bootswatch-themes",
     "href": "2-components-theming/2-components-theming.html#bootswatch-themes",
     "title": "Dashboard components and themes",
     "section": "Bootswatch themes",
-    "text": "Bootswatch themes\nQuarto dashboards can be styled with one of the 25 themes from the Bootswatch project:\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Bootswatch themes\nQuarto dashboards can be styled with one of the 25 themes from the Bootswatch project:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#bootswatch-themes-1",
     "href": "2-components-theming/2-components-theming.html#bootswatch-themes-1",
     "title": "Dashboard components and themes",
     "section": "Bootswatch themes",
-    "text": "Bootswatch themes\n\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Bootswatch themes\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#bootswatch-themes-2",
@@ -1607,216 +892,293 @@
     "href": "2-components-theming/2-components-theming.html#goal-1",
     "title": "Dashboard components and themes",
     "section": "Goal",
-    "text": "Goal\nYour goal is to create a dashboard that looks like the following:\n\n\n\nUpdate the theme to the appropriate Bootswatch theme.\n\n\n\n\n\n\n\n\nTip\n\n\nWork with your neighbor if you’re having difficulty finding which theme to use.\n\n\n\n\n\n  \n    −\n    +\n \n 03:00"
+    "text": "Goal\nYour goal is to create a dashboard that looks like the following:"
+  },
+  {
+    "objectID": "2-components-theming/2-components-theming.html#step-1-1",
+    "href": "2-components-theming/2-components-theming.html#step-1-1",
+    "title": "Dashboard components and themes",
+    "section": "Step 1",
+    "text": "Step 1\n\n\nUpdate the theme to the appropriate Bootswatch theme.\n\n\n\n\n  \n    −\n    +\n \n 03:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#theming-quarto",
     "href": "2-components-theming/2-components-theming.html#theming-quarto",
     "title": "Dashboard components and themes",
     "section": "Theming Quarto",
-    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!\n\n\n\n\n\npos.it/quarto-dashboards-24"
+    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!\n\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#setup-continued",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#setup-continued",
-    "title": "Intro to Quarto",
-    "section": "Setup, continued",
-    "text": "Setup, continued\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK."
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-many-outputs",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#quarto-many-outputs",
+    "title": "Hello, dashboards!",
+    "section": "Quarto ➝ many outputs",
+    "text": "Quarto ➝ many outputs\nWith Quarto you can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books, and more…"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-dashboards",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#quarto-dashboards",
+    "title": "Hello, dashboards!",
+    "section": "Quarto ➝ dashboards",
+    "text": "Quarto ➝ dashboards\nSince Quarto 1.4!"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-version",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#quarto-version",
+    "title": "Hello, dashboards!",
+    "section": "Quarto version",
+    "text": "Quarto version\n\n\n\n\n\n\nTip\n\n\nRun the following in your Terminal to find your Quarto version:\n\n\nTerminal\n\nquarto --version"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "rows and columns value boxes multiple pages"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-1",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "sidebar"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-2",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-2",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "interactive leaflet widget html widget"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-3",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-3",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "interactive plotly code"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-4",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-4",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "dashboard for a model provides context into the model by adding narrative to the dashboard not just raw json dump"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-5",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-5",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "tabset"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-6",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-6",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "uses shiny for python select island and penguins and distributions will change can see all these dashboards and their code on the quarto website under gallery"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
     "href": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
     "title": "Hello, dashboards!",
     "section": "🍰 Olympic Games dashboard",
-    "text": "🍰 Olympic Games dashboard\n\n🔗 https://saraaltman.quarto.pub/olympic-games/"
+    "text": "🍰 Olympic Games dashboard\n\n🔗 https://saraaltman.quarto.pub/olympic-games/\n\n\n\nWalk through Click link to interact with the dashboard yourself"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
-    "title": "Intro to Quarto",
-    "section": "Converting notebooks",
-    "text": "Converting notebooks\nYou can convert between .ipynb and .qmd representations of a notebook using the quarto convert command.\nFor example:\n\n\nTerminal\n\nquarto convert my-document.ipynb # converts to qmd\nquarto convert my-document.qmd   # converts to ipynb"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
+    "title": "Hello, dashboards!",
+    "section": "Notebook ➝ Dashboard",
+    "text": "Notebook ➝ Dashboard\n\n\n\nolympicdash.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\n---\n\n# notebook content goes here...\n\n\n\nHow did we create this dashboard? One change to notebook format\nOnce you done that Many components you can add all components offered in ipynb or plain text qmd"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-8",
-    "title": "Intro to Quarto",
-    "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\n#| include: false\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#cards",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#cards",
+    "title": "Hello, dashboards!",
+    "section": "Cards",
+    "text": "Cards\nDashboards are composed of cards.\n\ncards are the basic building blocks of dashboards you often won’t need to manually define a card – they will typically map to cells in your notebook that create plots, display data, display text, etc."
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-9",
-    "title": "Intro to Quarto",
-    "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\nThis dataset records Olympic athlete details.\n\n```{python}\n#| include: false\n#| fig.alt: \"A scatterplot with country on the x-axis and medals on the y-axis.\"\nfrom plotnine import ggplot, aes, geom_bar\n\n(\n    ggplot(mpg, aes(x = \"country\", y = \"medals\"))\n    + geom_bar()\n)\n```"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-and-columns",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-and-columns",
+    "title": "Hello, dashboards!",
+    "section": "Rows and columns",
+    "text": "Rows and columns\nCards are arranged into rows and columns.\n\n\n\n\n\n\n\n\n\n\n\n\nto organize content arrange into rows and columns"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-10",
-    "title": "Intro to Quarto",
-    "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nCode can include optional chunk options, in YAML style, identified by #| at the beginning of the line\n\n\n\n\n\n\n\nOption\nDescription\n\n\n\n\neval\nEvaluate the code chunk\n\n\necho\nInclude the source code\n\n\nwarning\nInclude warnings\n\n\ninclude\nInclude code and results\n\n\n\nOther options: https://quarto.org/docs/computations/execution-options.html"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#layouts",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#layouts",
+    "title": "Hello, dashboards!",
+    "section": "Layouts",
+    "text": "Layouts\nPages, tabsets, and sidebars allow for more advanced layouts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncan also control the general layout of the page with things like pages, tabsets, and sidebars talk about this in the next slide deck"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
-    "title": "Intro to Quarto",
-    "section": "Quarto VS Code extension",
-    "text": "Quarto VS Code extension\n\n\nIntegrated render and preview for Quarto documents.\nSyntax highlighting for markdown and embedded languages\nCompletion and diagnostics for YAML options\nCompletion for embedded languages (e.g. Python, R, Julia, etc.)\nCommands and key-bindings for running cells and selected lines"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-by-step",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-by-step",
+    "title": "Hello, dashboards!",
+    "section": "Step-by-step",
+    "text": "Step-by-step\nLet’s make a dashboard, step-by-step"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#rendering-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#rendering-1",
-    "title": "Intro to Quarto",
-    "section": "Rendering",
-    "text": "Rendering\nin VS Code\n\nOption 1: In the Terminal via quarto render\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard",
+    "title": "Hello, dashboards!",
+    "section": "Step 1: format: dashboard",
+    "text": "Step 1: format: dashboard\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n\n\nfirst, need to add that format: dashboard line"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
-    "title": "Intro to Quarto",
-    "section": "Previewing and rendering",
-    "text": "Previewing and rendering"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
+    "title": "Hello, dashboards!",
+    "section": "Step 2: Add a card",
+    "text": "Step 2: Add a card\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\n\nnow, add a card creating a plot this is plotnine code see what it looks like"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-1",
-    "title": "Intro to Quarto",
-    "section": "Previewing and rendering",
-    "text": "Previewing and rendering"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 2: Add a card",
+    "text": "Step 2: Add a card\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-2",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering-2",
-    "title": "Intro to Quarto",
-    "section": "Previewing and rendering",
-    "text": "Previewing and rendering"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
+    "title": "Hello, dashboards!",
+    "section": "Step 3: Add another card",
+    "text": "Step 3: Add another card\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#previewing",
-    "title": "Intro to Quarto",
-    "section": "Previewing",
-    "text": "Previewing\nin VS Code\n\nOption 1: In the Terminal via quarto preview\n\n\n\nTerminal\n\nquarto preview my-document.qmd\n\n\n\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\n\n\nOption 3: Ctrl + Shift + K"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 3: Add another card",
+    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```\n\n\n\n\n\n\n\nwill appear below by default"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#a-tour-of-quarto-1",
-    "title": "Intro to Quarto",
-    "section": "A tour of Quarto",
-    "text": "A tour of Quarto\n\n\nUnderstanding the relationship between Quarto and the Jupyter engine\nUsing Quarto in VS Code\nCreating Quarto documents (metadata, markdown text, and code)\nWorking with Quarto projects"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
+    "title": "Hello, dashboards!",
+    "section": "Step 4: Add titles to cards",
+    "text": "Step 4: Add titles to cards\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#images-and-links",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#images-and-links",
-    "title": "Intro to Quarto",
-    "section": "Images and links",
-    "text": "Images and links\n\n\n\nMarkdown syntax\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![](penguin.jpg)"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 4: Add titles to cards",
+    "text": "Step 4: Add titles to cards\n\nadd titles using the title option in the cell\n\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#tables",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#tables",
-    "title": "Intro to Quarto",
-    "section": "Tables",
-    "text": "Tables\nTables\n```{markdown}\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|    12 | 12   | 12      |   12   |\n|   123 | 123  | 123     |  123   |\n|     1 | 1    | 1       |   1    |\n```\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo",
+    "title": "Hello, dashboards!",
+    "section": "Step 5: Add a logo",
+    "text": "Step 5: Add a logo\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-and-spans",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-and-spans",
-    "title": "Intro to Quarto",
-    "section": "Divs and Spans",
-    "text": "Divs and Spans\nYou can add classes, attributes, and other identifiers to content using Divs and Spans.\nDivs\n::: {.border}\nThis content can be styled with a border\n:::\nSpans\n[This is *some text*]{.class key=\"val\"}"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-5-add-a-logo-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 5: Add a logo",
+    "text": "Step 5: Add a logo\n\nadd a logo yaml header\n\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#callout-blocks",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#callout-blocks",
-    "title": "Intro to Quarto",
-    "section": "Callout blocks",
-    "text": "Callout blocks\n:::{.callout-tip}\n\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\nTip\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---5",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#steps-1---5",
+    "title": "Hello, dashboards!",
+    "section": "Steps 1 - 5",
+    "text": "Steps 1 - 5\n\n\nnow have a dashboard"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#tabsets",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#tabsets",
-    "title": "Intro to Quarto",
-    "section": "Tabsets",
-    "text": "Tabsets\n```{markdown}\n::: {.panel-tabset group=\"language\"}\n## R\n\n`library(dplyr)`\n\n## Python\n\n`import pandas as pd`\n:::\n```\n\nRPython\n\n\nlibrary(dplyr)\n\n\nimport pandas as pd"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows",
+    "title": "Hello, dashboards!",
+    "section": "Rows",
+    "text": "Rows\nBy default, cards are laid out in rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs",
-    "title": "Intro to Quarto",
-    "section": "Divs",
-    "text": "Divs\nCallout blocks\n\n\nmy-document.qmd\n\n:::{.callout-tip}\n\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n\n:::\n\n\n\n\n\n\n\n\nTip\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-1",
+    "title": "Hello, dashboards!",
+    "section": "Rows",
+    "text": "Rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
-    "title": "Intro to Quarto",
-    "section": "Divs",
-    "text": "Divs\nMultiple columns\n\n\nmy-document.qmd\n\n::: {layout-ncol=2}\n\n![](penguin.jpg)\n\nPhoto by &lt;a href=\"https://unsplash.com/@corneliusventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Cornelius Ventures&lt;/a&gt; on &lt;a href=\"https://unsplash.com/s/photos/penguin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Unsplash&lt;/a&gt;\n:::\n\n\n\n\n\n\n\n\n\n\n\nPhoto by Cornelius Ventures on Unsplash"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-2",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-2",
+    "title": "Hello, dashboards!",
+    "section": "Rows",
+    "text": "Rows\nDefault value of orientation is rows:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows\"\nformat: \n  dashboard:\n    orientation: rows\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
-    "title": "Intro to Quarto",
-    "section": "Divs",
-    "text": "Divs\nTabsets\n\n\nmy-document.qmd\n\n::: {.panel-tabset group=\"language\"}\n## R\n\n`library(dplyr)`\n\n## Python\n\n`import pandas as pd`\n:::\n\n\nRPython\n\n\nlibrary(dplyr)\n\n\nimport pandas as pd"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns",
+    "title": "Hello, dashboards!",
+    "section": "Columns",
+    "text": "Columns\nSetting orientation to columns makes each ## indicate a column instead of a row:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#spans",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#spans",
-    "title": "Intro to Quarto",
-    "section": "Spans",
-    "text": "Spans\n\n\nmy-document.qmd\n\nThis is text that is [red]{style=\"color:red;\"}.\n\n\nThis is text that is red.\n\n\nmy-document.qmd\n\n![](penguin.jpg){fig-alt=\"A photo of a penguin jumping\"}"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns-1",
+    "title": "Hello, dashboards!",
+    "section": "Columns",
+    "text": "Columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n## Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-2",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-2",
-    "title": "Intro to Quarto",
-    "section": "Your turn",
-    "text": "Your turn\nIn VS Code, open the olympicdash-0.qmd file.\n\n\nIn the YAML, add an author field and add your name.\nAdd some Markdown text to the document.\nFor one of the tables, add the chunk option echo: false.\nAdd this to the top of the plotnine chart to set the order of medal variable.\n\nolympics['medal'] = pd.Categorical(\n    olympics['medal'], \n    categories=[\"Gold\", \"Silver\", \"Bronze\"], \n    ordered=True\n)\n\nSave in between each step and see how the preview changes.\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns",
+    "title": "Hello, dashboards!",
+    "section": "Rows, then columns",
+    "text": "Rows, then columns\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#theming",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#theming",
-    "title": "Intro to Quarto",
-    "section": "Theming",
-    "text": "Theming\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\ntheme: sketchy\n---"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#rows-then-columns-1",
+    "title": "Hello, dashboards!",
+    "section": "Rows, then columns",
+    "text": "Rows, then columns\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-3",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-3",
-    "title": "Intro to Quarto",
-    "section": "Your turn",
-    "text": "Your turn\n\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\nEdit the Markdown text you wrote in the previous exercise so that one of the words is blue.\nAdd a code chunk cell with the option include: false. Use the dataset to find the most gold medals by team.\nUse inline code to write a sentence such as: “The most gold medals won by a single team are [count].”\nAdd a Div of your choice.\n\n\ncountdown(minutes = 10)\n\n\n−+\n10:00"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows",
+    "title": "Hello, dashboards!",
+    "section": "Columns, then rows",
+    "text": "Columns, then rows\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats",
-    "title": "Intro to Quarto",
-    "section": "Changing formats",
-    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: pdf\n---"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#columns-then-rows-1",
+    "title": "Hello, dashboards!",
+    "section": "Columns, then rows",
+    "text": "Columns, then rows\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Rows, then columns\"\nformat: \n  dashboard:\n    orientation: columns\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview\n\n### \n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### \n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\"}\n\n## Plots\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-1",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-1",
-    "title": "Intro to Quarto",
-    "section": "Changing formats",
-    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: revealjs\n---"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#start",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#start",
+    "title": "Hello, dashboards!",
+    "section": "Start",
+    "text": "Start\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), open on olympicdash-1.qmd."
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-2",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-2",
-    "title": "Intro to Quarto",
-    "section": "Changing formats",
-    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: pdf\n---"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#goal",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#goal",
+    "title": "Hello, dashboards!",
+    "section": "Goal",
+    "text": "Goal\nYour goal is to create the following dashboard."
   },
   {
-    "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-3",
-    "href": "0-intro-to-quarto/0-intro-to-quarto.html#changing-formats-3",
-    "title": "Intro to Quarto",
-    "section": "Changing formats",
-    "text": "Changing formats\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\ntheme: sketchy\n---"
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
+    "title": "Hello, dashboards!",
+    "section": "Step 1",
+    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\nAdd the olympics logo from the images folder\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
+    "title": "Hello, dashboards!",
+    "section": "Step 2",
+    "text": "Step 2\n\nUsing https://quarto.org/docs/dashboards/:\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   }
 ]

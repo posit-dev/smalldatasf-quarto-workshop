@@ -10,9 +10,10 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
 <link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.54">
+  <meta name="generator" content="quarto-99.9.9">
 
-  <meta name="author" content="Sara Altman and Isabella Velásquez">
+  <meta name="author" content="Sara Altman">
+  <meta name="author" content="Isabella Velásquez">
   <meta name="dcterms.date" content="2024-09-23">
   <title>From Notebooks to Dashboards with Quarto – Deploy your dashboard</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -325,7 +326,7 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Deploy your dashboard – From Notebooks to Dashboards with Quarto">
+<meta property="og:title" content="From Notebooks to Dashboards with Quarto - Deploy your dashboard">
 <meta property="og:description" content="Small Data SF">
 <meta property="og:site_name" content="From Notebooks to Dashboards with Quarto">
 </head>
@@ -340,7 +341,15 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Sara Altman and Isabella Velásquez 
+Sara Altman 
+</div>
+        <p class="quarto-title-affiliation">
+            Posit, PBC
+          </p>
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Isabella Velásquez 
 </div>
         <p class="quarto-title-affiliation">
             Posit, PBC
@@ -353,7 +362,8 @@ Sara Altman and Isabella Velásquez
 <section id="dashboard-deployment" class="slide level2">
 <h2>Dashboard deployment</h2>
 <p>Dashboards are typically just static HTML pages so can be deployed to any web server or web host.</p>
-<table id="deployment-table" class="caption-top" data-quarto-postprocess="true">
+<div>
+<table id="deployment-table" data-quarto-postprocess="true">
 <colgroup>
 <col style="width: 35%">
 <col style="width: 65%">
@@ -387,13 +397,12 @@ Sara Altman and Isabella Velásquez
   font-weight: 800;
 }
 </style>
+</div>
 </section>
 <section id="deployment-options" class="slide level2">
 <h2>Deployment options</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
-<h3 id="server">Server</h3>
-<div class="column" style="width:40%;">
+<div class="column">
 <h4 id="cloud">Cloud</h4>
 <ul>
 <li><a href="https://connect.posit.cloud/">Posit Connect Cloud</a></li>
@@ -402,21 +411,22 @@ Sara Altman and Isabella Velásquez
 <li><a href="https://huggingface.co/docs/hub/spaces-sdks-docker-shiny">Hugging Face</a></li>
 <li><a href="https://shiny.posit.co/py/docs/deploy.html#other-hosting-options">Roll your own</a></li>
 </ul>
-</div><div class="column" style="width:50%;">
+</div><div class="column">
 <h4 id="on-prem">On-Prem</h4>
 <ul>
 <li><a href="https://shiny.posit.co/py/docs/deploy.html#deploy-to-shiny-server-open-source">Shiny Server</a> (open source)</li>
 <li><a href="https://shiny.posit.co/py/docs/deploy.html#deploy-to-posit-connect-commercial">Posit Connect</a> (commercial)</li>
 <li><a href="https://shiny.posit.co/py/docs/deploy.html#other-hosting-options">Roll your own</a></li>
 </ul>
-</div></div><div class="column fragment" style="width:40%;">
-<!-- -->
-<h3 id="serverless">Serverless</h3>
-<p>Using <a href="https://pyodide.org/">Pyodide</a></p>
-<p>[<a href="https://wch.github.io/retirement-simulation-dashboard/">Example</a>]</p>
-<p>Using <a href="https://posit-dev.github.io/r-shinylive/">ShinyLive</a></p>
-</div></div>
+</div>
+</div>
 </section>
+<section id="posit-connect-cloud" class="slide level2">
+<h2>Posit Connect Cloud</h2>
+<p><a href="https://connect.posit.cloud/">https://connect.posit.cloud/</a></p>
+<p>Easily publish and share data applications and documents in a cloud environment within minutes.</p>
+
+<img data-src="images/connect-cloud.png" class="r-stretch"></section>
 <section>
 <section id="your-turn" class="title-slide slide level1 center">
 <h1>Your turn</h1>
@@ -425,7 +435,7 @@ Sara Altman and Isabella Velásquez
 <section id="start" class="slide level2">
 <h2>Start</h2>
 <div class="python-box">
-<p>Clone the GitHub repo <code>posit-dev/smalldatasf-quarto-exercises</code> (<a href="http://pos.it/smalldatasf-quarto-exercises" class="uri">http://pos.it/smalldatasf-quarto-exercises</a>) and work on <code>olympicdash-py-4.qmd.</code></p>
+<p>Open <code>olympicdash-4.qmd.</code></p>
 </div>
 </section>
 <section id="goal" class="slide level2">
@@ -439,12 +449,12 @@ Sara Altman and Isabella Velásquez
 <li>Select your dashboard repository</li>
 <li>Click Publish</li>
 </ul>
-<div id="timer_a63628d091579dbe99eddb224b946b452c94c4ee" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_c0b4d12df8a5d75c7c53655431e0bc68620a7765" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
  </div>
- <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
  </div>
 </section></section>
 <section>
@@ -457,7 +467,7 @@ Sara Altman and Isabella Velásquez
 </section>
 <section id="learning-more" class="slide level2">
 <h2>Learning More</h2>
-<table class="caption-top">
+<table>
 <tbody>
 <tr class="odd">
 <td>About Quarto</td>
@@ -484,7 +494,7 @@ Sara Altman and Isabella Velásquez
 <div class="quarto-auto-generated-content">
 <p><img src="../images/slides-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="https://pos.it/quarto-dashboards-24">pos.it/quarto-dashboards-24</a></p>
+<p><a href="https://pos.it/smalldatasf-quarto-workshop">pos.it/smalldatasf-quarto-workshop</a></p>
 </div>
 </div>
 </section></section>
