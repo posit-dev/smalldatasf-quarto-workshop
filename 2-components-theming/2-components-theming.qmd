@@ -522,7 +522,7 @@ d.
 ## Start
 
 ::: python-box
-Clone the GitHub repo `posit-dev/smalldatasf-quarto-exercises` (<http://pos.it/smalldatasf-quarto-exercises>) and work on `olympicdash-py-2.qmd.`
+Work on `olympicdash-2.qmd.`
 :::
 
 ## Goal
@@ -598,7 +598,7 @@ Use the code (commented with `TODO for Step 3`) at the bottom of the document to
 Quarto dashboards can be styled with one of the 25 themes from the Bootswatch project:
 
 ::: {data-id="code"}
-```` {.yaml filename="dashboard-r.qmd" code-line-numbers="|3-5"}
+```` {.yaml filename="dashboard.qmd" code-line-numbers="|3-5"}
 {{< include _bootswatch.qmd >}}
 ````
 :::
@@ -608,7 +608,7 @@ Quarto dashboards can be styled with one of the 25 themes from the Bootswatch pr
 ::: columns
 ::: {.column width="40%"}
 ::: {data-id="code"}
-```` {.yaml filename="dashboard-r.qmd" code-line-numbers="3-5"}
+```` {.yaml filename="dashboard.qmd" code-line-numbers="3-5"}
 {{< include _bootswatch.qmd >}}
 ````
 :::
