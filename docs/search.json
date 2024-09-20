@@ -104,7 +104,7 @@
     "href": "3-deployment/3-deployment.html#start",
     "title": "Deploy your dashboard",
     "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-4.qmd."
+    "text": "Start\n\nOpen olympicdash-4.qmd."
   },
   {
     "objectID": "3-deployment/3-deployment.html#goal",
@@ -899,7 +899,7 @@
     "href": "2-components-theming/2-components-theming.html#start",
     "title": "Dashboard components and themes",
     "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-2.qmd."
+    "text": "Start\n\nWork on olympicdash-2.qmd."
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#goal",
@@ -941,14 +941,14 @@
     "href": "2-components-theming/2-components-theming.html#bootswatch-themes",
     "title": "Dashboard components and themes",
     "section": "Bootswatch themes",
-    "text": "Bootswatch themes\nQuarto dashboards can be styled with one of the 25 themes from the Bootswatch project:\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Bootswatch themes\nQuarto dashboards can be styled with one of the 25 themes from the Bootswatch project:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#bootswatch-themes-1",
     "href": "2-components-theming/2-components-theming.html#bootswatch-themes-1",
     "title": "Dashboard components and themes",
     "section": "Bootswatch themes",
-    "text": "Bootswatch themes\n\n\n\n\n\ndashboard-r.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Bootswatch themes\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Bootswatch themes\"\nformat: \n  dashboard:\n    theme: quartz\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Value boxes {height=\"25%\"}\n\n```{python}\n#| label: calculate-values\nlowest_mileage_index = mpg['cty'].idxmin()\nlowest_mileage_car = mpg.iloc[lowest_mileage_index]\nlowest_mileage_cty = mpg.loc[lowest_mileage_index, 'cty']\n\nhighest_mileage_index = mpg['cty'].idxmax()\nhighest_mileage_car = mpg.iloc[highest_mileage_index]\nhighest_mileage_cty = mpg.loc[highest_mileage_index, 'cty']\n\nmean_city_mileage = mpg['cty'].mean()\nrounded_mean_city_mileage = round(mean_city_mileage, 2)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Least efficient\"\n#| icon: fuel-pump-fill\n#| color: danger\ndict(\n  value = str(f\"{lowest_mileage_cty} mpg\")\n)\n```\n\n```{python}\n#| content: valuebox\n#| title: \"Most efficient\"\ndict(\n  icon = \"fuel-pump\",\n  color = \"success\",\n  value = str(f\"{highest_mileage_cty} mpg\")\n)\n```\n\n::: {.valuebox icon=\"fuel-pump\" color=\"secondary\"}\nAverage city mileage\n\n`{r} rounded_mean_city_mileage` mpg\n:::\n\n## Plots {height=\"75%\"}\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#bootswatch-themes-2",
@@ -1007,39 +1007,88 @@
     "text": "Quarto version\n\n\n\n\n\n\nTip\n\n\nRun the following in your Terminal to find your Quarto version:\n\n\nTerminal\n\nquarto --version"
   },
   {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "rows and columns value boxes multiple pages"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-1",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-1",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "sidebar"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-2",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-2",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "interactive leaflet widget html widget"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-3",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-3",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "interactive plotly code"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-4",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-4",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "dashboard for a model provides context into the model by adding narrative to the dashboard not just raw json dump"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-5",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-5",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "tabset"
+  },
+  {
+    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-6",
+    "href": "1-hello-dashboards/1-hello-dashboards.html#section-6",
+    "title": "Hello, dashboards!",
+    "section": "",
+    "text": "uses shiny for python select island and penguins and distributions will change can see all these dashboards and their code on the quarto website under gallery"
+  },
+  {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
     "href": "1-hello-dashboards/1-hello-dashboards.html#olympic-games-dashboard",
     "title": "Hello, dashboards!",
     "section": "🍰 Olympic Games dashboard",
-    "text": "🍰 Olympic Games dashboard\n\n🔗 https://saraaltman.quarto.pub/olympic-games/"
+    "text": "🍰 Olympic Games dashboard\n\n🔗 https://saraaltman.quarto.pub/olympic-games/\n\n\n\nWalk through Click link to interact with the dashboard yourself"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
     "href": "1-hello-dashboards/1-hello-dashboards.html#notebook-dashboard",
     "title": "Hello, dashboards!",
     "section": "Notebook ➝ Dashboard",
-    "text": "Notebook ➝ Dashboard\n\n\n\nolympicdash-py.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\n---\n\n# notebook content goes here..."
+    "text": "Notebook ➝ Dashboard\n\n\n\nolympicdash.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: dashboard\n---\n\n# notebook content goes here...\n\n\n\nHow did we create this dashboard? One change to notebook format\nOnce you done that Many components you can add all components offered in ipynb or plain text qmd"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#cards",
     "href": "1-hello-dashboards/1-hello-dashboards.html#cards",
     "title": "Hello, dashboards!",
     "section": "Cards",
-    "text": "Cards\nDashboards are composed of cards."
+    "text": "Cards\nDashboards are composed of cards.\n\ncards are the basic building blocks of dashboards you often won’t need to manually define a card – they will typically map to cells in your notebook that create plots, display data, display text, etc."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#rows-and-columns",
     "href": "1-hello-dashboards/1-hello-dashboards.html#rows-and-columns",
     "title": "Hello, dashboards!",
     "section": "Rows and columns",
-    "text": "Rows and columns\nCards are arranged into rows and columns."
+    "text": "Rows and columns\nCards are arranged into rows and columns.\n\n\n\n\n\n\n\n\n\n\n\n\nto organize content arrange into rows and columns"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#layouts",
     "href": "1-hello-dashboards/1-hello-dashboards.html#layouts",
     "title": "Hello, dashboards!",
     "section": "Layouts",
-    "text": "Layouts\nPages, tabsets, and sidebars allow for more advanced layouts."
+    "text": "Layouts\nPages, tabsets, and sidebars allow for more advanced layouts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncan also control the general layout of the page with things like pages, tabsets, and sidebars talk about this in the next slide deck"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-by-step",
@@ -1053,63 +1102,63 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1-format-dashboard",
     "title": "Hello, dashboards!",
     "section": "Step 1: format: dashboard",
-    "text": "Step 1: format: dashboard\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---"
+    "text": "Step 1: format: dashboard\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n\n\nfirst, need to add that format: dashboard line"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card",
     "title": "Hello, dashboards!",
     "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Step 2: Add a card\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n\n\nnow, add a card creating a plot this is plotnine code see what it looks like"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2-add-a-card-1",
     "title": "Hello, dashboards!",
     "section": "Step 2: Add a card",
-    "text": "Step 2: Add a card\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
+    "text": "Step 2: Add a card\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 3: Add another card\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```\n\n\n\n\n\n\n\nwill appear below by default"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
     "title": "Hello, dashboards!",
     "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 4: Add titles to cards\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards-1",
     "title": "Hello, dashboards!",
     "section": "Step 4: Add titles to cards",
-    "text": "Step 4: Add titles to cards\n\n\n\n\n\ndashboard-py.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
+    "text": "Step 4: Add titles to cards\n\nadd titles using the title option in the cell\n\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
     "href": "1-hello-dashboards/1-hello-dashboards.html#steps-1---4",
     "title": "Hello, dashboards!",
     "section": "Steps 1 - 4",
-    "text": "Steps 1 - 4"
+    "text": "Steps 1 - 4\n\n\nnow have a dashboard"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#start",
     "href": "1-hello-dashboards/1-hello-dashboards.html#start",
     "title": "Hello, dashboards!",
     "section": "Start",
-    "text": "Start\n\nClone the GitHub repo posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises) and work on olympicdash-py-1.qmd."
+    "text": "Start\n\nIn your cloned version of posit-dev/smalldatasf-quarto-exercises (http://pos.it/smalldatasf-quarto-exercises), open on olympicdash-1.qmd."
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#goal",
@@ -1130,13 +1179,13 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "title": "Hello, dashboards!",
     "section": "Step 2",
-    "text": "Step 2\n\n\nAdd a GitHub icon and link to a GitHub repository (that may or may not contain the code for the dashboard you’re building).\nAdd the olympics logo from the images folder.\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 2\n\nUsing https://quarto.org/docs/dashboards/:\n\nAdd a GitHub icon and link to a GitHub repository.\nAdd the olympics logo from the images folder.\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-3",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3",
     "title": "Hello, dashboards!",
     "section": "Step 3",
-    "text": "Step 3\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/small-data-sf-quarto-workshop"
+    "text": "Step 3\n\nUsing https://quarto.org/docs/dashboards/:\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/small-data-sf-quarto-workshop"
   }
 ]
