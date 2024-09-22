@@ -90,7 +90,7 @@
     "href": "3-deployment/3-deployment.html#dashboard-deployment",
     "title": "Deploy your dashboard",
     "section": "Dashboard deployment",
-    "text": "Dashboard deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
+    "text": "Dashboard deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host."
   },
   {
     "objectID": "3-deployment/3-deployment.html#deployment-options",
@@ -661,7 +661,7 @@
     "href": "2-components-theming/2-components-theming.html#sidebars-rows-columns-and-tabsets",
     "title": "Dashboard components and themes",
     "section": "Sidebars, rows, columns, and tabsets",
-    "text": "Sidebars, rows, columns, and tabsets\nRows and columns using markdown heading, with optional attributes to control height, width, etc. Sidebars, mostly used for for interactive inputs. Tabsets to further divide content."
+    "text": "Sidebars, rows, columns, and tabsets\nRows and columns using markdown headings, with optional attributes to control height, width, etc. Sidebars, mostly used for for interactive inputs. Tabsets to further divide content."
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#cards",
@@ -769,32 +769,11 @@
     "text": "Tabsets\nEach card within a row/column or each row/column within another becomes a tab:\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Tabsets\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n## Overview {.tabset}\n\n### Objective\n\nThis dashboard summarizes an illuminating analysis of fuel economy of cars.\n\n### Car\n\nThis is a car.\n\n![](images/car.png){fig-alt=\"Illustration of a teal color car.\" width=\"299\"}\n\n## Plots {.tabset}\n\n### Scatter\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n### Bar\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
   },
   {
-    "objectID": "2-components-theming/2-components-theming.html#cards-2",
-    "href": "2-components-theming/2-components-theming.html#cards-2",
-    "title": "Dashboard components and themes",
-    "section": "Cards",
-    "text": "Cards\n\n\nFundamental unit of display within dashboards\nCreated automatically for cells and markdown content that are within rows and columns\nCan be created manually with a card div:\n::: {.card}\nThis text will be displayed within a card\n:::\nCards provide an expand button which appears at bottom right on hover"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#card-titles",
-    "href": "2-components-theming/2-components-theming.html#card-titles",
-    "title": "Dashboard components and themes",
-    "section": "Card titles",
-    "text": "Card titles\nCard titles can be provided as a cell option:\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Card titles\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
-    "objectID": "2-components-theming/2-components-theming.html#card-titles-1",
-    "href": "2-components-theming/2-components-theming.html#card-titles-1",
-    "title": "Dashboard components and themes",
-    "section": "Card titles",
-    "text": "Card titles\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"Card titles\"\nformat: \n  dashboard:\n    logo: images/beetle.png\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n#| title: Highway vs. city mileage\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n#| title: Drive types\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```"
-  },
-  {
     "objectID": "2-components-theming/2-components-theming.html#value-boxes",
     "href": "2-components-theming/2-components-theming.html#value-boxes",
     "title": "Dashboard components and themes",
     "section": "Value boxes",
-    "text": "Value boxes\n\n\nValue boxes are a great way to prominently display simple values within a dashboard\nYou can create value boxes in executable cells or plain markdown in divs\nValue boxes use Bootstrap icons (https://icons.getbootstrap.com) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we’ll get to themes later!)\n\n\n\nColor alias\nDefault theme color(s)\n\n\n\n\nprimary\nBlue\n\n\nsecondary\nGray\n\n\nsuccess\nGreen\n\n\ninfo\nBright Blue\n\n\nwarning\nYellow/Orange\n\n\ndanger\nRed\n\n\nlight\nLight Gray\n\n\ndark\nBlack"
+    "text": "Value boxes\n\nmultiple ways to make value boxes\n\n\n\nValue boxes are a great way to prominently display simple values within a dashboard\nYou can create value boxes in executable cells or plain markdown in divs\nValue boxes use Bootstrap icons (https://icons.getbootstrap.com) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we’ll get to themes later!)\n\n\n\nColor alias\nDefault theme color(s)\n\n\n\n\nprimary\nBlue\n\n\nsecondary\nGray\n\n\nsuccess\nGreen\n\n\ninfo\nBright Blue\n\n\nwarning\nYellow/Orange\n\n\ndanger\nRed\n\n\nlight\nLight Gray\n\n\ndark\nBlack"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#value-boxes-1",
@@ -836,7 +815,7 @@
     "href": "2-components-theming/2-components-theming.html#step-1",
     "title": "Dashboard components and themes",
     "section": "Step 1",
-    "text": "Step 1\n\n\nMake the columns 65% (first) and 35% (second) of width of the dashboard.\nDivide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.\nIn the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 1\n\n\nMake the columns 65% (first) and 35% (second) of width of the dashboard.\nDivide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.\nIn the second row of the first column, combine markdown text about cancelled Olympic games with the medals by year plot in the same cell.\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#step-2",
@@ -899,7 +878,7 @@
     "href": "2-components-theming/2-components-theming.html#step-1-1",
     "title": "Dashboard components and themes",
     "section": "Step 1",
-    "text": "Step 1\n\n\nUpdate the theme to the appropriate Bootswatch theme.\n\n\n\n\n  \n    −\n    +\n \n 03:00"
+    "text": "Step 1\n\n\nUpdate the theme to the appropriate Bootswatch theme.\n\n\n\n\n  \n    −\n    +\n \n 02:00"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#theming-quarto",
@@ -955,25 +934,11 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#section-3",
     "title": "Hello, dashboards!",
     "section": "",
-    "text": "interactive plotly code"
+    "text": "dashboard for a model provides context into the model by adding narrative to the dashboard not just raw json dump"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-4",
     "href": "1-hello-dashboards/1-hello-dashboards.html#section-4",
-    "title": "Hello, dashboards!",
-    "section": "",
-    "text": "dashboard for a model provides context into the model by adding narrative to the dashboard not just raw json dump"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-5",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#section-5",
-    "title": "Hello, dashboards!",
-    "section": "",
-    "text": "tabset"
-  },
-  {
-    "objectID": "1-hello-dashboards/1-hello-dashboards.html#section-6",
-    "href": "1-hello-dashboards/1-hello-dashboards.html#section-6",
     "title": "Hello, dashboards!",
     "section": "",
     "text": "uses shiny for python select island and penguins and distributions will change can see all these dashboards and their code on the quarto website under gallery"
@@ -1172,13 +1137,13 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
     "title": "Hello, dashboards!",
     "section": "Step 1",
-    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\nAdd the olympics logo from the images folder\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\nAdd the Olympics logo from the images folder\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "title": "Hello, dashboards!",
     "section": "Step 2",
-    "text": "Step 2\n\nUsing https://quarto.org/docs/dashboards/:\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
+    "text": "Step 2\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   }
 ]

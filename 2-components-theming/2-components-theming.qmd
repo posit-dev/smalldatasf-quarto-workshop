@@ -29,7 +29,7 @@ Icon, title, and author along with links to sub-pages if more than one page is d
 
 ## Sidebars, rows, columns, and tabsets
 
-Rows and columns using markdown heading, with optional attributes to control height, width, etc.
+Rows and columns using markdown headings, with optional attributes to control height, width, etc.
 Sidebars, mostly used for for interactive inputs.
 Tabsets to further divide content.
 
@@ -216,95 +216,11 @@ Each card within a row/column or each row/column within another becomes a tab:
 :::
 :::
 
-# Cards
-
-## Cards
-
-::: incremental
--   Fundamental unit of display within dashboards
-
--   Created automatically for cells and markdown content that are within rows and columns
-
--   Can be created manually with a `card` div:
-
-    ```` {.yaml}
-    ::: {.card}
-    This text will be displayed within a card
-    :::
-    ````
-
--   Cards provide an **expand** button which appears at bottom right on hover
-:::
-
-## Card titles {.smaller auto-animate="true"}
-
-Card titles can be provided as a cell option:
-
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="|14|22"}
-{{< include _card-titles.qmd >}}
-````
-:::
-
-## Card titles {.smaller auto-animate="true"}
-
-::: columns
-::: {.column width="40%"}
-::: {data-id="code"}
-```` {.yaml filename="dashboard.qmd" code-line-numbers="14,22"}
-{{< include _card-titles.qmd >}}
-````
-:::
-:::
-
-::: {.column width="60%"}
-![](images/card-titles.png)
-:::
-:::
-
-<!--
-## Pop quiz!
-
-::: your-turn
-Which of the following cells will become a card in a dashboard?
-:::
-
-::: columns
-::: {.column width=45%}
-a.  
-
-```{{r}}
-library(palmerpenguins)
-```
-
-b.  
-
-```{{r}}
-x <- 2
-```
-:::
-
-::: {.column width=35%}
-c.  
-
-```{{r}}
-plot(cars)
-```
-
-d.  
-
-```{{r}}
-#| output: false
-2 + 2
-```
-:::
-::: {.column width=20%}
-![](images/slido.png)
-:::
-:::
--->
-
 ## Value boxes {.smaller}
+
+::: {.notes}
+multiple ways to make value boxes
+:::
 
 ::: incremental
 -   Value boxes are a great way to prominently display simple values within a dashboard
@@ -395,7 +311,7 @@ Your goal is to create a dashboard that looks like the following:
 
 -   Make the columns 65% (first) and 35% (second) of width of the dashboard.
 -   Divide the first column into rows of 60% (first) and 40% (second) of height of the dashboard.
--   In the second row of the first column, combine markdown text about cancelled olympic games with the medals by year plot in the same cell.
+-   In the second row of the first column, combine markdown text about cancelled Olympic games with the medals by year plot in the same cell.
 :::
 
 ![](images/olympicdash-2-step-1.png)
@@ -524,7 +440,7 @@ Your goal is to create a dashboard that looks like the following:
 
 ![](images/olympicdash-3.png)
 
-{{< countdown minutes=3 >}}
+{{< countdown minutes=2 >}}
 
 
 # Learn more
