@@ -13,7 +13,7 @@ title: "Setup"
 - Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
 - Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
-**3. Exercises:** Go to [`pos.it/smalldatasf-quarto-exercises`](https://pos.it/smalldatasf-quarto-exercises), click on *Use this template* then *Create a new repository*.
+**3. Exercises:** Go to [`pos.it/smalldatasf-quarto-exercises`](https://pos.it/smalldatasf-quarto-exercises), click on *Use this template* then *Create a new repository*. Check *Include all branches*. Choose your personal GitHub repo as the Owner and give the repository a name.
 
 **4. Packages:**  Open *VS Code*. Under *Start*, click on *Clone Git Repository*, and paste the URL of your exercise repo. 
 
