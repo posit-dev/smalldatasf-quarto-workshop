@@ -72,6 +72,7 @@ Deploy your latest dashboard to [Posit Connect Cloud](https://connect.posit.clou
 * Sign up for free at <https://connect.posit.cloud/> (requires GitHub account)
 * Click Publish and select Quarto
 * Select your dashboard repository
+* Select `publish-dashboard` as the branch
 * Click Publish
 
 {{< countdown minutes=5 >}}
@@ -80,7 +81,7 @@ Deploy your latest dashboard to [Posit Connect Cloud](https://connect.posit.clou
 
 ## Time for Q&A! {.center}
 
-## Learning More
+## Learning more
 
 |                   |                                                                        |
 |-------------------------|-----------------------------------------------|

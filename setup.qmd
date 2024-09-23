@@ -23,7 +23,7 @@ title: "Setup"
 ::: callout-note
 The packages you need are as follows:
 
-``` {.bash filename="requirements.txt"}
+``` {.txt filename="requirements.txt"}
 ipykernel==6.29.5
 jupyter==1.0.0
 PyYAML==6.0.2
@@ -32,6 +32,7 @@ nbformat==5.10.4
 great_tables==0.10.0
 pandas==2.2.2
 plotnine==0.13.6
+plotly==5.24.1
 ```
 
 If you have a different preferred way of managing your environment, you're welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples. 

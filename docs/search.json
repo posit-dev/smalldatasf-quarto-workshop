@@ -4,7 +4,7 @@
     "href": "setup.html",
     "title": "Setup",
     "section": "",
-    "text": "1. Software: Download and install Python and the latest version of Quarto:\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.",
+    "text": "1. Software: Download and install Python and the latest version of Quarto:\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository. Check Include all branches. Choose your personal GitHub repo as the Owner and give the repository a name.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.",
     "crumbs": [
       "Setup"
     ]
@@ -314,7 +314,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
     "title": "Intro to Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\nSee full instructions under Setup: pos.it/smalldatasf-quarto-workshop\nThen: In VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert.\nPreview the .qmd file."
+    "text": "Your turn\n\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository. Check Include all branches. Choose your personal GitHub repo as the Owner and give the repository a name.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.\n\nOpen the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed.\nCheck the box for requirements.txt in the Select dependencies to install menu and hit OK.\n\nSee full instructions under Setup: pos.it/smalldatasf-quarto-workshop\nThen: In VS Code, open the olympicdash-0.ipynb file.\n\nConvert the file to .qmd using quarto convert.\nPreview the .qmd file."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document",
