@@ -161,7 +161,7 @@ Sit back and enjoy!
 
 ## Quarto ...
 
-is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular media.
+is an open technical content creation system.
 
 ![](images/demo-quarto.png){width=75% fig-align="center"}
 
