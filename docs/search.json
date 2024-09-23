@@ -118,7 +118,7 @@
     "href": "3-deployment/3-deployment.html#goal",
     "title": "Deploy your dashboard",
     "section": "Goal",
-    "text": "Goal\n\nDeploy your latest dashboard to Posit Connect Cloud.\n\n\nSign up for free at https://connect.posit.cloud/ (requires GitHub account)\nClick Publish and select Quarto\nSelect your dashboard repository\nClick Publish\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Goal\n\nDeploy your latest dashboard to Posit Connect Cloud.\n\n\nSign up for free at https://connect.posit.cloud/ (requires GitHub account)\nClick Publish and select Quarto\nSelect your dashboard repository\nSelect publish-dashboard as the branch\nClick Publish\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "3-deployment/3-deployment.html#time-for-qa",
@@ -131,8 +131,8 @@
     "objectID": "3-deployment/3-deployment.html#learning-more",
     "href": "3-deployment/3-deployment.html#learning-more",
     "title": "Deploy your dashboard",
-    "section": "Learning More",
-    "text": "Learning More\n\n\n\nAbout Quarto\nhttps://quarto.org/\n\n\nQuarto Dashboards\nhttps://quarto.org/docs/dashboards/\n\n\nShiny for R\nhttps://shiny.posit.co/r/\n\n\nShiny for Python\nhttps://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/"
+    "section": "Learning more",
+    "text": "Learning more\n\n\n\nAbout Quarto\nhttps://quarto.org/\n\n\nQuarto Dashboards\nhttps://quarto.org/docs/dashboards/\n\n\nShiny for R\nhttps://shiny.posit.co/r/\n\n\nShiny for Python\nhttps://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html/"
   },
   {
     "objectID": "3-deployment/3-deployment.html#thank-you",
@@ -195,7 +195,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto",
     "title": "Intro to Quarto",
     "section": "Quarto …",
-    "text": "Quarto …\nis an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and other popular media."
+    "text": "Quarto …\nis an open technical content creation system."
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#with-quarto",
@@ -321,14 +321,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nThree components:\n\nMetadata: YAML\nText: Markdown\nCode: Executed via jupyter or knitr\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+    "text": "Anatomy of a Quarto document\nThree components:\n\nYAML: Metadata\nText: Markdown\nCode: Executed via jupyter or knitr\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-1",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-1",
     "title": "Intro to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\n\n\nYet another markup language”\nMetadata of your document\nDemarcated by three dashes (---) on either end\nUses key-value pairs in the format key: value"
+    "text": "Anatomy of a Quarto document\nMetadata: YAML\n\n\n\n\nmy-document.qmd\n\n---\ntitle: \"Olympic Games\"\nformat: html\n---\n\n\n\n“Yet another markup language”\nMetadata of your document\nDemarcated by three dashes (---) on either end\nUses key-value pairs in the format key: value"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#anatomy-of-a-quarto-document-2",
@@ -1018,7 +1018,7 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-3-add-another-card-1",
     "title": "Hello, dashboards!",
     "section": "Step 3: Add another card",
-    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```\n\n\n\n\n\n\n\nwill appear below by default"
+    "text": "Step 3: Add another card\n\n\n\n\n\ndashboard.qmd\n\n---\ntitle: \"My first Quarto dashboard\"\nformat: dashboard\n---\n\n```{python}\nfrom plotnine import ggplot, aes, geom_point, geom_bar\nfrom plotnine.data import mpg\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"cty\", y = \"hwy\"))\n    + geom_point()\n)\n```\n\n```{python}\n(\n    ggplot(mpg, aes(x = \"drv\"))\n    + geom_bar()\n)\n```\n\n\n\n\n\n\nwill appear below by default"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-4-add-titles-to-cards",
@@ -1137,13 +1137,13 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-1",
     "title": "Hello, dashboards!",
     "section": "Step 1",
-    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\nAdd the Olympics logo from the images folder\n\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
+    "text": "Step 1\n\n\nTurn the output to a dashboard.\nAdd titles to code cells.\nAdd the Olympics logo from the images folder\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "title": "Hello, dashboards!",
     "section": "Step 2",
-    "text": "Step 2\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
+    "text": "Step 2\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
   }
 ]
