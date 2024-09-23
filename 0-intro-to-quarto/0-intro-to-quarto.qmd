@@ -447,7 +447,7 @@ format: html
 :::
 
 ::: {.column .fragment}
-* Yet another markup language”
+* "Yet another markup language”
 * Metadata of your document
 * Demarcated by three dashes (`---`) on either end
 *  Uses key-value pairs in the format `key: value`
