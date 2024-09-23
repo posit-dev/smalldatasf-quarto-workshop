@@ -24,8 +24,8 @@ website:
         href: https://github.com/posit-dev/small-data-sf-quarto-workshop
         text: "GitHub"
       - icon: code-square
-        href: https://posit.cloud
-        text: "Posit Cloud"
+        href: https://github.com/posit-dev/smalldatasf-quarto-exercises
+        text: "Exercises"
 
     style: docked
     search: true
