@@ -420,7 +420,7 @@ See full instructions under **Setup**: [pos.it/smalldatasf-quarto-workshop](http
 
 Three components:
 
-1.  Metadata: YAML
+1.  YAML: Metadata
 
 2.  Text: Markdown
 
