@@ -60,24 +60,12 @@ interactive leaflet widget
 html widget
 :::
 
-##  {.no-line background-image="images/dashboards/gapminder.png" background-size="contain"}
-
-::: {.notes}
-interactive plotly code
-:::
-
 ##  {.no-line background-image="images/dashboards/model-card.png" background-size="contain"}
 
 ::: {.notes}
 dashboard for a model
 provides context into the model by adding narrative to the dashboard
 not just raw json dump
-:::
-
-##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
-
-::: {.notes}
-tabset
 :::
 
 ##  {.no-line background-image="images/dashboards/shiny-penguins.png" background-size="contain"}
@@ -87,8 +75,6 @@ uses shiny for python
 select island and penguins and distributions will change
 can see all these dashboards and their code on the quarto website under gallery
 :::
-
-##  {.no-line background-image="images/dashboards/stock-explorer.png" background-size="contain"}
 
 ## 🍰 Olympic Games dashboard
 
@@ -646,10 +632,10 @@ Your goal is to create the following dashboard.
 ::: your-turn
 -   Turn the output to a dashboard.
 -   Add `title`s to code cells.
--   Add the olympics logo from the `images` folder
+-   Add the Olympics logo from the `images` folder
 :::
 
-:::{.column width="80%"}
+:::{.column width="70%"}
 ::: python-box
 ![](images/olympicdash-1.png)
 :::
@@ -661,8 +647,6 @@ Your goal is to create the following dashboard.
 ## Step 2
 
 ::: your-turn
-Using [https://quarto.org/docs/dashboards/](https://quarto.org/docs/dashboards/):
-
 Reorganize the cards into rows and columns as shown below.
 :::
 
