@@ -384,7 +384,7 @@ quarto render
 -   Python 3: <https://www.python.org/downloads/>
 -   Quarto 1.5.57: <https://quarto.org/docs/get-started/>
 
-**2. Tools:** Dowload and install VS Code and Jupyter and the Quarto extensions:
+**2. Tools:** Download and install VS Code and Jupyter and the Quarto extensions:
 
 - VS Code: <https://code.visualstudio.com/>
 - Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>

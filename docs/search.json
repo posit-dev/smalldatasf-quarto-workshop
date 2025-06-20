@@ -4,7 +4,7 @@
     "href": "setup.html",
     "title": "Setup",
     "section": "",
-    "text": "1. Software: Download and install Python and the latest version of Quarto:\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository. Check Include all branches. Choose your personal GitHub repo as the Owner and give the repository a name.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.",
+    "text": "1. Software: Download and install Python and the latest version of Quarto:\n2. Tools: Download and install VS Code and Jupyter and the Quarto extensions:\n3. Exercises: Go to pos.it/smalldatasf-quarto-exercises, click on Use this template then Create a new repository. Check Include all branches. Choose your personal GitHub repo as the Owner and give the repository a name.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of your exercise repo.",
     "crumbs": [
       "Setup"
     ]
@@ -139,7 +139,7 @@
     "href": "3-deployment/3-deployment.html#thank-you",
     "title": "Deploy your dashboard",
     "section": "Thank you!",
-    "text": "Thank you!\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
+    "text": "Thank you!"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#about-us",
@@ -202,7 +202,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#with-quarto",
     "title": "Intro to Quarto",
     "section": "With Quarto …",
-    "text": "With Quarto …\nyou can weave together narrative and code to produce elegantly formatted output such as documents, web pages, blog posts, books, dashboards, and more, with…\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnatively multi-lingual, supporting for multiple languages like Python, Julia, Observable, and more via the Jupyter engine for executable code chunks"
+    "text": "With Quarto …\nyou can weave together narrative and code to produce elegantly formatted output such as documents, web pages, blog posts, books, dashboards, and more, with…\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnatively multi-lingual, supporting for multiple languages like Python, Julia, Observable, and more via the Jupyter engine for executable code chunks"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#a-pause",
@@ -237,14 +237,14 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#under-the-hood",
     "title": "Intro to Quarto",
     "section": "Under the hood",
-    "text": "Under the hood\n\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+    "text": "Under the hood\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#under-the-hood-1",
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#under-the-hood-1",
     "title": "Intro to Quarto",
     "section": "Under the hood",
-    "text": "Under the hood\nwith a wider lens…\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+    "text": "Under the hood\nwith a wider lens…\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#converting-notebooks",
@@ -265,7 +265,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#quarto-vs-code-extension",
     "title": "Intro to Quarto",
     "section": "Quarto VS Code extension",
-    "text": "Quarto VS Code extension\n\n\nIntegrated render and preview for Quarto documents.\nSyntax highlighting for markdown and embedded languages\nCompletion and diagnostics for YAML options\nCompletion for embedded languages (e.g. Python, R, Julia, etc.)\nCommands and key-bindings for running cells and selected lines"
+    "text": "Quarto VS Code extension\n\nIntegrated render and preview for Quarto documents\nSyntax highlighting for markdown and embedded languages\nCompletion and diagnostics for YAML options\nCompletion for embedded languages (e.g. Python, R, Julia, etc.)\nCommands and key-bindings for running cells and selected lines"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#previewing-and-rendering",
@@ -307,7 +307,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn",
     "title": "Intro to Quarto",
     "section": "Your turn",
-    "text": "Your turn\n\n1. Software: Download and install Python and the latest version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and the Quarto extensions:\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter"
+    "text": "Your turn\n\n1. Software: Download and install Python and the latest version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.57: https://quarto.org/docs/get-started/\n\n2. Tools: Download and install VS Code and Jupyter and the Quarto extensions:\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#your-turn-1",
@@ -433,7 +433,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#divs-1",
     "title": "Intro to Quarto",
     "section": "Divs",
-    "text": "Divs\nMultiple columns\n\n\nmy-document.qmd\n\n::: {layout-ncol=2}\n\n![](penguin.jpg)\n\nPhoto by &lt;a href=\"https://unsplash.com/@corneliusventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Cornelius Ventures&lt;/a&gt; on &lt;a href=\"https://unsplash.com/s/photos/penguin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Unsplash&lt;/a&gt;\n:::\n\n\n\n\n\n\n\n\n\n\n\nPhoto by Cornelius Ventures on Unsplash"
+    "text": "Divs\nMultiple columns\n\n\nmy-document.qmd\n\n::: {layout-ncol=2}\n\n![](penguin.jpg)\n\nPhoto by &lt;a href=\"https://unsplash.com/@corneliusventures?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Cornelius Ventures&lt;/a&gt; on &lt;a href=\"https://unsplash.com/s/photos/penguin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\"&gt;Unsplash&lt;/a&gt;\n:::\n\n\n\n\n\n\n\n\nPhoto by Cornelius Ventures on Unsplash"
   },
   {
     "objectID": "0-intro-to-quarto/0-intro-to-quarto.html#divs-2",
@@ -524,7 +524,7 @@
     "href": "0-intro-to-quarto/0-intro-to-quarto.html#section",
     "title": "Intro to Quarto",
     "section": "",
-    "text": "thank you!\n\n\nany questions?\n\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
+    "text": "thank you!\n\n\nany questions?"
   },
   {
     "objectID": "LICENSE.html",
@@ -773,7 +773,7 @@
     "href": "2-components-theming/2-components-theming.html#value-boxes",
     "title": "Dashboard components and themes",
     "section": "Value boxes",
-    "text": "Value boxes\n\nmultiple ways to make value boxes\n\n\n\nValue boxes are a great way to prominently display simple values within a dashboard\nYou can create value boxes in executable cells or plain markdown in divs\nValue boxes use Bootstrap icons (https://icons.getbootstrap.com) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we’ll get to themes later!)\n\n\n\nColor alias\nDefault theme color(s)\n\n\n\n\nprimary\nBlue\n\n\nsecondary\nGray\n\n\nsuccess\nGreen\n\n\ninfo\nBright Blue\n\n\nwarning\nYellow/Orange\n\n\ndanger\nRed\n\n\nlight\nLight Gray\n\n\ndark\nBlack"
+    "text": "Value boxes\n\nmultiple ways to make value boxes\n\n\nValue boxes are a great way to prominently display simple values within a dashboard\nYou can create value boxes in executable cells or plain markdown in divs\nValue boxes use Bootstrap icons (https://icons.getbootstrap.com) and can be set to any color (e.g., with a HEX code) or color alias defined by the theme (we’ll get to themes later!)\n\n\n\nColor alias\nDefault theme color(s)\n\n\n\n\nprimary\nBlue\n\n\nsecondary\nGray\n\n\nsuccess\nGreen\n\n\ninfo\nBright Blue\n\n\nwarning\nYellow/Orange\n\n\ndanger\nRed\n\n\nlight\nLight Gray\n\n\ndark\nBlack"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#value-boxes-1",
@@ -794,7 +794,7 @@
     "href": "2-components-theming/2-components-theming.html#markdown-text",
     "title": "Dashboard components and themes",
     "section": "Markdown text",
-    "text": "Markdown text\n\n\nYou can include markdown text anywhere within a dashboard\nMarkdown text is automatically placed in cards, but you can also explicitly put them in cards with fenced divs, and add titles to cards\n::: {.card title=\"Title goes here\"}\nText goes here.\n:::\nYou can place markdown text and other cell output in a single card as well\n::: {.card title=\"Title goes here\"}\nText goes here.\n\n```{r}\n# code generating output goes here\n```\n:::"
+    "text": "Markdown text\n\nYou can include markdown text anywhere within a dashboard\nMarkdown text is automatically placed in cards, but you can also explicitly put them in cards with fenced divs, and add titles to cards\n::: {.card title=\"Title goes here\"}\nText goes here.\n:::\nYou can place markdown text and other cell output in a single card as well\n::: {.card title=\"Title goes here\"}\nText goes here.\n\n```{r}\n# code generating output goes here\n```\n:::"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#start",
@@ -864,7 +864,7 @@
     "href": "2-components-theming/2-components-theming.html#custom-themes",
     "title": "Dashboard components and themes",
     "section": "Custom themes",
-    "text": "Custom themes\n\n\nYou can create an entirely custom theme and apply it to your dashboard:\nformat:\n  theme: style.scss\nOr you can customize an existing Bootswatch theme:\nformat:\n  theme:\n    - cosmo\n    - custom.scss"
+    "text": "Custom themes\n\nYou can create an entirely custom theme and apply it to your dashboard:\nformat:\n  theme: style.scss\nOr you can customize an existing Bootswatch theme:\nformat:\n  theme:\n    - cosmo\n    - custom.scss"
   },
   {
     "objectID": "2-components-theming/2-components-theming.html#goal-1",
@@ -885,7 +885,7 @@
     "href": "2-components-theming/2-components-theming.html#theming-quarto",
     "title": "Dashboard components and themes",
     "section": "Theming Quarto",
-    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!\n\n\n\n\n\npos.it/smalldatasf-quarto-workshop"
+    "text": "Theming Quarto\nA lot more to learn on theming all things Quarto!"
   },
   {
     "objectID": "1-hello-dashboards/1-hello-dashboards.html#quarto-many-outputs",
@@ -1144,6 +1144,6 @@
     "href": "1-hello-dashboards/1-hello-dashboards.html#step-2",
     "title": "Hello, dashboards!",
     "section": "Step 2",
-    "text": "Step 2\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00\n \n\n\n\n\npos.it/smalldatasf-quarto-workshop"
+    "text": "Step 2\n\nReorganize the cards into rows and columns as shown below.\n\n\n\n\n\n\n  \n    −\n    +\n \n 05:00"
   }
 ]
